@@ -10,15 +10,21 @@ a, button, input{
 	outline: 0;
 	border: 0;
 }
+a{
+	color: #36aa61;
+}
+a:hover{
+	color: #1d75bd;
+}
 a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
 
 body {
-    background: #f8f8f8;
+    background: #175783;
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
      font-family: 'Candara';
 }
@@ -96,7 +102,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1430px;
 	width: 100%;
 }
 .container-md{
