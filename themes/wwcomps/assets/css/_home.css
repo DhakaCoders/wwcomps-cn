@@ -14,6 +14,7 @@
 	background: #1C75BC;
 	padding-right: 70px;
 	position: relative;
+	letter-spacing: 1px;
 }
 .flash-title span{
 	font-family: 'LeagueSpartan-Regular';
@@ -37,4 +38,16 @@
 	bottom: 0;
 	left: 0;
 	background: #1C75BC;
+}
+
+
+.lates-winners-sec-con{
+	padding: 70px 0 30px;
+}
+
+.lwsc-btn a{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 280px;
+	width: 100%;
 }
