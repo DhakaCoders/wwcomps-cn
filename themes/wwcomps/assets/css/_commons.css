@@ -374,12 +374,13 @@ ul li.refGridItem:before{
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
-	color: #CEA673;
-	font-weight: 800;
-	font-size: 16px;
+	color: #175884;
+	font-size: 22px;
 	line-height: 1;
 	text-align: center;
 	position: absolute;
+	font-family: 'Hind', sans-serif;
+	font-weight:700;
 	left: 0;
 	top: 4px;
 }
