@@ -229,7 +229,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-  
+
+  /*start Of Rannojit*/
+//windowWidth
+  var containerWidth = $('.container').width();
+  var leftOffsetCal = (windowWidth - containerWidth ) / 2 ;
+  $('.fl-angle-hdr-join').css('width', leftOffsetCal );
 
     new WOW().init();
 

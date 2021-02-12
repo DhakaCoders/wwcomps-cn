@@ -1,4 +1,40 @@
 .fl-angle-hdr{
 	background: #EACEAD;
-	margin-bottom: 1px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	position: relative;
+}
+.flash-title{
+	color: #fff;
+	margin: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	text-transform: uppercase;
+	display: inline-block;
+	background: #1C75BC;
+	padding-right: 70px;
+	position: relative;
+}
+.flash-title span{
+	font-family: 'LeagueSpartan-Regular';
+}
+.flash-title:after{
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	width: 18px;
+	z-index: 2;
+	background: url(../images/blue-angle.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: -6px;
+}
+.fl-angle-hdr-join{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: #1C75BC;
 }
