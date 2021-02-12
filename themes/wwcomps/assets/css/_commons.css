@@ -40,7 +40,7 @@ strong{
 
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #EACEAD;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -364,7 +364,7 @@ ul li.refGridItem:before{
 	display: none;
 }
 .default-page-con ol, ol {
-	padding: 0 0 0 0px;
+	padding: 0 46px 0 0px;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
@@ -374,9 +374,9 @@ ul li.refGridItem:before{
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding-bottom: 15px;
-	line-height: 26px;
-	padding-left: 25px;
+	padding-bottom: 34px;
+	line-height: 30px;
+	padding-left: 21px;
 	position: relative;
 }
 .default-page-con ol li::before,
@@ -403,7 +403,6 @@ ol li::before {
 	align-items: center;
 	background: #009245;
 	border: 2px solid #009245;
-	font-weight: 700;
 	font-size: 16px;
 	font-family: LeagueSpartan-Medium;
 	line-height: 19px;
