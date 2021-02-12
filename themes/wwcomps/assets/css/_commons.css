@@ -376,7 +376,7 @@ ul li.refGridItem:before{
 	-webkit-counter-increment: my-awesome-counter;
 	padding-bottom: 34px;
 	line-height: 30px;
-	padding-left: 21px;
+	padding-left: 28px;
 	position: relative;
 }
 .default-page-con ol li::before,
