@@ -87,7 +87,7 @@
 
 
 .header-bottom{
-
+	background: #fff;
 }
 .header-bottom-cntlr{
 	display: flex;
@@ -159,17 +159,69 @@ nav.main-nav > ul > li a:hover,
 nav.main-nav > ul > li.current-menu-item > a{
 	color: #019245;
 }
-
-nav.main-nav > ul > li.current-menu-item > a{
-
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    width: 225px;
+    padding: 0 10px 0 0;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    -o-transform: scale3d(1,0,1);
+    transform-origin: top;
+    opacity: 0;
 }
-
-nav.main-nav > ul > li.menu-item-has-children > a{
-
+nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    opacity: 1;
 }
-
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
-	
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
+	padding: 6px 0;
+	line-height: 1;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #019245;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
+    border-bottom: none;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+	display: block;
+	font-family: 'LeagueSpartan-Medium';
+	font-size: 16px;
+	line-height: 1;
+	color: #4B4B4B;
+    padding: 5px 20px;
+    position: relative;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    background: #019245;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
+    height: 100%;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
+	color: #019245;
 }
 
 .hdr-add-to-card{
