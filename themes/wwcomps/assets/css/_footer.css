@@ -2,7 +2,22 @@
 .ftr-cols{
 	display: flex;
 }
+.ftr-col{
+	width: 22%;
+	padding-top: 25px;
+}
 
+.ftr-col-1{
+	width: 32%;
+	padding-right: 120px;
+	padding-top: 0;
+}
+.ftr-col .ftr-heading{
+	text-transform: uppercase;
+	color: #1C75BC;
+	margin-bottom: 30px;
+	font-family: 'LeagueSpartan-Medium';
+}
 
 
 
