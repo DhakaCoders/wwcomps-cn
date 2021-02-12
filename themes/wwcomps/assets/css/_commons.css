@@ -408,6 +408,7 @@ ol li::before {
 	line-height: 19px;
 	padding: 10px 5px;
 	color: #fff;
+	letter-spacing: 2px;
 }
 .fl-btn:hover{
 	background: #1C75BC;

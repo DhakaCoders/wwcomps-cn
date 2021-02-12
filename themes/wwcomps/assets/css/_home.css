@@ -47,4 +47,6 @@
 .lwsc-btn a{
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 280px;
+	width: 100%;
 }
