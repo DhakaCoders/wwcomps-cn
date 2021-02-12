@@ -1,3 +1,117 @@
+.header{
+
+}
+.header-top{
+	background: #1d75bd;
+	padding: 5px 0;
+}
+.header-top-cntlr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.header-top-socials{
+
+}
+.header-top-socials ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+.header-top-socials ul li{
+	padding: 0 5px;
+	line-height: 1;
+}
+.header-top-socials ul li a,
+.header-top-socials ul li a i{
+	display: inline-block;
+}
+.header-top-socials ul li a:hover i svg{
+	fill: orange;
+}
+.header-top-right{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hdr-top-rt-login{
+	padding: 0 10px 0 22px;
+	display: inline-block;
+	position: relative;
+}
+.hdr-top-rt-login i{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	left: 0;
+}
+.hdr-top-rt-login button{
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	display: inline-block;
+	text-transform: capitalize;
+	line-height: 1;
+	padding: 0;
+	background: transparent;
+}
+.hdr-top-rt-register{
+	padding-left: 10px;
+	position: relative;
+	display: inline-block;
+}
+.hdr-top-rt-register i{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	left: -1px;
+}
+.hdr-top-rt-register button{
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	display: inline-block;
+	text-transform: capitalize;
+	line-height: 1;
+	padding: 0;
+	background: transparent;
+}
+
+
+.header-bottom{
+
+}
+.header-bottom-cntlr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hdr-btm-left{
+
+}
+.logo{
+
+}
+.logo a{
+	display: inline-block;
+}
+.hdr-btm-right{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hdr-menu{
+	padding-right: 50px;
+}
 nav.main-nav ul{
 
 }
@@ -29,3 +143,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	
 }
 
+.hdr-add-to-card{
+	position: relative;
+	display: inline-block;
+}
