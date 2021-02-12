@@ -1,15 +1,131 @@
-.contact-us-sec{
-	padding-top:59px;
-	padding-bottom:122px;
-	position:relative;
-	min-height:975px;
+.cnt-page-des{
+	border: none!important;
 }
-.contact-bg{
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	display:flex;
-	z-index:0;
+.cnt-page-des h2{
+	padding-bottom: 10px;
+}
+.cnt-page-des p{
+	line-height: 1;
+	padding-bottom: 5px;
+}
+.input-field-col{
+	padding-bottom: 30px;
+}
+.input-field-col input[type="text"],
+.input-field-col input[type="email"],
+.input-field-col textarea[type="text"]{
+	border: 1px solid #C6C6C6;
+	width: 100%;
+	height: 50px;
+	color: #545050;
+	font-weight: 300;
+    font-family: 'Hind', sans-serif;	
+	font-size: 18px;
+	background-color: #F9F9F9;
+	padding: 0 9px;
+}
+.input-field-col textarea[type="text"]{
+	height: 200px;
+	padding-top: 15px;
+}
+.input-field-col input[type="text"]::placeholder,
+.input-field-col input[type="email"]::placeholder,
+.input-field-col textarea[type="text"]::placeholder{
+	color: #828282;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.input-field-col input[type="text"]::-webkit-input-placeholder,
+.input-field-col input[type="email"]::-webkit-input-placeholder,
+.input-field-col textarea[type="text"]::-webkit-input-placeholder{
+	color: #828282;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.input-field-col input[type="text"]::-moz-placeholder,
+.input-field-col input[type="email"]::-moz-placeholder,
+.input-field-col textarea[type="text"]::-moz-placeholder{
+	color: #828282;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.input-field-col input[type="text"]:-ms-input-placeholder,
+.input-field-col input[type="email"]:-ms-input-placeholder,
+.input-field-col textarea[type="text"]:-ms-input-placeholder{
+	color: #828282;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.input-field-col input[type="text"]:-moz-placeholder,
+.input-field-col input[type="email"]:-moz-placeholder,
+.input-field-col textarea[type="text"]:-moz-placeholder{
+	color: #828282;
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.cnt-form-btn{
+	width: 200px;
+	text-transform: uppercase;
+}
+.quick-cnt-links{
+	background: #175783;
+}
+.qck-lnk-cntrl{
+	padding-top: 93px;
+	padding-bottom: 106px;
+}
+.qck-lnk-cntrl ul{
+	display: flex;
+	margin: 0 -10px;
+}
+.qck-lnk-cntrl ul li{
+	max-width: 33.3333%;
+	width: 100%;
+	padding: 0 10px;
+}
+.qck-lnk-items{
+	position: relative;
+	padding-left: 116px;
+}
+.qck-lnk-items:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/location-ico.png');
+	background-repeat: no-repeat;
+	width: 116px;
+	height: 100%;
+	left: 0;
+    top: 50%;
+    background-position: center center;
+    border: 2px solid #fff;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.qck-lnk-item{
+	background-image: url('../images/cu-qck-lnk-bg.png');
+	min-height: 150px;
+	background-color: #fff;
+	background-position: right center!important;
+	padding: 24px 5px 20px 29px;
+}
+.qck-lnk-cntrl ul li:nth-child(2) .qck-lnk-items:after{
+	background-image: url('../images/phone-icon.png');
+}
+.qck-lnk-cntrl ul li:nth-child(3) .qck-lnk-items:after{
+	background-image: url('../images/mail-icon.png');
+}
+.qck-lnk-title{
+	font-size: 24px;
+	font-family: 'LeagueSpartan-Semibold';
+	text-transform: uppercase;
+}
+.qck-lnk-item address{
+	font-size: 20px;
+	line-height: 1.3;
 }

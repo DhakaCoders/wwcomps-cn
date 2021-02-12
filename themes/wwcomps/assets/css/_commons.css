@@ -6,9 +6,10 @@ Commons
 	text-decoration: none;
 }
 
-a, button, input{
+a, button, input, textarea{
 	outline: 0;
 	border: 0;
+	resize: none;
 }
 a{
 	color: #36aa61;
