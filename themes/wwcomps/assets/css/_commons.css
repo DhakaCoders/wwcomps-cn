@@ -364,7 +364,7 @@ ul li.refGridItem:before{
 	display: none;
 }
 .default-page-con ol, ol {
-	padding: 0 0 0 25px;
+	padding: 0 0 0 0px;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
