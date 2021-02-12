@@ -4,6 +4,9 @@
 	position:relative;
 	min-height:975px;
 }
+.page-banner-section .container{
+	z-index:2;
+}
 .banner-bg{
 	position:absolute;
 	left:0;
@@ -11,6 +14,7 @@
 	top:0;
 	bottom:0;
 	display:flex;
+	z-index:0;
 }
 .bnr-bg-lft{
 	max-width: 34.7%;
@@ -31,6 +35,8 @@
 	padding-left:39px;
 	padding-right:39px;
 	padding-bottom:56px;
+	position: relative;
+	border:1px solid #7C7C7C;
 }
 .page-des h1{
 	font-family: 'LeagueSpartan-Medium';
@@ -45,10 +51,16 @@
 	line-height:1.5;
 	margin-bottom:28px;
 }
-.page-des strong{
+.page-des > strong{
 	display:inline-block;
 	line-height:1;
 	font-size:24px;
 	font-family: 'Hind', sans-serif;
 	font-weight:500;
+}
+.page-des span{
+	position: absolute;
+	right:-22px;
+	top:18.7%;
+ 
 }
