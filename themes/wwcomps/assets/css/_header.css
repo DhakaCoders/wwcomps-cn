@@ -118,6 +118,7 @@ nav.main-nav > ul{
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -22px;
+	padding-top: 52px;
 }
 nav.main-nav > ul > li{
 	line-height: 1;
@@ -126,9 +127,37 @@ nav.main-nav > ul > li{
 nav.main-nav > ul > li > a{
 	display: inline-block;
 	font-size: 16px;
+	padding-bottom: 52px;
 	color: #231F20;
 	font-family: 'LeagueSpartan-Medium';
 	text-transform: uppercase;
+	position: relative;
+}
+nav.main-nav > ul > li > a:after{
+	position: absolute;
+	top: 100%;
+	content: "";
+	left: 0;
+	right: 0;
+	background: #019245;
+	height: 3px;
+	transform: scale(0,1);
+	-ms-transform: scale(0,1);
+	-webkit-transform: scale(0,1);
+	-o-transform: scale(0,1);
+	transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+}
+nav.main-nav > ul > li > a:hover:after{
+	transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	-o-transform: scale(1,1);
+}
+nav.main-nav > ul > li a:hover,
+nav.main-nav > ul > li.current-menu-item > a{
+	color: #019245;
 }
 
 nav.main-nav > ul > li.current-menu-item > a{
