@@ -34,6 +34,10 @@ p{
 	line-height: 2.0;
 	margin-bottom: 20px;
 }
+strong{
+
+}
+
 ::selection {
   color: #fff;
   background: #512C36;
@@ -181,7 +185,7 @@ img{
 ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
-.fl-pagi-ctlr ul,
+.fl-pagi-cntlr ul,
 .reset-slect ul{
 	margin: 0;
 	padding: 0;
@@ -189,7 +193,7 @@ ul.sub-menu,
 }
 .reset-list li,
 ul.sub-menu li,
-.fl-pagi-ctlr ul li,
+.fl-pagi-cntlr ul li,
 .reset-slect ul li{
 	padding: 0;
 	margin: 0;
@@ -198,7 +202,7 @@ ul.sub-menu li,
 }
 .reset-list li:before,
 ul.sub-menu li:before,
-.fl-pagi-ctlr ul li:before,
+.fl-pagi-cntlr ul li:before,
 .reset-slect ul li:before{
 	content: none!important;
 }
