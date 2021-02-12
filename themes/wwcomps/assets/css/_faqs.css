@@ -18,7 +18,7 @@
 	cursor:pointer;
 }
 .hh-accordion-title:after{
-	content:"\f077";
+	content:"\f078";
 	position: absolute;
 	font-family: 'Font Awesome 5 Free';
 	left: 0;
@@ -39,5 +39,5 @@
 	right:-21px;
 }
 .hh-accordion-active:after{
-	content:"\f078";
+	content:"\f077";
 }
