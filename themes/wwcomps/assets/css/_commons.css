@@ -40,7 +40,7 @@ strong{
 
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #EACEAD;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -403,7 +403,6 @@ ol li::before {
 	align-items: center;
 	background: #009245;
 	border: 2px solid #009245;
-	font-weight: 700;
 	font-size: 16px;
 	font-family: LeagueSpartan-Medium;
 	line-height: 19px;
