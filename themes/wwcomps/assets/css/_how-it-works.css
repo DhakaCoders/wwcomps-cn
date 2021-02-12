@@ -40,10 +40,15 @@
 }
 .page-des h2,
 .page-des h2.fl-h1{
-	font-family: 'LeagueSpartan-Medium';
+	font-family: 'LeagueSpartan-Bold';
 	color:#3A3A3A;
 	text-transform:uppercase;
 	margin-bottom:24px;
+}
+.page-des h2 strong,
+.page-des h2.fl-h1 strong{
+	font-family: 'LeagueSpartan-Medium';
+	font-weight:500;
 }
 .page-des h3,
 .page-des h3.fl-h3{

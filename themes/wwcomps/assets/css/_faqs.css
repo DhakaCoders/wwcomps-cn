@@ -1,0 +1,12 @@
+.faqs-pg-des{
+	max-width:1017px;
+	width:100%;
+}
+.hh-accordion-title{
+	font-size:22px;
+	color:#1C75BC!important;
+	font-weight:500;
+}
+.hh-accordion-title:after{
+	content:"";
+}
