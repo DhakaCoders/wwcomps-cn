@@ -71,6 +71,7 @@
 .cnt-form-btn{
 	width: 200px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 .quick-cnt-links{
 	background: #175783;

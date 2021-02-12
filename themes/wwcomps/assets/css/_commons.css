@@ -209,8 +209,22 @@ ul.sub-menu li:before,
 }
 
 
-
-
+.input-group{
+	position: relative;
+}
+.invalid-text{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+.was-validated input[type="text"]:invalid, .was-validated input[type="email"]:invalid {
+	border: 2px solid red;
+}
+.was-validated:invalid .invalid-text{
+	color: red;
+	display: block;
+}
 /**
 Selects
 */
