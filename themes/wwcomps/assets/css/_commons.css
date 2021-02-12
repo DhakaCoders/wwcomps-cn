@@ -336,17 +336,20 @@ ul{
 }
 .default-page-con ul li,
 ul li {
-	padding: 5px 0 5px 16px;
+	padding: 0px 0 20px 16px;
 	position: relative;
 	line-height: 24px;
 	font-size: 16px;
 }
-
+.default-page-con ul li a,
+ul li a{
+	color: #545050;
+}
 .default-page-con ul li::before, ul li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 3px;
+    top: 6px;
     width: 8px;
     height: 8px;
     background: url(../images/list-icon.svg);
