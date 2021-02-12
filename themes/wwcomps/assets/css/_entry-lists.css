@@ -13,8 +13,7 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding-top: 38px;
-	padding-bottom: 35px;
+	padding: 38px 23px 35px;
 	display: flex;
 	flex-direction: column;
 }
@@ -34,6 +33,22 @@
 .entty-item-title{
 	display: flex;
 	align-items: flex-end;
-	line-height: 2.3;
+	line-height: 1.1;
 	font-size: 24px;
+	font-family: 'LeagueSpartan-Semibold';
+	margin-bottom: 0;
+}
+.entry-list-item p{
+	margin-bottom: 0;
+	line-height: 1.2;
+}
+.entry-list-item p:nth-child(2){
+	font-family:'SegoeUI-Regular';
+	font-size: 20px;
+	padding-bottom: 22px;
+}
+.entry-list-item p:nth-child(3){
+	font-weight: 300;
+	font-size: 16px;
+	padding-bottom: 39px;
 }
