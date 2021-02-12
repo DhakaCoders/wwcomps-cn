@@ -217,15 +217,21 @@
           <h2 class="fl-h1">SEND A MESSAGE</h2>
           <p>We aim to reply to your message within 5 working days.</p>
           <div class="cnt-form">
-            <form>
+            <form class="needs-validation" novalidate>
               <div class="input-fields-row">
-                <div class="input-field-col">
-                  <input type="text" name="fname" placeholder="Your Name(required)">
+                <div class="input-field-col input-group">
+                  <input type="text" name="fname" placeholder="Your Name(required)" required>
+                  <div class="invalid-text">
+                      Enter your name.
+                    </div>
                 </div>
               </div>
               <div class="input-fields-row">
-                <div class="input-field-col">
-                  <input type="email" placeholder="Your Email(required)">
+                <div class="input-field-col input-group">
+                  <input type="email" placeholder="Your Email(required)" required>
+                  <div class="invalid-text">
+                      Enter your email.
+                    </div>
                 </div>
               </div>
               <div class="input-fields-row">
@@ -238,9 +244,12 @@
                   <textarea type="text" placeholder="Yours message"></textarea>
                 </div>
               </div>
+              <div class="cnt-us-submit-btn">
+                <input class="fl-btn cnt-form-btn" type="submit" value="send message">
+              </div>
             </form>
           </div>
-          <a class="fl-btn cnt-form-btn" href="#">send message</a>
+          <a class="" href="#"></a>
           <span><img src="assets/images/hit-page-des-angle.png" alt=""></span>
         </div>
       </div>
