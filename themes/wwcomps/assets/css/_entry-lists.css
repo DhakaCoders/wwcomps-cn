@@ -13,22 +13,22 @@
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: cover;
-	padding: 38px 7px 35px 23px;
+	padding: 38px 10px 35px 23px;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 5px 5px 10px 0px rgba(112,112,112,1);
 	-webkit-box-shadow: 5px 5px 10px 0px rgba(112,112,112,1);
 	-moz-box-shadow: 5px 5px 10px 0px rgba(112,112,112,1);
-	box-shadow: 5px 5px 10px 0px rgba(112,112,112,1);
 }
 .entry-grid-list-items ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: -22px;
+	margin: -16px;
 }
 .entry-grid-list-items ul li{
 	max-width: 33.3333%;
 	width: 100%;
-	padding: 22px;
+	padding: 16px;
 }
 .title-bar{
 	display: flex;
@@ -41,6 +41,7 @@
 	line-height: 1.1;
 	font-size: 24px;
 	font-family: 'LeagueSpartan-Semibold';
+	text-transform: uppercase;
 	margin-bottom: 0;
 }
 .entry-list-item p{
@@ -56,6 +57,10 @@
 	font-weight: 300;
 	font-size: 16px;
 	padding-bottom: 39px;
+	color: #1C75BC;
+}
+.entry-list-item p span{
+	padding-left: 6px;
 }
 .entry-lst-btn{
 	width: 120px;
