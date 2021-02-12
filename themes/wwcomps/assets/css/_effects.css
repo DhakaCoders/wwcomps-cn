@@ -1,12 +1,14 @@
 /**
 All Transitions
 */
-a,input,img,textarea,button,svg,i,.dft-transition{
+a,input,img,textarea,button,svg,i,.dft-transition,
+.pro-fea-img-cntlr .inline-bg{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale{
+.scale,
+.product-grd-item:hover .pro-fea-img-cntlr .inline-bg{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
