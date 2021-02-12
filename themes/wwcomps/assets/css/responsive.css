@@ -1,3 +1,11 @@
+@media (max-width: 1699px){
+	.container { max-width: 1200px;}
+}
+@media (max-width: 1499px) {
+	.container { max-width: 1100px; }
+}
+
+
 @media(max-width: 1499px){
 
 }
@@ -9,6 +17,8 @@
 @media(max-width: 1299px){
 
 }
+
+
 
 @media(max-width: 1199px){
 	.hide-lg{
