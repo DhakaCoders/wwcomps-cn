@@ -1,0 +1,39 @@
+.entry-lists{
+
+}
+.entry-list-bg{
+	min-height: 1406px;
+	padding-top: 71px;
+	padding-bottom: 119px;
+}
+.entry-list-item{
+	min-height: 250px;
+	background: #fff;
+	background-image: url('../images/_entry-item-icon.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding-top: 38px;
+	padding-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+}
+.entry-grid-list-items ul{
+	display: flex;
+	margin: 0 -16px;
+}
+.entry-grid-list-items ul li{
+	max-width: 33.3333%;
+	width: 100%;
+	padding: 0 16px;
+}
+.title-bar{
+	display: flex;
+	align-items: center;
+}
+.entty-item-title{
+	display: flex;
+	align-items: flex-end;
+	line-height: 2.3;
+	font-size: 24px;
+}
