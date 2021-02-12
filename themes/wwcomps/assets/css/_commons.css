@@ -367,7 +367,7 @@ ul li.refGridItem:before{
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
 	padding-bottom: 15px;
-	line-height: 24px;
+	line-height: 26px;
 	padding-left: 25px;
 	position: relative;
 }
