@@ -1,16 +1,5 @@
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('LatoRegular/LatoRegular.eot');
-    src: url('LatoRegular/LatoRegular.eot') format('embedded-opentype'),
-         url('LatoRegular/LatoRegular.woff2') format('woff2'),
-         url('LatoRegular/LatoRegular.woff') format('woff'),
-         url('LatoRegular/LatoRegular.ttf') format('truetype'),
-         url('LatoRegular/LatoRegular.svg#LatoRegular') format('svg');
-    font-weight: normal;
-}
-
-@font-face {
     font-family:'SegoeUI-Regular';
     src: url('SegoeUI-Regular/SegoeUI.eot');
     src: url('SegoeUI-Regular/SegoeUI.eot?#iefix') format('embedded-opentype'),
@@ -23,3 +12,68 @@
     font-display: swap;
 }
 
+
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('LeagueSpartan-Bold/LeagueSpartan-Bold.eot');
+    src: url('LeagueSpartan-Bold/LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LeagueSpartan-Bold/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('LeagueSpartan-Bold/LeagueSpartan-Bold.woff') format('woff'),
+        url('LeagueSpartan-Bold/LeagueSpartan-Bold.ttf') format('truetype'),
+        url('LeagueSpartan-Bold/LeagueSpartan-Bold.svg#LeagueSpartan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Extrabold';
+    src: url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.eot');
+    src: url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.woff2') format('woff2'),
+        url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.woff') format('woff'),
+        url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.ttf') format('truetype'),
+        url('LeagueSpartan-Extrabold/LeagueSpartan-Extrabold.svg#LeagueSpartan-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Light';
+    src: url('LeagueSpartan-Light/LeagueSpartan-Light.eot');
+    src: url('LeagueSpartan-Light/LeagueSpartan-Light.eot?#iefix') format('embedded-opentype'),
+        url('LeagueSpartan-Light/LeagueSpartan-Light.woff2') format('woff2'),
+        url('LeagueSpartan-Light/LeagueSpartan-Light.woff') format('woff'),
+        url('LeagueSpartan-Light/LeagueSpartan-Light.ttf') format('truetype'),
+        url('LeagueSpartan-Light/LeagueSpartan-Light.svg#LeagueSpartan-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Medium';
+    src: url('LeagueSpartan-Medium/LeagueSpartan-Medium.eot');
+    src: url('LeagueSpartan-Medium/LeagueSpartan-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LeagueSpartan-Medium/LeagueSpartan-Medium.woff2') format('woff2'),
+        url('LeagueSpartan-Medium/LeagueSpartan-Medium.woff') format('woff'),
+        url('LeagueSpartan-Medium/LeagueSpartan-Medium.ttf') format('truetype'),
+        url('LeagueSpartan-Medium/LeagueSpartan-Medium.svg#LeagueSpartan-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Semibold';
+    src: url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.eot');
+    src: url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.woff2') format('woff2'),
+        url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.woff') format('woff'),
+        url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.ttf') format('truetype'),
+        url('LeagueSpartan-Semibold/LeagueSpartan-Semibold.svg#LeagueSpartan-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
