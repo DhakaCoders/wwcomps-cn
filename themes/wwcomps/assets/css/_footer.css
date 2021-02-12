@@ -1,3 +1,11 @@
+
+.ftr-cols{
+	display: flex;
+}
+
+
+
+
 .footer-btm{
 	background: #1d75bd;
 }
