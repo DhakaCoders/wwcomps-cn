@@ -226,10 +226,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start Of Niaz*/
-
-
-
   
+  var allPanels = $('.hh-accordion-des').hide();
+  $('.hh-accordion-title').click(function() {
+        allPanels.slideUp();
+        $('.hh-accordion-title').removeClass('hh-accordion-active');
+        $(this).next().slideDown();
+        $(this).addClass('hh-accordion-active');
+        return false;
+  });
+
+
+
+  /*start Of Rannojit*/
+//windowWidth
+  var containerWidth = $('.container').width();
+  var leftOffsetCal = (windowWidth - containerWidth ) / 2 ;
+  $('.fl-angle-hdr-join').css('width', leftOffsetCal );
 
     new WOW().init();
 

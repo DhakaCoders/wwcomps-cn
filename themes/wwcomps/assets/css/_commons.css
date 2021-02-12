@@ -34,9 +34,13 @@ p{
 	line-height: 2.0;
 	margin-bottom: 20px;
 }
+strong{
+
+}
+
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #EACEAD;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -181,7 +185,7 @@ img{
 ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
-.fl-pagi-ctlr ul,
+.fl-pagi-cntlr ul,
 .reset-slect ul{
 	margin: 0;
 	padding: 0;
@@ -189,7 +193,7 @@ ul.sub-menu,
 }
 .reset-list li,
 ul.sub-menu li,
-.fl-pagi-ctlr ul li,
+.fl-pagi-cntlr ul li,
 .reset-slect ul li{
 	padding: 0;
 	margin: 0;
@@ -198,7 +202,7 @@ ul.sub-menu li,
 }
 .reset-list li:before,
 ul.sub-menu li:before,
-.fl-pagi-ctlr ul li:before,
+.fl-pagi-cntlr ul li:before,
 .reset-slect ul li:before{
 	content: none!important;
 }
@@ -360,7 +364,7 @@ ul li.refGridItem:before{
 	display: none;
 }
 .default-page-con ol, ol {
-	padding: 0 0 0 25px;
+	padding: 0 46px 0 0px;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
@@ -370,9 +374,9 @@ ul li.refGridItem:before{
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding-bottom: 15px;
-	line-height: 26px;
-	padding-left: 25px;
+	padding-bottom: 34px;
+	line-height: 30px;
+	padding-left: 28px;
 	position: relative;
 }
 .default-page-con ol li::before,
@@ -399,12 +403,12 @@ ol li::before {
 	align-items: center;
 	background: #009245;
 	border: 2px solid #009245;
-	font-weight: 700;
 	font-size: 16px;
 	font-family: LeagueSpartan-Medium;
 	line-height: 19px;
 	padding: 10px 5px;
 	color: #fff;
+	letter-spacing: 2px;
 }
 .fl-btn:hover{
 	background: #1C75BC;

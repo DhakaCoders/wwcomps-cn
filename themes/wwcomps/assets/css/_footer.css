@@ -65,6 +65,7 @@
 	vertical-align: baseline;
 	padding: 0 14px;
 	position: relative;
+	font-size: 14px;
 }
 .copyright-menu ul li:not(:last-child):after{
 	content: "";
