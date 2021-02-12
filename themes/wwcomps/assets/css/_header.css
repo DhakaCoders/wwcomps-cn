@@ -112,23 +112,23 @@
 .hdr-menu{
 	padding-right: 50px;
 }
-nav.main-nav ul{
 
-}
-nav.main-nav ul li{
-	
-}
-nav.main-nav ul li a{
-	
-}
 nav.main-nav > ul{
-
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -22px;
 }
 nav.main-nav > ul > li{
-
+	line-height: 1;
+	padding: 0 22px;
 }
 nav.main-nav > ul > li > a{
-
+	display: inline-block;
+	font-size: 16px;
+	color: #231F20;
+	font-family: 'LeagueSpartan-Medium';
+	text-transform: uppercase;
 }
 
 nav.main-nav > ul > li.current-menu-item > a{
@@ -144,6 +144,25 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 }
 
 .hdr-add-to-card{
+	
+}
+.hdr-add-to-card-icon{
 	position: relative;
 	display: inline-block;
+	padding-right: 18px;
+}
+.hdr-add-to-card-icon span{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	background: #1C75BC;
+	border-radius: 50% 50%;
+	top: 2px;
+	right: 0;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'LeagueSpartan-Medium';
 }
