@@ -170,6 +170,40 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+  /*start Of Noyon*/
+
+
+
+
+
+
+  /*start Of Shariful*/
+
+
+
+
+
+  /*start Of Milon*/
+
+
+
+
+
+
+  /*start Of Sabbir*/
+
+
+
+  
+
+
+  /*start Of Niaz*/
+
+
+
+  
+
     new WOW().init();
 
 })(jQuery);
