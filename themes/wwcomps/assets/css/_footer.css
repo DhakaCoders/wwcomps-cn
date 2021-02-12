@@ -1,10 +1,14 @@
 
+.footer-wrp{
+	padding-top: 60px;
+}
 .ftr-cols{
 	display: flex;
 }
 .ftr-col{
 	width: 22%;
 	padding-top: 25px;
+	padding-bottom: 100px;
 }
 
 .ftr-col-1{
@@ -18,7 +22,18 @@
 	margin-bottom: 30px;
 	font-family: 'LeagueSpartan-Medium';
 }
-
+.ftr-contact-info-row{
+	padding-bottom: 30px;
+}
+.ftr-contact-info-row strong{
+	font-size: 20px;
+	font-family: 'LeagueSpartan-Medium';
+	display: block;
+}
+.ftr-contact-info-row a{
+	font-size: 16px;
+	color: #515151;
+}
 
 
 .footer-btm{
