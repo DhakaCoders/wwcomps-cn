@@ -3,6 +3,7 @@
 	font-size:54px;
 	font-family: 'LeagueSpartan-Bold';
 	font-weight: 700;
+	margin-bottom:35px;
 }
 .about-pg-des h2 strong{
 	font-size:44px;
@@ -14,5 +15,9 @@
 	font-family: 'LeagueSpartan-Regular'!important;
 }
 .about-pg-des p{
-	
+	line-height:1.5;
+	margin-bottom:29px;
+}
+.about-pg-des a{
+	margin-top:6px;
 }
