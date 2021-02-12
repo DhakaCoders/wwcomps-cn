@@ -41,3 +41,67 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+/* ===================== */
+/*== pagination start ==*/
+/* =================== */
+.fl-pagi-cntlr{
+	display: flex;
+	justify-content: center;
+}
+.fl-pagi-cntlr ul{
+	display: flex;
+	background:#665440;
+	margin: -2px -2px;
+}
+.fl-pagi-cntlr ul li{
+	padding: 2px 2px;
+	display: flex;
+}
+.fl-pagi-cntlr ul li span{
+	font-weight: 500;
+	font-size: 16px;
+	padding: 9px 12px;
+}
+.fl-pagi-cntlr ul li a,
+.page-numbers.dots{
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+	background: #C18F53;
+	padding: 9px 12px;
+}
+.fl-pagi-cntlr ul li a:hover{
+	color: #665440;
+	background: #fff;
+}
+.page-numbers.current{
+	background: #fff;
+}
+.prev, .next{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.prev:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/pagi-prev.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 7px;
+}
+.next:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/pagi-next.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 7px;
+}
+.prev:hover,
+.next:hover{
+	background: #665440!important;
+}
+/*== pagination end ==*/
