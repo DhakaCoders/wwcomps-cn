@@ -2,11 +2,35 @@
 	max-width:1017px;
 	width:100%;
 }
+.faqs-pg-des h2{
+	margin-bottom:30px;
+}
 .hh-accordion-title{
 	font-size:22px;
 	color:#1C75BC!important;
 	font-weight:500;
+	position: relative;
+	padding-left:50px;
+	font-family: 'Hind', sans-serif!important;
+	font-weight:500;
+	margin-bottom:8px!important;
+	margin-top:42px;
 }
 .hh-accordion-title:after{
-	content:"";
+	content:"\f077";
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	left: 0;
+	top:0;
+	width:32px;
+	height:32px;
+	border:2px solid #707070;
+	font-weight:700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#000000;
+}
+.faqs-pg-des span{
+	right:-21px;
 }
