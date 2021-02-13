@@ -18,6 +18,10 @@
 	cursor:pointer;
 	text-transform: capitalize!important;
 }
+.hh-accordion-des{
+	display: none;
+	padding-bottom: 1px;
+}
 .hh-accordion-title span{
 	width:32px;
 	height:32px;
