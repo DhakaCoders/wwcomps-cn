@@ -41,7 +41,7 @@
 	display: flex;
 	align-items: flex-end;
 	line-height: 1.1;
-	font-size: 24px;
+	font-size: 24px!important;
 	font-family: 'LeagueSpartan-Semibold';
 	text-transform: uppercase;
 	margin-bottom: 0;
@@ -50,18 +50,18 @@
 	margin-bottom: 0;
 	line-height: 1.2;
 }
-.entry-list-item p:nth-child(2){
+.publish-date p{
 	font-family:'SegoeUI-Regular';
 	font-size: 20px;
 	padding-bottom: 22px;
 }
-.entry-list-item p:nth-child(3){
+.drwan-date p{
 	font-weight: 300;
 	font-size: 16px;
 	padding-bottom: 39px;
 	color: #1C75BC;
 }
-.entry-list-item p span{
+.publish-date p span, .drwan-date p span{
 	padding-left: 6px;
 }
 .entry-lst-btn{
