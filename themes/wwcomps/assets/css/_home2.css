@@ -1,13 +1,150 @@
+.lucky-winner-banner{
+	min-height: 660px!important;
+	padding: 55px 0 0 0!important;
+}
+.lucky-winner-banner-bg{
 
+}
+.lucky-winner-desc-cntlr{
 
+}
+.lucky-winner-slider{
 
+}
+.lw-slide-item-cntlr{
+	display: none;
+}
+.lw-slide-item-cntlr:first-child{
+	display: block;
+}
+/*slick code here*/
+.lucky-winner-slider.slick-slider .lw-slide-item-cntlr{
+	display: block;
+}
+.lucky-winner-slider.slick-slider ul.slick-dots{
+	margin-top: 25px;
+}
+.lw-slide-item-desc{
+	padding: 85px 58px 60px 58px;
+	position: relative;
+	background: #fff;
+	max-width: 720px;
+	width: 100%;
+}
+.lw-slide-item-desc > i{
+	position: absolute;
+	right: -24px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.lw-slide-item-title{
+	font-size: 40px;
+    font-family: 'LeagueSpartan-Medium';
+	line-height: 1.2;
+	margin-bottom: 45px;
+	color: #545050;
+	text-transform: uppercase;
+}
+.lw-slide-item-title span{
+	font-size: 44px;
+	 font-family: 'LeagueSpartan-Semibold';
+	 display: block;
+}
+.lw-slide-item-sub-title{
+	color: #1C75BC;
+	font-size: 40px;
+	display: block;
+	margin-bottom: 15px;
+    font-family: 'LeagueSpartan-Bold';
+    text-transform: uppercase;
 
-
-
-
-
-
-
+}
+.lw-slide-item-desc > p{
+	margin-bottom: 30px;
+}
+.lw-si-prize-cntlr{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+.lw-si-prize-cntlr strong{
+	font-size: 28px;
+	color: #545050;
+	text-transform: uppercase;
+}
+.lw-si-prize-cntlr .price{
+	display: inline-block;
+	position: relative;
+	padding-right: 44px;
+}
+.lw-si-prize-cntlr .price i{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.lw-si-prize-cntlr .price > i > del{
+	font-size: 17px;
+	font-weight: 400;
+	color: #AAAAAA;
+}
+.lw-si-prize-cntlr .price .woocommerce-Price-amount bdi{
+    font-family: 'LeagueSpartan-Bold';
+	font-size: 34px;
+	color: #1C75BC;
+	padding-left: 10px;
+}
+.counter-up-sec{
+	background: #fff;
+	padding: 55px 0 25px 0;
+}
+.counter-up-cntlr{
+	padding-left: 25px;
+}
+.counter-up-cntlr ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -40px;
+}
+.counter-up-cntlr ul li{
+	padding: 0 40px;
+	width: 25%;
+	margin-bottom: 30px;
+}
+.counter-item{
+	
+	position: relative;
+	padding: 22px 0;
+	padding-left: 102px;
+}
+.counter-item-img{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.number-of-counter{
+	display: block;
+	color: #1C75BC;
+    font-family: 'LeagueSpartan-Bold';
+	font-size: 50px;
+	margin-bottom: 7px;
+	line-height: 1;
+}
+.counter-item-sub-title{
+	display: block;
+	font-size: 24px;
+    font-family: 'LeagueSpartan-Semibold';
+	color: #545050;
+	line-height: 1;
+	margin-bottom: 0;
+}
 
 .how-to-play-sec{
 	min-height: 727px!important;
@@ -96,3 +233,7 @@
 	right: -24px;
 	left: initial;
 }
+
+
+
+
