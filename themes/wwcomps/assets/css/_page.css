@@ -61,16 +61,26 @@
 .fl-pagi-cntlr ul li span{
 	font-weight: 500;
 	font-size: 16px;
-	padding: 9px 12px;
-	cursor: pointer;
+	padding: 2px;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .fl-pagi-cntlr ul li a,
 .page-numbers.dots{
 	font-weight: 500;
 	font-size: 16px;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #fff;
 	background: #C18F53;
-	padding: 9px 12px;
+	padding: 2px;
 }
 .fl-pagi-cntlr ul li a:hover,
 .fl-pagi-cntlr ul li span:hover{
@@ -85,7 +95,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 40px;
+	width: 40px!important;
 	border: 2px solid transparent;
 }
 .prev:after{

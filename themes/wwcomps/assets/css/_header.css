@@ -28,7 +28,7 @@
 	display: inline-block;
 }
 .header-top-socials ul li a:hover i svg{
-	fill: orange;
+	fill: #019245;
 }
 .header-top-right{
 	margin-left: auto;

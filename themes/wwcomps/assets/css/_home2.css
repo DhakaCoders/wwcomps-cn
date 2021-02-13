@@ -1,0 +1,98 @@
+
+
+
+
+
+
+
+
+
+
+
+.how-to-play-sec{
+	min-height: 727px!important;
+	padding: 75px 0!important;
+	margin-bottom: 45px;
+}
+.htp-banner-bg{
+
+}
+.htp-banner-bg .bnr-bg-lft{
+	max-width: 65.875%;
+}
+.htp-banner-bg .bnr-bg-rgt{
+	max-width: 34.125%;
+}
+.htp-sec-desc-cntlr{
+	position: relative;
+	max-width: 720px;
+	width: 100%;
+	background: #fff;
+	margin-left: auto;
+}
+.htp-desc-hedding{
+	position: relative;
+	background: #1d75bd;
+	border: 2px solid #235071;
+	padding: 18px 0;
+}
+.htp-desc-hedding i{
+	position: absolute;
+	bottom: -23px;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+.htp-desc-title{
+	margin-bottom: 0;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'LeagueSpartan-Regular';
+	color: #fff;
+	line-height: 1;
+	display: block;
+}
+.htp-desc-title span{
+	font-family: 'LeagueSpartan-Semibold';
+}
+
+.htp-sec-desc{
+	padding: 80px 35px 75px 37px;
+	border-right: 1px solid #787e7a;
+	border-left: 1px solid #787e7a;
+	border-bottom: 1px solid #787e7a;
+	position: relative;
+}
+.htp-sec-desc i{
+	position: absolute;
+	left: -23px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.htp-desc-sub-title{
+	font-family: 'LeagueSpartan-Regular';
+	font-size: 26px;
+	color: #3A3A3A;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+.htp-sec-desc p{
+	margin-bottom: 40px;
+}
+.htp-desc-button .fl-btn{
+	width: 180px;
+}
+
+
+.rstsn-projects-desc-cntlr{
+	margin-left: initial;
+}
+.rstsn-projects-desc i{
+	right: -24px;
+	left: initial;
+}

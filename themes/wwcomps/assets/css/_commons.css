@@ -214,12 +214,13 @@ ul.sub-menu li:before,
 }
 .invalid-text{
 	position: absolute;
-	bottom: 0;
+	bottom: 5px;
+	font-size: 16px;
 	left: 0;
 	display: none;
 }
 .was-validated input[type="text"]:invalid, .was-validated input[type="email"]:invalid {
-	border: 2px solid red;
+	border: 1px solid red;
 }
 .was-validated:invalid .invalid-text{
 	color: red;
