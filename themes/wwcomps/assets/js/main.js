@@ -227,7 +227,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   /*start Of Niaz*/
 
-
+// accordion
 $('.hh-accordion-title').click(function(){
     $(this).next().slideToggle(300);
     $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
@@ -235,6 +235,11 @@ $('.hh-accordion-title').click(function(){
     $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
 });
 
+//Masonry
+$('.our-proj-grid').masonry({
+  // options
+  itemSelector: '.our-proj-grid-item',
+});
 
 
 
