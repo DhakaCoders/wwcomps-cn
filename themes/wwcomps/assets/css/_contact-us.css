@@ -150,8 +150,9 @@
 	font-size: 20px;
 	line-height: 1;
 	color: #545050;
+	margin-bottom: 0;
 }
-.qck-lnk-item address{
+.qck-lnk-item address a{
 	line-height: 1.4;
 	text-transform: capitalize;
 }
@@ -164,4 +165,7 @@
 }
 .qck-lnk-item a:last-child{
 	padding-bottom: 0;
+}
+.cnt-page-des > span{
+	margin-left: -1px;
 }
