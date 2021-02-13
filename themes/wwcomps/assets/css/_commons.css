@@ -14,7 +14,8 @@ a, button, input, textarea{
 a{
 	color: #36aa61;
 }
-a:hover{
+a:hover,
+.wgid-title a:hover{
 	color: #1d75bd;
 }
 a, a:hover, a:focus, button:hover, button:focus{

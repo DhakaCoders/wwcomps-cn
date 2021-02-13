@@ -52,10 +52,10 @@
 .fl-pagi-cntlr ul{
 	display: flex;
 	background:#665440;
-	margin: -2px -2px;
+	margin: -1px -1px;
 }
 .fl-pagi-cntlr ul li{
-	padding: 2px 2px;
+	padding: 1px 1px;
 	display: flex;
 }
 .fl-pagi-cntlr ul li span{
