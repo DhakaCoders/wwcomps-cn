@@ -200,7 +200,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   /*start Of Noyon*/
 
+  if( $('.luckyWinnerSlider').length ){
+    $('.luckyWinnerSlider').slick({
+      dots: true,
+      infinite: false,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+}
 
+jQuery(document).ready(function($) {
+  if( $('.counter').length ){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+    });
+  }
+});
 
 
 
@@ -244,6 +264,8 @@ $('.our-proj-grid').masonry({
 
 
   /*start Of Rannojit*/
+
+
 //windowWidth
   var containerWidth = $('.container').width();
   var leftOffsetCal = (windowWidth - containerWidth ) / 2 ;

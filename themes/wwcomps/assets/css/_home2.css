@@ -1,6 +1,6 @@
 .lucky-winner-banner{
-	min-height: 700px!important;
-	padding: 55px 0!important;
+	min-height: 660px!important;
+	padding: 55px 0 0 0!important;
 }
 .lucky-winner-banner-bg{
 
@@ -18,10 +18,12 @@
 	display: block;
 }
 /*slick code here*/
-.lw-slide-item-cntlr.slick-slide{
+.lucky-winner-slider.slick-slider .lw-slide-item-cntlr{
 	display: block;
 }
-
+.lucky-winner-slider.slick-slider ul.slick-dots{
+	margin-top: 25px;
+}
 .lw-slide-item-desc{
 	padding: 85px 58px 60px 58px;
 	position: relative;
@@ -94,8 +96,55 @@
 	color: #1C75BC;
 	padding-left: 10px;
 }
-
-
+.counter-up-sec{
+	background: #fff;
+	padding: 55px 0 25px 0;
+}
+.counter-up-cntlr{
+	padding-left: 25px;
+}
+.counter-up-cntlr ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -40px;
+}
+.counter-up-cntlr ul li{
+	padding: 0 40px;
+	width: 25%;
+	margin-bottom: 30px;
+}
+.counter-item{
+	
+	position: relative;
+	padding: 22px 0;
+	padding-left: 102px;
+}
+.counter-item-img{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.number-of-counter{
+	display: block;
+	color: #1C75BC;
+    font-family: 'LeagueSpartan-Bold';
+	font-size: 50px;
+	margin-bottom: 7px;
+	line-height: 1;
+}
+.counter-item-sub-title{
+	display: block;
+	font-size: 24px;
+    font-family: 'LeagueSpartan-Semibold';
+	color: #545050;
+	line-height: 1;
+	margin-bottom: 0;
+}
 
 .how-to-play-sec{
 	min-height: 727px!important;
