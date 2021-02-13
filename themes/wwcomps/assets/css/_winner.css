@@ -13,10 +13,12 @@
 }
 .winr-grd-item-des{
 	padding: 27px 20px 25px 15px!important;
-}
-.wgid-title-bar{
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url('../images/winr-itm-des-bg.png')!important;
+	background-repeat: no-repeat!important;
+	background-position: bottom center!important;
 }
 .wgid-title a{
 	color: #35AA5F;
