@@ -14,7 +14,8 @@ a, button, input, textarea{
 a{
 	color: #36aa61;
 }
-a:hover{
+a:hover,
+.wgid-title a:hover{
 	color: #1d75bd;
 }
 a, a:hover, a:focus, button:hover, button:focus{
@@ -214,12 +215,13 @@ ul.sub-menu li:before,
 }
 .invalid-text{
 	position: absolute;
-	bottom: 0;
+	bottom: 5px;
+	font-size: 16px;
 	left: 0;
 	display: none;
 }
 .was-validated input[type="text"]:invalid, .was-validated input[type="email"]:invalid {
-	border: 2px solid red;
+	border: 1px solid red;
 }
 .was-validated:invalid .invalid-text{
 	color: red;
