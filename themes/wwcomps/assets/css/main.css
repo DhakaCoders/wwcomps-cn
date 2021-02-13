@@ -12,6 +12,8 @@
 
 
 /*Start of Noyon*/
+@import url('_home2.css');
+
 
 
 
@@ -29,6 +31,7 @@
 
 @import url('_entry-lists.css');
 @import url('_contact-us.css');
+@import url('_winner.css');
 
 
 
@@ -39,6 +42,7 @@
 @import url('_how-it-works.css');
 @import url('_about-us.css');
 @import url('_faqs.css');
+@import url('_forest-projects.css');
 
 /*Start of Rannojit*/
 
