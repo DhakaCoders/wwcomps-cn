@@ -17,6 +17,10 @@
 	z-index:0;
 	border-bottom:1px solid #7C7C7C;
 }
+.bnr-bg-lft,
+.bnr-bg-rgt{
+	background-attachment: fixed;
+}
 .bnr-bg-lft{
 	max-width: 34.7%;
     width: 100%;
@@ -63,12 +67,12 @@
 	display:inline-block;
 	line-height:1;
 	font-size:24px;
-	font-family: 'Hind', sans-serif;
 	font-weight:500;
 	padding-bottom:32px;
 }
-.page-des span{
-	position: absolute;
-	right:-22px;
-	top:18.7%;
+.page-des span {
+    position: absolute;
+    top: 16.5%;
+    left: 100%;
+    width: 26px;
 }

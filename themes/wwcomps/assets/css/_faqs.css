@@ -29,6 +29,8 @@
 	border-width: 2px;
 	border-image-slice: 1;
     border-image-source: linear-gradient(to left, #2174a8, #01934a);
+    -ms-border-image-source: linear-gradient(to left, #2174a8, #01934a);
+    -webkit-border-image-source: linear-gradient(to left, #2174a8, #01934a);
 	font-weight:700;
 	display: flex;
 	justify-content: center;
@@ -39,24 +41,6 @@
 	right:-21px;
 }
 .hh-accordion-active:after{
-	content:"\f077";
+	/*content:"\f077";*/
+	tr
 }
-.page-des span:after,.faqs-pg-des span:after{
-	content: "";
-	background: #7C7C7C;
-	height: 1px;
-	width: 64px;
-	position: absolute;
-	left: -18px;
-	top: 36px;
-	transform: rotate(71deg);
-}
-.page-des span:before,.faqs-pg-des span:before {
-	content: "";
-	height: 1px;background: #7C7C7C;
-	position: absolute;
-	left: -16px;
-	bottom: 36px;
-	width: 60px;
-	transform: rotate(-69deg);
-} 

@@ -2,10 +2,17 @@
 All Transitions
 */
 a,input,img,textarea,button,svg,i,.dft-transition,
-.pro-fea-img-cntlr .inline-bg{
+.pro-fea-img-cntlr .inline-bg,
+.hh-accordion-title:after{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+}
+
+.banner-bg{
+	transition: all 1s;
+	-ms-transition: all 1s;
+	-webkit-transition: all 1s;
 }
 .scale,
 .product-grd-item:hover .pro-fea-img-cntlr .inline-bg{
