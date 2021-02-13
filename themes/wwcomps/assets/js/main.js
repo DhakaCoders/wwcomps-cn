@@ -226,14 +226,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start Of Niaz*/
-  
-  var allPanels = $('.hh-accordion-des').hide();
   $('.hh-accordion-title').click(function() {
-        allPanels.slideUp();
         $('.hh-accordion-title').removeClass('hh-accordion-active');
-        $(this).next().slideDown();
+        $(this).next().slideToggle();
         $(this).addClass('hh-accordion-active');
-        return false;
+        $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
   });
 
 
