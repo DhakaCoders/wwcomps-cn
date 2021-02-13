@@ -37,9 +37,11 @@ p{
 	margin-bottom: 20px;
 }
 strong{
-
+    font-family: 'LeagueSpartan-Semibold';
 }
-
+del{
+	text-decoration: line-through;
+}
 ::selection {
   color: #fff;
   background: #EACEAD;
