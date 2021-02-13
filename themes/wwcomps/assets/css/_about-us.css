@@ -1,23 +1,27 @@
-.about-pg-des h2{
+.about-pg-bnr-desc h2{
 	color:#3A3A3A;
 	font-size:54px;
 	font-family: 'LeagueSpartan-Bold';
 	font-weight: 700;
 	margin-bottom:35px;
 }
-.about-pg-des h2 strong{
+.about-pg-bnr-desc h2 span{
 	font-size:44px;
 	font-family: 'LeagueSpartan-Medium';
 	font-weight: 500;
 	display:block;
 }
-.about-pg-des h3{
+.about-pg-bnr-desc h3{
 	font-family: 'LeagueSpartan-Regular'!important;
 }
-.about-pg-des p{
+.about-pg-bnr-desc p{
 	line-height:1.5;
 	margin-bottom:29px;
 }
-.about-pg-des a{
+.about-pg-bnr-desc a{
 	margin-top:6px;
+}
+.about-pg-bnr-desc > span{
+	margin-left:-1.2px;
+	top: 17.5%;
 }
