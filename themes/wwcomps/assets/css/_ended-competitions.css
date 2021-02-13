@@ -65,4 +65,87 @@
 	line-height: 1;
 	font-family: 'LeagueSpartan-Extrabold';
 }
+.pro-grd-price .price del {
+    font-size: 17.11px;
+    line-height: 1;
+    color: #AAAAAA;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 8px;
+    margin-left: 1px;
+}
+.pro-grd-ftr-bar{
+	background: #f8f4f1;
+	border-top: 1px solid #9c9c9c;
+	padding: 12px 20px;
+	display: flex;
+	position: relative;
+}
+.pro-grd-ftr-bar:before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: 60px;
+	height: 2px;
+	background: #c6c6c6;
+	top:-1px;
+}
+.pro-grd-time{
+	margin-left: auto;
+}
 
+.pro-grd-date,
+.pro-grd-time{
+	display: flex;
+	align-items: center;
+}
+.pro-grd-ftr-bar span{
+	margin-left: 5px;
+	font-size: 12px;
+	line-height: 1;
+	font-weight: 300;
+	display: inline-block;
+}
+.latest-compitions-page-con-cntlr{
+	padding-bottom: 120px;
+}
+
+.latest-compitions-page-con-cntlr .pro-absolute-text:before{
+	content: none;
+}
+
+.latest-compitions-page-con-cntlr .pro-absolute-text{
+	background: url(../images/pro-absolute-text-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	right: -2px;
+	color: #7F531D;
+}
+
+.latest-compitions-page-con-cntlr .products-grd-page-con{
+	padding-top: 0;
+	background: transparent;
+}
+
+.latest-compitions-page-con-cntlr .fl-angle-hdr-cntlr{
+	margin-bottom: 70px;
+}
+
+.latest-compitions-page-con-cntlr .products-grd-page-con{
+	padding-bottom: 95px;
+}
+
+.recently-ended-view-more-btn{
+	padding-top: 40px;
+}
+
+.recently-ended-view-more-btn a{
+	margin-left: auto;
+	margin-right: auto;
+}

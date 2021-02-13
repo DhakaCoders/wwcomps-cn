@@ -226,15 +226,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start Of Niaz*/
-  
-  var allPanels = $('.hh-accordion-des').hide();
-  $('.hh-accordion-title').click(function() {
-        allPanels.slideUp();
-        $('.hh-accordion-title').removeClass('hh-accordion-active');
-        $(this).next().slideDown();
-        $(this).addClass('hh-accordion-active');
-        return false;
-  });
+
+// accordion
+$('.hh-accordion-title').click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
+    $(this).toggleClass('hh-accordion-active');
+    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
+});
+
+//Masonry
+$('.our-proj-grid').masonry({
+  // options
+  itemSelector: '.our-proj-grid-item',
+});
 
 
 
