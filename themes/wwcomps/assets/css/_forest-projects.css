@@ -20,6 +20,9 @@
 	padding-bottom:0px;
 	position:relative;
 }
+.project-img img{
+	width:100%;
+}
 .our-project-sec{
 	background:#175783;
 }
@@ -68,6 +71,7 @@
     width: 39px;
     height: 13px;
     background-repeat: no-repeat;
+    margin-bottom:-1px;
 }
 .pur-proj-dec p{
 	font-size:16px;
@@ -96,8 +100,29 @@
 	border-color:#1d75bd;
 
 }
+.proj-btn a:first-child:hover{
+	background:#009245;
+	border-color:#009245;
+	}
+.partners-sec{
+	background:#F7F4F2;
+	border-bottom:1px solid #7C7C7C;
+}
+.partners-sec-cntlr{
+	min-height:300px;
+	display:flex;
+	align-items: center;
+}
 .partners-sec-cntlr ul{
 	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+}
+.partners-logo {
+    display: flex;
+    justify-content: center;
 }
 .partners-sec-cntlr ul li{
 	max-width:16.6666%;
@@ -106,3 +131,4 @@
 .partners-logo img{
 	max-height:150px;
 }
+
