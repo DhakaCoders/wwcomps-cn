@@ -65,7 +65,18 @@
 	line-height: 1;
 	font-family: 'LeagueSpartan-Extrabold';
 }
-
+.pro-grd-price .price del {
+    font-size: 17.11px;
+    line-height: 1;
+    color: #AAAAAA;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 8px;
+    margin-left: 1px;
+}
 .pro-grd-ftr-bar{
 	background: #f8f4f1;
 	border-top: 1px solid #9c9c9c;
@@ -100,4 +111,41 @@
 	line-height: 1;
 	font-weight: 300;
 	display: inline-block;
+}
+.latest-compitions-page-con-cntlr{
+	padding-bottom: 120px;
+}
+
+.latest-compitions-page-con-cntlr .pro-absolute-text:before{
+	content: none;
+}
+
+.latest-compitions-page-con-cntlr .pro-absolute-text{
+	background: url(../images/pro-absolute-text-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	right: -2px;
+	color: #7F531D;
+}
+
+.latest-compitions-page-con-cntlr .products-grd-page-con{
+	padding-top: 0;
+	background: transparent;
+}
+
+.latest-compitions-page-con-cntlr .fl-angle-hdr-cntlr{
+	margin-bottom: 70px;
+}
+
+.latest-compitions-page-con-cntlr .products-grd-page-con{
+	padding-bottom: 95px;
+}
+
+.recently-ended-view-more-btn{
+	padding-top: 40px;
+}
+
+.recently-ended-view-more-btn a{
+	margin-left: auto;
+	margin-right: auto;
 }
