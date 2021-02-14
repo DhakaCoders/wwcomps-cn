@@ -35,4 +35,8 @@ nav.main-nav ul li:hover > a,
 nav.main-nav ul li.current-menu-item a{
 	
 }
-
+.input-field-col input[type="text"]:focus,
+.input-field-col input[type="email"]:focus,
+.input-field-col textarea:focus{
+	border: 1px solid #9d9d9d;
+}

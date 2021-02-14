@@ -170,20 +170,17 @@
 }
 
 @media(max-width: 575px){
-	.entry-grid-list-items ul{
-		margin: -12px;
-	}
-	.entry-grid-list-items ul li{
-		padding: 12px;
-	}
 	.entry-grid-list-items ul li{
 		max-width: 100%;
 	}
 	.entry-list-item{
-		padding: 30px 10px 10px 15px;
+		padding: 30px 10px 25px 15px;
 	}
 	.title-bar{
-		padding-bottom: 20px;
+	    display: inline-block;
+	    vertical-align: baseline;
+	    padding-bottom: 20px;
+	    min-height: 85px;
 	}
 	.entty-item-title{
 		font-size: 16px!important;
