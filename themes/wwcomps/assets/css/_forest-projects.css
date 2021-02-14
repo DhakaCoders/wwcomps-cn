@@ -131,4 +131,12 @@
 .partners-logo img{
 	max-height:150px;
 }
-
+@media(max-width:1499px){}
+@media(max-width:1399px){}
+@media(max-width:1299px){}
+@media(max-width:1199px){}
+@media(max-width:991px){}
+@media(max-width:767px){}
+@media(max-width:575px){}
+@media(max-width:479px){}
+@media(max-width:369px){}

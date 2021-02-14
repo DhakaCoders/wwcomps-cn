@@ -34,9 +34,6 @@
 	.about-pg-bnr-desc h2 span{
 		font-size:42px;
 	}
-	header,footer{
-		overflow: hidden;
-	}
 }
 @media(max-width:1399px){
 	.about-pg-bnr-desc h2{
