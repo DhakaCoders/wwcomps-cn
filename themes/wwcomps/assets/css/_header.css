@@ -184,7 +184,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     transform-origin: top;
     opacity: 0;
 }
-nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menutop-bar-rt-col{
+nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
     transform: scale3d(1,1,1);
     -ms-transform: scale3d(1,1,1);
     -webkit-transform: scale3d(1,1,1);
