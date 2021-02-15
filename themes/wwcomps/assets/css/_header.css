@@ -470,6 +470,12 @@ body.allWork{
 	.hdr-menu{
 		display: none;
 	}
+	.logo a{
+		max-width: 180px;
+	}
+	.hdr-add-to-card-icon a{
+		max-width: 43px;
+	}
 
 	/*mobile*/
 	nav.main-nav > ul{
@@ -550,9 +556,30 @@ body.allWork{
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
     	font-size: 15px;
     }
+    .hdr-add-to-card-icon{
+    	padding-right: 17px;
+    }
+    .hdr-add-to-card-icon span{
+    	width: 17px;
+    	height: 17px;
+    	font-size: 10px;
+    }
 }
 @media (max-width: 767px){
-	
+	.logo a{
+		max-width: 140px;
+	}
+	.hdr-add-to-card-icon{
+		padding-right: 15px;
+	}
+	.hdr-add-to-card-icon a{
+		max-width: 35px;
+	}
+	.hdr-add-to-card-icon span{
+		width: 14px;
+		height: 14px;
+		font-size: 9px;
+	}
 }
 @media (max-width: 639px){
 	
