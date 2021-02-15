@@ -437,13 +437,16 @@ ol li::before {
 
 
 /*-- slider break fix--*/
-.winnersSlider .winnersSlideItem{
+.winnersSlider .winnersSlideItem,
+.latesCompititionsSlider .latesCompititionsSlideItem{
 	display: none;
 }
 
-.winnersSlider .winnersSlideItem:first-child{
+.winnersSlider .winnersSlideItem:first-child,
+.latesCompititionsSlider .latesCompititionsSlideItem:first-child{
 	display: block;
 }
-.winnersSlider.slick-initialized .winnersSlideItem{
+.winnersSlider.slick-initialized .winnersSlideItem,
+.latesCompititionsSlider .latesCompititionsSlideItem{
 	display: block;
 }
