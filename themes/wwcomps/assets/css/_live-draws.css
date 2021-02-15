@@ -144,15 +144,36 @@
 
 
 /*responsive*/
+@media(max-width: 1399px){
+	.previous-draws{
+		padding-bottom: 100px;
+	}
+}
 @media(max-width: 1199px){
-
+	.previous-draws{
+		padding-bottom: 80px;
+	}
 }
 @media(max-width: 991px){
+	.live-draws{
+		min-height: 280px;
+		padding: 47px 0;
+	}
+	.previous-draws{
+		padding-bottom: 60px;
+	}
 	.fb-video-embaded{
 		height: 300px;
 	}
 }
 @media(max-width: 767px){
+	.live-draws{
+		min-height: 260px;
+		padding: 35px 0;
+	}
+	.previous-draws{
+		padding: 45px 0 45px;
+	}
 	.fb-video-embaded{
 		height: 200px;
 	}
@@ -179,9 +200,10 @@
 	}
 }
 @media(max-width: 575px){
-	.fb-video-embaded{
-		height: 165px;
+	.previous-draws{
+		padding: 35px 0 35px;
 	}
+	
 }
 @media(max-width: 479px){
 	
