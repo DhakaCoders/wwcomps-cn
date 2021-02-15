@@ -10,6 +10,9 @@
 .mobile{
 	display: none;
 }
+.page-banner-section .banner-bg{
+	border-bottom:1px solid #7C7C7C;
+}
 .banner-bg{
 	position:absolute;
 	left:0;
