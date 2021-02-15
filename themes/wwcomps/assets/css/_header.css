@@ -343,12 +343,12 @@ body.allWork{
 .xs-mbl-menu-cntlr{
    position: fixed;
    top: 0;
-   right: -375px;
+   right: -320px;
    bottom: 0;
    background: #fff;
    color: #0c0c0c;
    font-size: 20px;
-   max-width: 375px;
+   max-width: 320px;
    width: 0;
    z-index: 99999;
    opacity: 0;

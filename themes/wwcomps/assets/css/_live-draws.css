@@ -11,7 +11,6 @@
 
 }
 .live-draws-title{
-	font-size: 40px;
 	display: block;
 	margin-bottom: 20px;
     font-family: 'LeagueSpartan-Bold';
@@ -46,8 +45,6 @@
 	clear: left;
 }
 .prev-grid-item{
-	border-left: 1px solid #b5b6b1;
-	border-right: 1px solid #b5b6b1;
 }
 .fb-video-embaded{
 	overflow: hidden;
@@ -144,3 +141,70 @@
 	padding: 16px 14px;
 	min-height: 142px;
 }*/
+
+
+/*responsive*/
+@media(max-width: 1399px){
+	.previous-draws{
+		padding-bottom: 100px;
+	}
+}
+@media(max-width: 1199px){
+	.previous-draws{
+		padding-bottom: 80px;
+	}
+}
+@media(max-width: 991px){
+	.live-draws{
+		min-height: 280px;
+		padding: 47px 0;
+	}
+	.previous-draws{
+		padding-bottom: 60px;
+	}
+	.fb-video-embaded{
+		height: 300px;
+	}
+}
+@media(max-width: 767px){
+	.live-draws{
+		min-height: 260px;
+		padding: 35px 0;
+	}
+	.previous-draws{
+		padding: 45px 0 45px;
+	}
+	.fb-video-embaded{
+		height: 200px;
+	}
+	
+}
+@media(max-width: 639px){
+	.previous-draws-grids-cntlr > ul{
+		display: block;
+		margin: 0;
+	}
+	.previous-draws-grids-cntlr > ul > li{
+		padding: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.previous-draws-grids-cntlr > ul > li:nth-child(2n+1){
+		clear: initial;
+	}
+	.prev-grid-item {
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media(max-width: 575px){
+	.previous-draws{
+		padding: 35px 0 35px;
+	}
+	
+}
+@media(max-width: 479px){
+	
+}
