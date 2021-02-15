@@ -91,13 +91,13 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="header-top">
+<header class="header-warp">
+  <div class="top-bar">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="header-top-cntlr">
-            <div class="header-top-socials">
+          <div class="top-bar-cntlr">
+            <div class="top-bar-socials">
               <ul class="reset-list">
                 <li>
                   <a href="#">
@@ -137,39 +137,65 @@
 
               </ul>
             </div>
-            <div class="header-top-right">
-              <div class="hdr-top-rt-login">
-                <button>Login</button>
-                <i><img src="assets/images/user-icon.svg" alt=""></i>
-              </div>
-              <div class="hdr-top-rt-register">
-                <button>Register</button>
-                <i><img src="assets/images/hdr-top-line.svg" alt=""></i>
-              </div>
+            <div class="top-bar-right">
+              <ul class="reset-list">
+                <li>
+                  <div class="top-bar-rt-login top-bar-rt-col">
+                    <a href="#">
+                      <span>Login</span>
+                      <i><img src="assets/images/user-icon.svg" alt=""></i>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="top-bar-rt-register top-bar-rt-col">
+                    <a href="#"><span>Register</span></a>
+                  </div>
+                </li>
+              </ul>
+              
+              
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-bottom">
+
+  <div class="header">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="header-bottom-cntlr">
-            <div class="hdr-btm-left">
+          <div class="header-cntlr">
+            <div class="hdr-left">
               <div class="logo">
                 <a href="#">
                   <img src="assets/images/logo.svg" alt="">
                 </a>
               </div>
             </div>
-            <div class="hdr-btm-right">
+            <div class="hdr-right">
+              <div class="humberger-cntlr">
+                <div class="humberger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
               <div class="hdr-menu">
                 <nav class="main-nav">
                   <ul class="clearfix reset-list">
                     <li class="current-menu-item"><a href="#">latest competitions</a></li>
-                    <li class="menu-item-has-children"><a href="#">entry lists</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">entry lists</a>
+                      <ul class="sub-menu" style="">
+                        <li><a href="#">Sub Menu</a></li>
+                        <li><a href="#">Sub Menu</a></li>
+                        <li><a href="#">Sub Menu</a></li>
+                        <li><a href="#">Sub Menu</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">live draws</a></li>
                     <li><a href="#">winners</a></li>
                     <li><a href="#">forest projects</a></li>
@@ -179,7 +205,7 @@
               </div>
               <div class="hdr-add-to-card">
                 <div class="hdr-add-to-card-icon">
-                  <img src="assets/images/Cart-icon.svg" alt="">
+                  <a href="#"><img src="assets/images/Cart-icon.svg" alt=""></a>
                   <span class="hdr-add-to-card-items">2</span>
                 </div>
               </div>
@@ -191,12 +217,41 @@
   </div>
 </header>
 
-<section class="lucky-winner-banner page-banner-section">
-  <div class="lucky-winner-slider ">
-    <div class="lw-slide-item-cntlr">
-      <div class="banner-bg lucky-winner-banner-bg">
-        <div class="bnr-bg-lft inline-bg" style="background-image:url('assets/images/hit-bnr-page-lft-img.jpg')"></div>
-        <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/lucky-winner-banner-bg-right-img.jpg')"></div>
+<section class="fl-angle-hdr-cntlr">
+  <div class="fl-angle-hdr">
+    <span class="fl-angle-hdr-join"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="fl-angle-sec-hdr">
+            <h2 class="fl-h5 flash-title"><span>FOREST</span> PROJECTS</h2>  
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<section class="lucky-winner-banner page-banner-section forest-proj-sec">
+  <div class="banner-bg lucky-winner-banner-bg">
+    <div class="bnr-bg-lft inline-bg" style="background-image:url('assets/images/hit-bnr-page-lft-img.jpg')"></div>
+    <div class="banner-bg-rgt-cntlr">
+      <div class="lucky-winner-slider frstProjSlider">
+        <div class="lw-slide-item-rgt-cntlr">
+          <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+        </div>
+        <div class="lw-slide-item-rgt-cntlr">
+          <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+        </div>
+        <div class="lw-slide-item-rgt-cntlr">
+          <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+        </div>
+        <div class="lw-slide-item-rgt-cntlr">
+          <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+        </div>
+        <div class="lw-slide-item-rgt-cntlr">
+          <div class="bnr-bg-rgt inline-bg" style="background-image:url('assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -204,39 +259,35 @@
     <div class="row">
       <div class="col-md-12">
         <div class="lucky-winner-desc-cntlr">
-          <!-- <div class="lucky-winner-slider"> -->
-            <!-- <div class="lw-slide-item-cntlr"> -->
-              <div class="lw-slide-item-desc forest-proj-slide-item-des">
-                <i><img src="assets/images/white-angle-right.png" alt=""></i>
-                <h1 class="lw-slide-item-title">ALL OUR COMPETITION PROFITS,
-                <span>GO TO FOREST RESTORATION.</span></h1>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non nunc eget lectus consectetur pharetra non in dolor. Phasellus tortor mi, imperdiet porta gravida commodo est id,  iaculis lectus. Sed pretium blandit felis, id tincidunt purus feugiat eu. Nunc id orci porta, iaculis. <br>
-                Win the most exciting gift this Christmas for a fraction of the price.</p>
-                <div class="counter-up-cntlr">
-                  <span><img src="assets/images/fp-angel-img.png" alt=""></span>
-                  <ul class="reset-list">
-                    <li>
-                      <div class="counter-item">
-                        <div class="counter-item-img"><img src="assets/images/frst-proj-img1.png" alt=""></div>
-                        <strong class="number-of-counter">£<span class="counter">166</span>k</strong>
-                        <h6 class="counter-item-sub-title">MONEY RAISED</h6>
-                      </div>
-                    </li>
+          <div class="lw-slide-item-desc forest-proj-slide-item-des">
+            <i><img src="assets/images/white-angle-right.png" alt=""></i>
+            <h2 class="lw-slide-item-title">ALL OUR COMPETITION PROFITS,
+            <span>GO TO FOREST RESTORATION.</span></h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non nunc eget lectus consectetur pharetra non in dolor. Phasellus tortor mi, imperdiet porta gravida commodo est id,  iaculis lectus. Sed pretium blandit felis, id tincidunt purus feugiat eu. Nunc id orci porta, iaculis. <br>
+            Win the most exciting gift this Christmas for a fraction of the price.</p>
+            <div class="counter-up-cntlr">
+              <span><img src="assets/images/fp-angel-img.png" alt=""></span>
+              <ul class="reset-list">
 
-                    <li>
-                      <div class="counter-item">
-                        <div class="counter-item-img"><img src="assets/images/frst-proj-img2.png" alt=""></div>
-                        <strong class="number-of-counter"><span class="counter">4421</span>+</strong>
-                        <h6 class="counter-item-sub-title">TREES PLANTED</h6>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            
-            <!-- </div> -->
-         <!--  </div> -->
+                <li>
+                  <div class="counter-item">
+                    <div class="counter-item-img"><img src="assets/images/frst-proj-img1.png" alt=""></div>
+                    <strong class="number-of-counter">£<span class="counter">166</span>k</strong>
+                    <h6 class="counter-item-sub-title">MONEY RAISED</h6>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="counter-item">
+                    <div class="counter-item-img"><img src="assets/images/frst-proj-img2.png" alt=""></div>
+                    <strong class="number-of-counter"><span class="counter">4421</span>+</strong>
+                    <h6 class="counter-item-sub-title">TREES PLANTED</h6>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -262,6 +313,7 @@
         <div class="our-project-sec-cntlr">
           <div class="our-project-grid-items">
             <ul class="ulc reset-list our-proj-grid">
+
                <li class="our-proj-grid-item">
                 <div class="our-project-item">
                   <div class="project-img">
@@ -281,6 +333,7 @@
                   </div>
                 </div>
               </li>
+
               <li class="our-proj-grid-item">
                 <div class="our-project-item">
                   <div class="project-img">
@@ -300,6 +353,7 @@
                   </div>
                 </div>
               </li>
+
               <li class="our-proj-grid-item">
                 <div class="our-project-item">
                   <div class="project-img">
@@ -319,6 +373,7 @@
                   </div>
                 </div>
               </li>
+
               <li class="our-proj-grid-item">
                 <div class="our-project-item">
                   <div class="project-img">
@@ -337,6 +392,7 @@
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
         </div>
@@ -344,6 +400,7 @@
     </div>
   </div>
 </section>
+
 <section class="partners-sec">
   <div class="fl-angle-hdr">
     <span class="fl-angle-hdr-join"></span>
@@ -362,36 +419,43 @@
       <div class="col sm-12">
         <div class="partners-sec-cntlr">
           <ul class="ulc reset-list">
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project1.png" alt="">
               </div>
             </li>
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project2.png" alt="">
               </div>
             </li>
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project3.png" alt="">
               </div>
             </li>
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project4.png" alt="">
               </div>
             </li>
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project5.png" alt="">
               </div>
             </li>
+
             <li>
               <div class="partners-logo">
                 <img src="assets/images/fp-project6.png" alt="">
               </div>
             </li>
+
           </ul>
         </div>
       </div>
