@@ -1,3 +1,40 @@
+.forest-proj-slide-item-des .counter-up-cntlr ul{
+	background: #195883;
+	margin: 0 -55px;
+}
+.forest-proj-slide-item-des .counter-up-cntlr ul li{
+	width:50%;
+	margin-bottom:0;
+}
+.forest-proj-slide-item-des .number-of-counter{
+	color:#fff;
+}
+.forest-proj-slide-item-des .counter-item-sub-title{
+	color:#fff;
+}
+.forest-proj-slide-item-des .counter-up-cntlr{
+	padding-left:0px;
+}
+.forest-proj-slide-item-des{
+	padding-bottom:3px;
+}
+.forest-proj-slide-item-des .counter-item{
+	padding-top:55px;
+	padding-bottom:55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .our-project-sec-cntlr{
 	padding-top:50px;
 	padding-bottom:80px;
