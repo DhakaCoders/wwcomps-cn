@@ -3,6 +3,7 @@
 }
 .cnt-page-des h2{
 	padding-bottom: 10px;
+	font-family: 'LeagueSpartan-Semibold'!important;
 }
 .cnt-page-des p{
 	line-height: 1;
@@ -35,7 +36,6 @@
 	color: #828282;
 	font-family: 'Hind', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	opacity: 1;
 }
 .input-field-col input[type="text"]::-webkit-input-placeholder,
@@ -44,7 +44,6 @@
 	color: #828282;
 	font-family: 'Hind', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	opacity: 1;
 }
 .input-field-col input[type="text"]::-moz-placeholder,
@@ -53,7 +52,6 @@
 	color: #828282;
 	font-family: 'Hind', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	opacity: 1;
 }
 .input-field-col input[type="text"]:-ms-input-placeholder,
@@ -62,7 +60,6 @@
 	color: #828282;
 	font-family: 'Hind', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	opacity: 1;
 }
 .input-field-col input[type="text"]:-moz-placeholder,
@@ -71,7 +68,6 @@
 	color: #828282;
 	font-family: 'Hind', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	opacity: 1;
 }
 .cnt-form-btn{
@@ -88,6 +84,7 @@
 }
 .qck-lnk-cntrl ul{
 	display: flex;
+	flex-wrap: wrap;
 	margin: -10px -10px;
 }
 .qck-lnk-cntrl ul li{
@@ -100,43 +97,47 @@
 }
  .qck-lnk-item-des{
 	background-image: url('../images/cu-qck-lnk-bg.png');
-	min-height: 150px;
 	background-color: #fff;
 	background-position: right bottom!important;
 	padding: 24px 10px 20px 20px;
 	width: 100%;
 }
-.qck-lnk-img{
-	border: 2px solid #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 116px;
-	margin-right: -1px;
-	position: relative;
+.qck-lnk-img {
+    position: relative;
+    border: 2px solid #fff;
+    padding-right: 116px;
+    margin-right: -1px;
 }
 .qck-lnk-img:after{
 	position: absolute;
 	content: "";
-	border-right: 16px solid #fff;	 
-	border-top: 15px solid transparent;	 
 	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+	border-right: 10px solid #fff;
 	right: 0;
-	top: 24%;
-	margin-right: -1px;
+	top: 22%;
 	transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
 }
-.qck-lnk-img i {
-    display: inline-block;
-    vertical-align: baseline;
-    padding: 0 5px;
-    height: 60px;
+.qck-lnk-img img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
 }
-.qck-lnk-img i img{
-	height: 100%;
-}
+/* .qck-lnk-img img {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 30px;
+} */
+/* .qck-lnk-item img {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #fff;
+} */
+
 .qck-lnk-title{
 	font-size: 24px;
 	font-family: 'LeagueSpartan-Semibold';
@@ -166,4 +167,143 @@
 }
 .cnt-page-des > span{
 	margin-left: -1px;
+}
+
+/* ================= */
+/* == responsive == */
+/* =============== */
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	.qck-lnk-item-des address, 
+	.qck-lnk-item-des a{
+		font-size: 19px;
+	}
+}
+
+
+@media(max-width: 1399px){
+	.qck-lnk-item-des address a{
+		line-height: 1.2;
+	}
+	.qck-lnk-item-des address, 
+	.qck-lnk-item-des a{
+		font-size: 18px;
+	}
+
+}
+
+@media(max-width: 1299px){
+	
+}
+
+@media(max-width: 1199px){
+	.qck-lnk-cntrl ul li{
+		max-width: 50%;
+	}
+	.qck-lnk-cntrl ul li {
+    	margin: auto;
+	}
+	.qck-lnk-item-des address a{
+		line-height: 1.4;
+	}
+	.qck-lnk-item-des address, .qck-lnk-item-des a{
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 991px){
+	.input-field-col input[type="text"],
+	.input-field-col input[type="email"],
+	.input-field-col textarea{
+		font-size: 17px;
+	}
+
+}
+
+@media(max-width: 767px){
+	
+	.cnt-page-des{
+		border: 1px solid #7C7C7C!important;
+		padding: 40px 15px!important;
+	}
+	.input-field-col input[type="text"],
+	.input-field-col input[type="email"],
+	.input-field-col textarea{
+		font-size: 16px;
+	}
+	.input-field-col textarea{
+		height: 150px;
+	}
+	.cnt-form-btn{
+		margin: auto;
+	}
+	.cnt-page-des{
+		position: relative;
+	}
+	.cnt-page-des > span{
+		position: absolute!important;
+		content: "";
+		top: 0!important;
+		margin-top: -12px!important;
+		transform: translateX(-50%)!important;
+		width: 68px!important;
+	}
+	.angle-desk{
+		display: none!important;
+	}
+	.angle-mobile{
+		display: block!important;
+	}
+	.qck-lnk-cntrl ul li{
+		max-width: 100%;
+	}
+	.qck-lnk-item-des address, .qck-lnk-item-des a{
+		font-size: 16px;
+	}
+
+}
+
+@media(max-width: 575px){
+	.cnt-form-btn{
+		width: 100%!important;
+	}
+	.input-field-col input[type="text"],
+	.input-field-col input[type="email"],
+	.input-field-col textarea{
+		font-size: 15px;
+	}
+	.input-field-col textarea{
+		height: 120px;
+	}
+	
+}
+
+@media(max-width: 479px){
+	.input-field-col input[type="text"],
+	.input-field-col input[type="email"],
+	.input-field-col textarea{
+		font-size: 14px;
+	}
+	.qck-lnk-img{
+		padding-right: 65px;
+		height: 65px;
+	}
+	.qck-lnk-img img{
+		left: 16px;
+    	width: 28px;
+    	height: 28px;
+	}
+	.qck-lnk-item-des address a{
+		line-height: 1.2;
+	}
+
+}
+
+@media(max-width: 359px){
+
 }
