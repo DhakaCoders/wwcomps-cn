@@ -285,7 +285,7 @@ $('.frstProjSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     dotsClass: 'custom_paging',
     customPaging: function (slider, i) {

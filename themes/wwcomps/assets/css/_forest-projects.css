@@ -1,6 +1,11 @@
+.forest-proj-slide-item-des{
+	max-width:728px;
+}
 .forest-proj-slide-item-des .counter-up-cntlr ul{
 	background: #195883;
 	margin: 0 -55px;
+	margin-left: -55px;
+    margin-right: -19px;
 }
 .forest-proj-slide-item-des .counter-up-cntlr ul li{
 	width:50%;
@@ -18,6 +23,8 @@
 }
 .forest-proj-slide-item-des{
 	padding-bottom:3px;
+	max-width:728px;
+	padding-right:22px;
 }
 .forest-proj-slide-item-des .counter-item{
 	padding-top:55px;
@@ -42,6 +49,35 @@
 	width:100%;
 	background-attachment:scroll;
 }
+.forest-proj-sec{
+	padding-bottom:114px!important;
+}
+.forest-proj-sec .custom_paging li:before{
+	content:none;
+}
+.forest-proj-sec .custom_paging li{
+	color: #fff;
+    width: 46px;
+    height: 46px;
+    background: #c18f54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: 400;
+    font-size: 24px;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+.forest-proj-sec .custom_paging{
+	position: absolute;
+	display: flex;
+	bottom:42px;
+	left:0px;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
 .forest-proj-sec .lucky-winner-slider,
 .forest-proj-sec .lucky-winner-slider .slick-list,
 .forest-proj-sec .lucky-winner-slider .slick-track,
@@ -54,7 +90,7 @@
 /*.forest-proj-sec .slick-slider ul.slick-dots{
 	position: absolute;
 	top: 0;
-	
+
 }*/
 
 
