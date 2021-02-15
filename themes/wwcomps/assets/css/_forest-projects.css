@@ -14,6 +14,7 @@
 }
 .forest-proj-slide-item-des .counter-up-cntlr{
 	padding-left:0px;
+	position: relative;
 }
 .forest-proj-slide-item-des{
 	padding-bottom:3px;
@@ -22,8 +23,39 @@
 	padding-top:55px;
 	padding-bottom:55px;
 }
-
-
+.forest-proj-slide-item-des .counter-up-cntlr > span {
+    position: absolute;
+    transform:translateX(-50%);
+    top: 0;
+    left: 50%;
+    margin-top:-1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-bg-rgt-cntlr {
+  max-width: 65.3%;
+  width:100%;
+}
+.forest-proj-sec .bnr-bg-rgt{
+	max-width:100%!important;
+	width:100%;
+	background-attachment:scroll;
+}
+.forest-proj-sec .lucky-winner-slider,
+.forest-proj-sec .lucky-winner-slider .slick-list,
+.forest-proj-sec .lucky-winner-slider .slick-track,
+.forest-proj-sec .lucky-winner-slider .lw-slide-item-cntlr,
+.forest-proj-sec .lucky-winner-slider .banner-bg,
+.forest-proj-sec .lucky-winner-slider .bnr-bg-lft,
+.forest-proj-sec .lucky-winner-slider .bnr-bg-rgt{
+	height:100%;
+}
+/*.forest-proj-sec .slick-slider ul.slick-dots{
+	position: absolute;
+	top: 0;
+	
+}*/
 
 
 

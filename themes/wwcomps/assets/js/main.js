@@ -278,6 +278,25 @@ if(windowWidth > 767) {
   };
 };
 
+// frst-project slider
+$('.frstProjSlider').slick({
+    prevArrow: $('.slick-arrows .pt-slick-prev'),
+    nextArrow: $('.slick-arrows .pt-slick-next'),
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    dots: true,
+    dotsClass: 'custom_paging',
+    customPaging: function (slider, i) {
+        console.log(slider);
+        return  (i + 1);
+    }
+  });
+
+
+
+
   /*start Of Rannojit*/
 
 
