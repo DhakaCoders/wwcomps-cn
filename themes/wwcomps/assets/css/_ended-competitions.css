@@ -138,7 +138,7 @@
 }
 
 .latest-compitions-page-con-cntlr .products-grd-page-con{
-	padding-bottom: 95px;
+	padding-bottom: 75px;
 }
 
 .recently-ended-view-more-btn{
@@ -148,4 +148,8 @@
 .recently-ended-view-more-btn a{
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.products-grd-page-pagi{
+	padding-top: 60px;
 }

@@ -147,6 +147,7 @@
 @media(max-width:767px){
 	.page-banner-section{
 		padding-bottom:45px;
+		padding-top: 234px;
 	}
 	.page-bnr-desc{
 		margin:auto;
@@ -247,6 +248,9 @@
 	 .default-page-con ol li, ol li, .page-bnr-desc ol li{
 	 	font-size:12px;
 	 }
+	 .page-bnr-desc{
+	    padding-top: 30px;
+	}
 	 .page-bnr-desc > strong{
 	 	font-size:14px;
 	 }
