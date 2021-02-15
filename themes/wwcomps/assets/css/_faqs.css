@@ -27,7 +27,7 @@
 	display: none;
 	padding-bottom: 1px;
 }
-.hh-accordion-title span{
+.hh-accordion-title > span{
 	width:32px;
 	height:32px;
     left: 0;
@@ -40,7 +40,7 @@
     -webkit-border-image-source: linear-gradient(to left, #2174a8, #01934a);
     border-image-slice: 1;
 }
-.hh-accordion-title span:after{
+.hh-accordion-title > span:after{
 	content:"\f078";
 	font-family: 'Font Awesome 5 Free';
 	font-weight:700;
@@ -50,7 +50,7 @@
 	color:#000000;
 	font-size: 18px;
 }
-.faqs-bnr-pg-desc span{
+.faqs-bnr-pg-desc > span{
 	right:-21px;
 }
 .hh-accordion-active span:after{
@@ -71,7 +71,7 @@
 	.hh-accordion-title{
 		font-size: 20px!important;
 	}
-	.hh-accordion-title span{
+	.hh-accordion-title > span{
 		width:30px;
 		height:30px;
 		top:-3px;
@@ -86,11 +86,11 @@
 	.hh-accordion-title{
 		font-size: 19px!important;
 	}
-	.hh-accordion-title span{
+	.hh-accordion-title >span{
 		width:28px;
 		height:28px;
 	}
-	.hh-accordion-title span:after{
+	.hh-accordion-title > span:after{
 		font-size:17px;
 	}
 	.hh-accordion-tab-row{
@@ -116,11 +116,11 @@
 		margin-bottom: 0px!important;
     	padding-bottom: 8px!important;
 	}
-	.hh-accordion-title span{
+	.hh-accordion-title > span{
 		width:26px;
 		height:26px;
 	}
-	.hh-accordion-title span:after{
+	.hh-accordion-title > span:after{
 		font-size:16px;
 	}
 	.faqs-bnr-pg-desc{
@@ -137,11 +137,11 @@
 	.hh-accordion-title{
 		font-size:16px!important;
 	}
-	.hh-accordion-title span{
+	.hh-accordion-title > span{
 		width:25px;
 		height:25px;
 	}
-	.hh-accordion-title span:after{
+	.hh-accordion-title > span:after{
 		font-size:15px;
 	}
 
@@ -153,11 +153,11 @@
 	.hh-accordion-title{
 		font-size:15px!important;
 	}
-	.hh-accordion-title span{
+	.hh-accordion-title > span{
 		width:24px;
 		height:24px;
 	}
-	.hh-accordion-title span:after{
+	.hh-accordion-title > span:after{
 		font-size:14px;
 	}
 }
