@@ -50,7 +50,7 @@
 	-o-transform: translateY(-50%);
 	left: 0;
 }
-.hdr-top-rt-login button{
+.hdr-top-rt-login a{
 	font-size: 14px;
 	font-weight: 500;
 	color: #fff;
@@ -74,7 +74,7 @@
 	-o-transform: translateY(-50%);
 	left: -1px;
 }
-.hdr-top-rt-register button{
+.hdr-top-rt-register a{
 	font-size: 14px;
 	font-weight: 500;
 	color: #fff;
@@ -232,6 +232,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 	position: relative;
 	display: inline-block;
 	padding-right: 18px;
+}
+.hdr-add-to-card-icon a{
+	display: inline-block;
 }
 .hdr-add-to-card-icon span{
 	position: absolute;
