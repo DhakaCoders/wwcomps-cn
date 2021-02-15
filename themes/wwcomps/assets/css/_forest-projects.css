@@ -59,7 +59,7 @@
 	color: #fff;
     width: 46px;
     height: 46px;
-    background: #c18f54;
+    background: #C18F53;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,12 @@
     font-size: 24px;
     border: 1px solid #fff;
     margin: 0 5px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+.forest-proj-sec .custom_paging li.slick-active{
+	background:#fff;
+	color:#665440;
 }
 .forest-proj-sec .custom_paging{
 	position: absolute;
