@@ -11,6 +11,12 @@
 .lucky-winner-slider{
 
 }
+.lucky-winner-slider button.slick-prev{
+	left: -47px;
+}
+.lucky-winner-slider button.slick-next{
+	right: -47px;
+}
 .lw-slide-item-cntlr{
 	display: none;
 }
@@ -141,7 +147,9 @@
 	line-height: 1;
 	margin-bottom: 0;
 }
-
+.left-right-desc{
+	padding-bottom: 35px;
+}
 .how-to-play-wrap{
 	min-height: 727px!important;
 	padding: 75px 0!important;
@@ -150,7 +158,7 @@
 	margin-bottom: 45px;
 }
 .htp-banner-bg{
-	
+
 }
 .htp-banner-bg .bnr-bg-lft{
 	max-width: 65.875%;
@@ -163,6 +171,9 @@
 	max-width: 720px;
 	width: 100%;
 	background: #fff;
+	
+}
+.right-desc-item .htp-sec-desc-cntlr{
 	margin-left: auto;
 }
 .htp-desc-hedding{
@@ -173,7 +184,7 @@
 }
 .htp-desc-hedding i{
 	position: absolute;
-	bottom: -23px;
+	bottom: -24px;
 	left: 50%;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
