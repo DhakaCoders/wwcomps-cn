@@ -256,13 +256,14 @@ $('.hh-accordion-title').click(function(){
 });
 
 //Masonry
- if( $('.our-proj-grid').length ){
-$('.our-proj-grid').masonry({
-  // options
-  itemSelector: '.our-proj-grid-item',
-});
+if(windowWidth > 767) {
+  if( $('.our-proj-grid').length ){
+    $('.our-proj-grid').masonry({
+      // options
+      itemSelector: '.our-proj-grid-item',
+    });
+  };
 };
-
 
   /*start Of Rannojit*/
 
