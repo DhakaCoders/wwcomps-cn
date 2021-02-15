@@ -1,6 +1,11 @@
+.forest-proj-slide-item-des{
+	max-width:728px;
+}
 .forest-proj-slide-item-des .counter-up-cntlr ul{
 	background: #195883;
 	margin: 0 -55px;
+	margin-left: -55px;
+    margin-right: -19px;
 }
 .forest-proj-slide-item-des .counter-up-cntlr ul li{
 	width:50%;
@@ -18,6 +23,8 @@
 }
 .forest-proj-slide-item-des{
 	padding-bottom:3px;
+	max-width:728px;
+	padding-right:22px;
 }
 .forest-proj-slide-item-des .counter-item{
 	padding-top:55px;
