@@ -63,9 +63,6 @@
 	    max-width: 880px;
 	    width: 100%;
 	}
-	header,footer{
-		overflow:hidden;
-	}
 }
 @media(max-width:1399px){
 	.faqs-bnr-pg-desc {
