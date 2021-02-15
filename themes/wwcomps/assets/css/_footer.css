@@ -34,6 +34,9 @@
 	font-size: 16px;
 	color: #515151;
 }
+.ftr-contact-info-row a:hover{
+	color: #1378d4;
+}
 
 
 .footer-btm{
