@@ -3,7 +3,8 @@ All Transitions
 */
 a,input,img,textarea,button,svg,i,.dft-transition,
 .pro-fea-img-cntlr .inline-bg,
-.hh-accordion-title span:after{
+.hh-accordion-title span:after,
+.winners-grd-item .winners-grd-item-fea-img-cntlr .inline-bg{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -15,7 +16,8 @@ a,input,img,textarea,button,svg,i,.dft-transition,
 	-webkit-transition: all 1s;
 }
 .scale,
-.product-grd-item:hover .pro-fea-img-cntlr .inline-bg{
+.product-grd-item:hover .pro-fea-img-cntlr .inline-bg,
+.winners-grd-item:hover .winners-grd-item-fea-img-cntlr .inline-bg {
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -35,4 +37,8 @@ nav.main-nav ul li:hover > a,
 nav.main-nav ul li.current-menu-item a{
 	
 }
-
+.input-field-col input[type="text"]:focus,
+.input-field-col input[type="email"]:focus,
+.input-field-col textarea:focus{
+	border: 1px solid #9d9d9d;
+}

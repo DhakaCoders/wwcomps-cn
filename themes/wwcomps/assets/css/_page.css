@@ -41,6 +41,47 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+.slick-prev{
+	left: 0;
+	background: url(../images/left-arrow.svg)!important;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+
+}
+.slick-next{
+	right: 0;
+	background: url(../images/right-arrow.svg)!important;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.slick-prev:hover{
+	left: 0;
+	background: url(../images/left-arrow-hover.svg)!important;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+
+}
+.slick-next:hover{
+	right: 0;
+	background: url(../images/right-arrow-hover.svg)!important;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+
+.slick-prev,
+.slick-next{
+	width: 19px;
+	height: 37px;
+	z-index: 30;
+}
+.slick-prev:before,
+.slick-next:before{
+	content: none;
+}
+
+
 
 /* ===================== */
 /*== pagination start ==*/
@@ -120,3 +161,57 @@
 	border: 2px solid #fff;
 }
 /*== pagination end ==*/
+
+
+
+
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	.slick-slider .slick-dots li button{
+		width: 19px;
+		height: 19px;
+	}
+}
+
+
+@media(max-width: 1399px){
+
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

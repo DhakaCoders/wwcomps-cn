@@ -256,12 +256,14 @@ $('.hh-accordion-title').click(function(){
 });
 
 //Masonry
-$('.our-proj-grid').masonry({
-  // options
-  itemSelector: '.our-proj-grid-item',
-});
-
-
+if(windowWidth > 767) {
+  if( $('.our-proj-grid').length ){
+    $('.our-proj-grid').masonry({
+      // options
+      itemSelector: '.our-proj-grid-item',
+    });
+  };
+};
 
   /*start Of Rannojit*/
 
@@ -270,6 +272,90 @@ $('.our-proj-grid').masonry({
   var containerWidth = $('.container').width();
   var leftOffsetCal = (windowWidth - containerWidth ) / 2 ;
   $('.fl-angle-hdr-join').css('width', leftOffsetCal );
+
+
+  if( $('.winnersSlider').length ){
+    $('.winnersSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+if( $('.latesCompititionsSlider').length ){
+    $('.latesCompititionsSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      arrows: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
 
     new WOW().init();
 

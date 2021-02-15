@@ -25,3 +25,75 @@
 	margin-left:-1.2px;
 	top: 17.5%;
 }
+
+@media(max-width:1499px){
+	.about-pg-bnr-desc h2{
+		font-size:51px;
+		margin-bottom:31px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:42px;
+	}
+}
+@media(max-width:1399px){
+	.about-pg-bnr-desc h2{
+		font-size:48px;
+		margin-bottom:28px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:38px;
+	}
+}
+@media(max-width:1199px){
+	.about-pg-bnr-desc h2{
+		font-size:43px;
+		margin-bottom:25px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:37px;
+	}
+}
+@media(max-width:991px){
+	.about-pg-bnr-desc h2{
+		font-size:40px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:34px;
+	}
+}
+@media(max-width:767px){
+	.about-pg-bnr-desc h2{
+		font-size:37px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:31px;
+	}
+	.about-pg-bnr-desc > span{
+		top:0px;
+	}
+}
+@media(max-width:575px){
+	.about-pg-bnr-desc h2{
+		font-size:35px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:28px;
+	}
+}
+@media(max-width:479px){
+	.about-pg-bnr-desc h2{
+		font-size:31px;
+		margin-bottom: 20px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:33px;
+	}
+}
+@media(max-width:369px){
+	.about-pg-bnr-desc h2{
+		font-size:22px;
+	}
+	.about-pg-bnr-desc h2 span{
+		font-size:26px;
+	}
+}
