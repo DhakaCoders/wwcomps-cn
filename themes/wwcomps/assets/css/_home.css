@@ -41,7 +41,8 @@
 }
 
 
-.lates-winners-sec-con{
+.lates-winners-sec-con,
+.lates-compititions-sec-con{
 	padding: 70px 0 30px;
 }
 .lwsc-btn{
@@ -183,7 +184,8 @@
 	font-weight: 400;
 }
 
-.winnersSlider{
+.winnersSlider,
+.latesCompititionsSlider{
 	margin-bottom: 0!important;
 	margin-left: -50px;
 	margin-right: -50px;
@@ -191,7 +193,8 @@
 	padding-right: 40px;
 }
 
-.winnersSlideItem{
+.winnersSlideItem,
+.latesCompititionsSlideItem{
 	padding: 0 10px 60px;
 }
 
