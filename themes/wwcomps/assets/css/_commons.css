@@ -434,3 +434,16 @@ ol li::before {
 	color: #fff;
 	border-color: #1C75BC;
 }
+
+
+/*-- slider break fix--*/
+.winnersSlider .winnersSlideItem{
+	display: none;
+}
+
+.winnersSlider .winnersSlideItem:first-child{
+	display: block;
+}
+.winnersSlider.slick-initialized .winnersSlideItem{
+	display: block;
+}

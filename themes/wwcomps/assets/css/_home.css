@@ -44,6 +44,9 @@
 .lates-winners-sec-con{
 	padding: 70px 0 30px;
 }
+.lwsc-btn{
+	padding-top: 50px;
+}
 
 .lwsc-btn a{
 	margin-left: auto;
@@ -138,4 +141,51 @@
 
 .filter-tabbar{
 	margin-bottom: 65px;
+}
+
+
+
+.winners-grd-item-fea-img-cntlr{
+	height: 274px;
+	overflow: hidden;
+	position: relative;
+}
+
+.winners-grd-item-fea-img-cntlr .inline-bg{
+	width: 100%;
+	height: 100%;
+}
+
+.winners-grd-item-des{
+	background: #fff;
+	padding: 30px 15px 25px;
+}
+
+.winners-grd-item-des .hwgid-title{
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+.winners-grd-item-des .hwgid-title a{
+	color: #3A3A3A;
+}
+
+.winners-grd-item-des strong{
+	display: block;
+	color: #7F7F7F;
+	font-size: 14px;
+	line-height: 1;
+	margin: 0;
+	font-family: 'Hind', sans-serif;
+	font-weight: 400;
+}
+
+.winnersSlider{
+	margin-bottom: 0!important;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.winnersSlideItem{
+	padding: 0 10px 60px;
 }
