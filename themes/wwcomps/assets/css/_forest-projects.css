@@ -135,9 +135,6 @@
 	max-height:150px;
 }
 @media(max-width:1499px){
- header,footer{
- 	overflow:hidden;
- }
 }
 @media(max-width:1399px){
 	.proj-location span{
