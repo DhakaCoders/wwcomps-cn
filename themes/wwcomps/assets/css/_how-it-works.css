@@ -256,6 +256,15 @@
 	.page-bnr-desc > strong{
 	 	font-size:17px;
 	 }
+	 .page-banner-section{
+	 	padding-top:270px;
+	 }
+	 .bnr-bg-lft {
+	    height: 65%;
+	}
+	.bnr-bg-rgt {
+	    height: 35%;
+	}
 }
 
 @media(max-width:479px){
@@ -278,4 +287,14 @@
 	 .page-bnr-desc ol li:before{
 	 	top:3px;
 	 }
+	 .page-banner-section {
+	    padding-top: 306px;
+	}
+	.bnr-bg-lft {
+	    height: 61%;
+	}
+	.bnr-bg-rgt {
+	    height: 39%;
+	}
+
 }
