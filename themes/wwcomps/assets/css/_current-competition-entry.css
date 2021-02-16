@@ -12,12 +12,27 @@
 	justify-content: center;
 	align-items: center;
 	margin-left:15px;
+	position:relative;
 }
 .current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span i{
  color:#fff;
 }
 .current-competition-entry-sec-ctlr .fl-angle-sec-hdr{
 	display: flex;
+}
+.current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span:after{
+	content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 18px;
+    z-index: 2;
+    background: url(../images/page-title-angle-2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 .current-competition-entry-sec-ctlr .hh-accordion-des{
 	background:#175884;
