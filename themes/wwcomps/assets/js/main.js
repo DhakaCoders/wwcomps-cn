@@ -301,10 +301,16 @@ $('.frstProjSlider').slick({
 
 
 //windowWidth
+function attrvaluupdate(){
+  var windowWidth2 = $(window).width();
   var containerWidth = $('.container').width();
-  var leftOffsetCal = (windowWidth - containerWidth ) / 2 ;
+  var leftOffsetCal = ((windowWidth2 - containerWidth ) / 2)+1;
   $('.fl-angle-hdr-join').css('width', leftOffsetCal );
-
+};
+attrvaluupdate();
+$(window).resize(function(){
+    attrvaluupdate();
+});
 
   if( $('.winnersSlider').length ){
     $('.winnersSlider').slick({

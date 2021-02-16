@@ -23,6 +23,10 @@
 .faqs-bnr-pg-desc div p:last-child{
 	margin-bottom:0!important;
 }
+.faqs-bnr-pg-sec .bnr-bg-lft,
+.faqs-bnr-pg-sec .bnr-bg-rgt{
+	background-attachment: fixed;
+}
 .hh-accordion-des{
 	display: none;
 	padding-bottom: 1px;
