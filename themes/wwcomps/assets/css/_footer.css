@@ -7,13 +7,14 @@
 }
 .ftr-col{
 	width: 22%;
-	padding-top: 25px;
+	padding-top: 28px;
 	padding-bottom: 100px;
+	padding-right: 20px;
 }
 
 .ftr-col-1{
-	width: 32%;
-	padding-right: 120px;
+	width: 34%;
+	padding-right: 103px;
 	padding-top: 0;
 }
 .ftr-col .ftr-heading{
@@ -23,7 +24,7 @@
 	font-family: 'LeagueSpartan-Medium';
 }
 .ftr-contact-info-row{
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .ftr-contact-info-row strong{
 	font-size: 20px;
@@ -47,7 +48,7 @@
 	display: flex;
 	align-items: center;
 	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-bottom: 9px;
 	color: #fff;
 	font-size: 14px;
 	line-height: 1;
@@ -87,4 +88,161 @@
 	display: inline-block;
 	vertical-align: baseline;
 	color: #fff;
+}
+.copyright-menu ul li a:hover{
+	color: #f1cfaa;
+}
+
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	.ftr-col-1{
+		padding-right: 47px;
+	}
+	.ftr-col{
+		padding-bottom: 80px;
+	}
+}
+
+
+@media(max-width: 1399px){
+
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+
+
+}
+
+@media(max-width: 991px){
+	.ftr-col{
+		width: 33.3333%;
+		 padding-bottom: 30px;
+	}
+	.ftr-col-1{
+		width: 100%;
+		padding-right: 0;
+		text-align: center;
+	}
+	.ftr-cols{
+		flex-wrap: wrap;
+	}
+	.ftr-col-1{
+		padding-bottom: 0;
+	}
+	.footer-wrp {
+	    padding-top: 40px;
+	}
+	.ftr-logo{
+		padding-bottom: 15px;
+	}
+	.ftr-contact-info-row strong{
+		font-size: 18px;
+	}
+}
+
+@media(max-width: 767px){
+	.ftr-col {
+	    width: 100%;
+	    padding-bottom: 0;
+	    text-align: center;
+	}
+	.ftr-collapse-con ul {
+	    display: flex;
+	    flex-wrap: wrap;
+	    max-width: 500px;
+	    width: 100%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-left: 98px;
+	}
+	.ftr-collapse-con ul li{
+		text-align: left;
+		width: 50%;
+		padding-right: 10px;
+	}
+	.ftr-collapse-con ul li:nth-child(2n+2){
+		clear: left;
+	}
+	.ftr-contact-info-row a br{
+		display: none;
+	}
+	.ftr-cols{
+		padding-bottom: 50px;
+	}
+	.ftr-contact-info-row{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 0;
+		margin-bottom: 15px;
+	}
+	.ftr-contact-info-row strong{
+		padding-right: 10px;
+	}
+	.ftr-contact-info-row a,
+	.ftr-contact-info-row strong{
+		font-size: 14px;
+		line-height: 1;
+	}
+	.ftr-intro-col-des{
+		max-width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ftr-btm-con{
+		flex-wrap: wrap;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.copyright-menu{
+		order: 1;
+		width: 100%;
+	}
+	.copyright-text{
+		order: 2;
+		width: 100%;
+	}
+	.copyright-menu{
+		padding-bottom: 10px;
+	}
+	.copyright-menu ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.copyright-menu ul li:not(:last-child):after{
+		margin-top: -1px;
+	}
+}
+
+@media(max-width: 575px){
+	.ftr-collapse-con ul{
+		padding-left: 80px;
+	}
+}
+
+@media(max-width: 479px){
+	.ftr-collapse-con ul li{
+		width: 100%;
+		padding-right: 0;
+	}
+	.ftr-collapse-con ul{
+		padding-left: 0;
+	}
+
+}
+
+@media(max-width: 359px){
+
 }

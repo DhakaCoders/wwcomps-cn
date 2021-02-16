@@ -57,7 +57,6 @@
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
     background-position: right bottom;
-	padding-top: 45px;
 }
 .body-cont p{
 	font-size: 16px;
@@ -127,6 +126,12 @@
 	.winr-fea-img-cntlr {
     	height: 350px!important;
 	}
+	.wgid-title-popup{
+		font-size: 20px;
+	}
+	.modal-title{
+		line-height: 1.4;
+	}
 }
 
 @media(max-width: 840px){
@@ -144,12 +149,27 @@
 	}
 	.body-cont{
 		text-align: center;
+		padding: 32px 5px 55px 20px;
+	}
+	.body-cont p{
+		font-size: 14px;
+		line-height: 1.8;
+	}
+	.wgid-title-popup{
+		font-size: 18px;
+	}
+	.modal-title{
+		line-height: 1.3;
 	}
 }
 
 @media(max-width: 639px){
 	.winr-fea-img-cntlr {
     	height: 220px!important;
+	}
+	.body-cont p{
+		font-size: 14px;
+		line-height: 1.7;
 	}
 }
 
@@ -172,13 +192,31 @@
 	.winr-grd-date span{
 		font-size: 14px;
 	}
+	.modal.show .modal-dialog{
+		padding: 10px 10px;
+	}
+	.wgid-title-popup{
+		font-size: 17px;
+	}
+	.modal-title{
+		line-height: 1.2;
+	}
 }
 
 @media(max-width: 479px){
 	.winr-fea-img-cntlr {
     	height: 288px!important;
 	}
-
+	.body-cont p{
+		font-size: 12px;
+		line-height: 2;
+	}
+	.wgid-title-popup{
+		font-size: 16px;
+	}
+	.modal-title{
+		line-height: 1.1;
+	}
 }
 
 @media(max-width: 359px){
