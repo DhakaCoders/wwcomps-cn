@@ -86,14 +86,14 @@
 		margin-bottom: 20px;
 	}
 	.about-pg-bnr-desc h2 span{
-		font-size:33px;
+		font-size:26px;
 	}
 }
 @media(max-width:369px){
 	.about-pg-bnr-desc h2{
-		font-size:22px;
+		font-size:26px;
 	}
 	.about-pg-bnr-desc h2 span{
-		font-size:26px;
+		font-size:22px;
 	}
 }
