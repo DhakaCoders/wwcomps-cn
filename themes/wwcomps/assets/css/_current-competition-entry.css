@@ -5,17 +5,22 @@
 	padding-left:0px;
 	margin-bottom:0px!important;
 }
+/*.current-competition-entry-sec-ctlr .fl-angle-hdr{
+	border-top-width: 2px;
+	border-bottom-width:2px;
+}*/
 .current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span{
 	background:#35AA5F;
 	display:flex;
-	width:70px;
+	width:80px;
 	justify-content: center;
 	align-items: center;
-	margin-left:15px;
+	margin-left:-1px;
 	position:relative;
 }
 .current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span i{
  color:#fff;
+ margin-left:13px;
 }
 .current-competition-entry-sec-ctlr .fl-angle-sec-hdr{
 	display: flex;
@@ -24,21 +29,25 @@
 	content: "";
     position: absolute;
     left: 100%;
-    top: 0;
-    bottom: 0;
+    top: -1px;
+    bottom: -1px;
     width: 18px;
     z-index: 2;
     background: url(../images/page-title-angle-2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-left: -1px;
-    margin-top: -1px;
+    margin-left: -3px;
+    margin-top: 0px;
 }
-.current-competition-entry-sec-ctlr .flash-title:after{
+/*.current-competition-entry-sec-ctlr .flash-title{
+	padding-top:12px;
+	padding-bottom:12px;
+}*/
+/*.current-competition-entry-sec-ctlr .flash-title:after{
 	background: url(../images/page-title-angle-1.png);
-	width: 24px;
-    margin-top: -2px;
-}
+	width: 13px;
+    margin-top: 0px;
+}*/
 .hh-accordion-active .icon-rotate i{
 	transform:rotate(180deg);
 }
