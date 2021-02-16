@@ -37,7 +37,6 @@
 .entty-item-title{
 	display: flex;
 	align-items: flex-end;
-	line-height: 2;
 	font-size: 24px!important;
 	font-family: 'LeagueSpartan-Semibold';
 	text-transform: uppercase;
@@ -184,7 +183,6 @@
 	}
 	.entty-item-title{
 		font-size: 16px!important;
-		line-height: 2.3;
 	}
 }
 
