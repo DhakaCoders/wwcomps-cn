@@ -79,6 +79,9 @@
 	.about-pg-bnr-desc h2 span{
 		font-size:28px;
 	}
+	.about-pg-bnr-desc > span{
+	    top: -3px;
+	}
 }
 @media(max-width:479px){
 	.about-pg-bnr-desc h2{
