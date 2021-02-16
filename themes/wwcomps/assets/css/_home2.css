@@ -311,6 +311,9 @@
 	}
 }
 @media(max-width: 767px){
+	.counter-up-sec{
+		padding-top: 35px;
+	}
 	.counter-up-cntlr ul{
 		margin: 0 -8px;
 	}
@@ -378,6 +381,9 @@
 		font-size: 33px;
 		margin-bottom: 7px;
 
+	}
+	.counter-up-sec{
+		padding-top: 25px;
 	}
 	.counter-item{
 		padding-left: 0;
