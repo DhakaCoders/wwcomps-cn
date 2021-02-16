@@ -22,10 +22,6 @@
 	display:flex;
 	z-index:0;
 }
-.bnr-bg-lft,
-.bnr-bg-rgt{
-	background-attachment: fixed;
-}
 .bnr-bg-lft{
 	max-width: 34.7%;
     width: 100%;
