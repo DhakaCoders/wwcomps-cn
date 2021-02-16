@@ -157,6 +157,9 @@
 .left-right-desc-item{
 	margin-bottom: 45px;
 }
+.left-right-desc-item:last-child{
+	border-bottom: 1px solid #b2c6c7;
+}
 .htp-banner-bg{
 
 }
