@@ -1,6 +1,6 @@
 .products-grd-page-con{
 	background: #175884;
-	padding: 80px;
+	padding-top: 80px;
 	padding-bottom: 120px;
 }
 .product-grds-cntlr ul{
@@ -162,7 +162,9 @@
 
 
 @media (max-width: 1499px) {
-
+	.pro-grd-price{
+		font-size: 30px;
+	}
 }
 
 
@@ -176,9 +178,31 @@
 }
 
 @media(max-width: 1199px){
-
-
-
+	.pro-fea-img-cntlr{
+		height: 255px;
+	}
+	.pro-grd-price {
+	    font-size: 25px;
+	}
+	.pgid-title{
+		margin-bottom: 12px;
+	}
+	.product-grds-cntlr ul{
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+	.product-grds-cntlr ul li{
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 16px;
+	}
+	.products-grd-page-con {
+	    padding-top: 65px;
+	    padding-bottom: 100px;
+	}
+	.products-grd-page-pagi {
+	    padding-top: 50px;
+	}
 }
 
 @media(max-width: 991px){

@@ -131,7 +131,7 @@
 .page-numbers.current{
 	background: #fff;
 }
-.prev, .next{
+.fl-pagi-cntlr .prev, .fl-pagi-cntlr .next{
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -139,7 +139,7 @@
 	width: 40px!important;
 	border: 2px solid transparent;
 }
-.prev:after{
+.fl-pagi-cntlr .prev:after{
 	position: absolute;
 	content: "";
 	background-image: url('../images/pagi-prev.png');
@@ -147,7 +147,7 @@
 	width: 16px;
 	height: 7px;
 }
-.next:after{
+.fl-pagi-cntlr .next:after{
 	position: absolute;
 	content: "";
 	background-image: url('../images/pagi-next.png');
@@ -155,8 +155,8 @@
 	width: 16px;
 	height: 7px;
 }
-.prev:hover,
-.next:hover{
+.fl-pagi-cntlr .prev:hover,
+.fl-pagi-cntlr .next:hover{
 	background: #665440!important;
 	border: 2px solid #fff;
 }
