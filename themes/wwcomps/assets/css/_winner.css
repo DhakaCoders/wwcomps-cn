@@ -18,7 +18,7 @@
 	justify-content: flex-end;
 	background-image: url('../images/winr-itm-des-bg.png')!important;
 	background-repeat: no-repeat!important;
-	background-position: bottom center!important;
+	background-position: right bottom!important;
 }
 .wgid-title{
 	margin-bottom: 13px!important;
@@ -123,11 +123,20 @@
 }
 
 @media(max-width: 991px){
-	.winr-grid-cntrl ul li{
-		width: 50%!important;
-	}
 	.winr-fea-img-cntlr {
-    	height: 350px!important;
+    	height: 225px!important;
+	}
+	.winr-grid-cntrl ul{
+		margin: 0 -5px -20px!important;
+	}
+	.winr-grid-cntrl ul li{
+		padding: 0 5px 20px!important;
+	}
+	.wgid-title a{
+		font-size: 17px;
+	}
+	.winr-grd-item-des{
+		padding: 27px 10px 25px 10px!important;
 	}
 	.wgid-title-popup{
 		font-size: 20px;
@@ -139,13 +148,16 @@
 
 @media(max-width: 840px){
 	.winr-fea-img-cntlr {
-    	height: 300px!important;
+    	height: 200px!important;
 	}
 }
 
 @media(max-width: 767px){
 	.winr-fea-img-cntlr {
-    	height: 250px!important;
+    	height: 172px!important;
+	}
+	.winr-grid-cntrl ul li{
+		width: 50%!important
 	}
 	.winr-grd-date span{
 		font-size: 15px;
@@ -168,7 +180,7 @@
 
 @media(max-width: 639px){
 	.winr-fea-img-cntlr {
-    	height: 220px!important;
+    	height: 190px!important;
 	}
 	.body-cont p{
 		font-size: 14px;
@@ -178,19 +190,26 @@
 
 @media(max-width: 575px){
 	.winners-sec-bg{
-		padding: 50px 0;
+		padding-top: 40px;
+		padding-bottom: 100px;
 	}
 	.winr-tabbar{
 		margin-bottom: 50px;
 	}
 	.winr-grid-cntrl{
-		padding-bottom: 30px;
+		padding-bottom: 60px;
 	}
 	.winr-grid-cntrl ul li{
 		width: 100%!important;
+		padding-bottom: 25px!important;
+	}
+	.winr-grid-item {
+    	max-width: 350px;
+    	width: 100%;
+    	margin: auto;
 	}
 	.winr-fea-img-cntlr {
-    	height: 350px!important;
+    	height: 250px!important;
 	}
 	.winr-grd-date span{
 		font-size: 14px;
@@ -219,6 +238,17 @@
 	}
 	.modal-title{
 		line-height: 1.1;
+	}
+	.winr-grd-item-des{
+		padding: 24px 15px 24px 15px!important;
+		text-align: center;
+	}
+	.body-cont{
+		padding: 35px 5px 55px 10px;
+		text-align: center;
+	}
+	.wgid-title{
+		margin-bottom: 13px!important;
 	}
 }
 
