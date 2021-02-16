@@ -1,10 +1,11 @@
-/*.current-competition-entry-section .hh-accordion-title > span{
-	display: none;
-}*/
-.current-competition-entry-section .hh-accordion-title{
-	padding-left:0px;
+.current-competition-entry-sec-ctlr .hh-accordion-tab-row{
+	padding-bottom:0px;
 }
-.current-competition-entry-section .fl-angle-sec-hdr > span{
+.current-competition-entry-sec-ctlr .hh-accordion-title{
+	padding-left:0px;
+	margin-bottom:0px!important;
+}
+.current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span{
 	background:#35AA5F;
 	display:flex;
 	width:70px;
@@ -12,25 +13,61 @@
 	align-items: center;
 	margin-left:15px;
 }
-.current-competition-entry-section .fl-angle-sec-hdr > span i{
+.current-competition-entry-sec-ctlr .fl-angle-sec-hdr > span i{
  color:#fff;
 }
-.current-competition-entry-section .fl-angle-sec-hdr{
+.current-competition-entry-sec-ctlr .fl-angle-sec-hdr{
 	display: flex;
 }
-.current-competition-entry-section{
+.current-competition-entry-sec-ctlr .hh-accordion-des{
 	background:#175884;
+	padding-top:78px;
+	padding-bottom:80px;
 }
-.current-competition-entry-section .hh-accordion-des{
+.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr{
 	background:#fff;
+	padding-left:30px;
+	padding-top:80px;
+	padding-right:75px;
+	padding-bottom:63px;
+	position:relative;
 }
-.current-competition-entry-section .hh-accordion-des p{
-
+.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
+	font-size:18px;
+	line-height:1.5;
+	margin-bottom:24px;
 }
-.current-competition-entry-section .hh-accordion-des h5{
 
+.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr h5{
+	color:#231F20;
 	font-size:24px;
 }
-.current-competition-entry-section .hh-accordion-des ul li{
+.current-competition-entry-sec-ctlr .hh-accordion-des ul li{
 
+}
+.hh-accordion-des-cntlr ul li{
+	font-size:18px;
+	line-height:1.5;
+	margin-bottom:10px;
+	position: relative;
+	padding-left:15px;
+}
+.hh-accordion-des-cntlr ul li:after{
+	content: "";
+	position: absolute;
+	height:6px;
+	width: 6px;
+	border-radius:50%;
+	background:#231F20;
+	left:0;
+	top:9px;
+}
+.hh-accordion-des-cntlr ul{
+	margin-bottom:20px;
+}
+.hh-accordion-des-cntlr > span{
+	position: absolute;
+	top:0;
+	left:70px;
+	margin-top:-3px;
 }
