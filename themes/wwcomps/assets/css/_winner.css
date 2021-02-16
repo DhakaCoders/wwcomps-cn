@@ -20,6 +20,9 @@
 	background-repeat: no-repeat!important;
 	background-position: bottom center!important;
 }
+.wgid-title{
+	margin-bottom: 13px!important;
+}	
 .wgid-title a{
 	color: #35AA5F;
 	line-height: 1.3;
