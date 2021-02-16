@@ -1,3 +1,15 @@
+.forest-bg-div{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:0;
+	height:236px;
+	background:#175884;
+	z-index:1;
+}
+.our-project-sec{
+	position: relative;
+}
 .forest-proj-slide-item-des{
 	max-width:728px;
 }
@@ -112,6 +124,8 @@
 .our-project-sec-cntlr{
 	padding-top:50px;
 	padding-bottom:80px;
+	position:relative;
+	z-index:2;
 }
 .our-project-grid-items ul{
 	display:flex;
