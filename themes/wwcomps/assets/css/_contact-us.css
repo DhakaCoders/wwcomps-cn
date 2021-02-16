@@ -3,7 +3,6 @@
 }
 .cnt-page-des h2{
 	padding-bottom: 10px;
-	font-family: 'LeagueSpartan-Semibold'!important;
 }
 .cnt-page-des p{
 	line-height: 1;
@@ -179,20 +178,26 @@
 
 
 @media (max-width: 1499px) {
+	.qck-lnk-title{
+		font-size: 22px!important;	
+	}
 	.qck-lnk-item-des address, 
 	.qck-lnk-item-des a{
-		font-size: 19px;
+		font-size: 22px;
 	}
 }
 
 
 @media(max-width: 1399px){
+	.qck-lnk-title{
+		font-size: 21px!important;	
+	}
 	.qck-lnk-item-des address a{
 		line-height: 1.2;
 	}
 	.qck-lnk-item-des address, 
 	.qck-lnk-item-des a{
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 }
@@ -208,11 +213,14 @@
 	.qck-lnk-cntrl ul li {
     	margin: auto;
 	}
+	.qck-lnk-title{
+		font-size: 20px!important;	
+	}
 	.qck-lnk-item-des address a{
 		line-height: 1.4;
 	}
 	.qck-lnk-item-des address, .qck-lnk-item-des a{
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -272,13 +280,33 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+	.qck-lnk-title{
+		font-size: 19px!important;	
+	}
 	.qck-lnk-item-des address, .qck-lnk-item-des a{
 		font-size: 16px;
 	}
 
 }
+@media(max-width: 639px){
+	.qck-lnk-img{
+		padding-right: 90px;
+    	height: 100px;
+	}
+	.qck-lnk-img img{
+		left: 25px;
+    	width: 45px;
+    	height: 45px;
+	}
+	.qck-lnk-title{
+		font-size: 18px!important;	
+	}
+}
 
 @media(max-width: 575px){
+	.cnt-page-des h2{
+		font-size: 26px!important;
+	}
 	.cnt-form-btn{
 		width: 100%!important;
 	}
@@ -289,6 +317,18 @@
 	}
 	.input-field-col textarea{
 		height: 120px;
+	}
+	.qck-lnk-img{
+		padding-right: 80px;
+		height: 80px;
+	}
+	.qck-lnk-img img{
+		left: 20px;
+    	width: 40px;
+    	height: 40px;
+	}
+	.qck-lnk-item-des address a{
+		line-height: 1.2;
 	}
 	
 }
