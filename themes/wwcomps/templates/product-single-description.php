@@ -1,12 +1,9 @@
-<?php 
-?>
 <section clsss="current-competition-entry-section">
   <div class="current-competition-entry-sec-ctlr">
-
     <div class="hh-accordion-tab-row">
-      <div class="fl-angle-hdr-cntlr hh-accordion-title">
+      <div class="fl-angle-hdr-cntlr hh-accordion-title hh-accordion-active">
         <div class="fl-angle-hdr">
-          <span class="fl-angle-hdr-join" style="width: 139.5px;"></span>
+          <span class="fl-angle-hdr-join"></span>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -24,8 +21,10 @@
              <div class="row">
                <div class="col-md-12">
                 <div class="hh-accordion-des-cntlr">
-                    <span> <img src="<?php echo THEME_URI; ?>/assets/images/cce-accor-angle.png" alt=""></span>
-                    <?php the_content(); ?>
+                    <div><span class="acordion-arrow"> <img src="<?php echo THEME_URI; ?>/assets/images/cce-accor-angle.png" alt=""></span></div>
+                    <div>
+                      <?php the_content(); ?>
+                    </div>
                 </div>
                </div>
              </div>
@@ -36,7 +35,7 @@
     <div class="hh-accordion-tab-row">
       <div class="fl-angle-hdr-cntlr hh-accordion-title">
         <div class="fl-angle-hdr">
-          <span class="fl-angle-hdr-join" style="width: 139.5px;"></span>
+          <span class="fl-angle-hdr-join"></span>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -54,7 +53,7 @@
              <div class="row">
                <div class="col-md-12">
                 <div class="hh-accordion-des-cntlr">
-                    <span> <img src="<?php echo THEME_URI; ?>/assets/images/cce-accor-angle.png" alt=""></span>
+                    <div><span class="acordion-arrow"> <img src="<?php echo THEME_URI; ?>/assets/images/cce-accor-angle.png" alt=""></span></div>
                     <div>
                       <?php
                        global $woocommerce, $post, $product;
