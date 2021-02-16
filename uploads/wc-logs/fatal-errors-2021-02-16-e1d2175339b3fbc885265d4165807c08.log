@@ -1,2 +1,24 @@
 2021-02-16T11:04:41+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2021\02\wwcomps\wp-includes\Requests\Transport\cURL.php on line 463
 
+2021-02-16T15:58:09+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\templates\wc\product-single-countdown.php:32
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php(171): get_template_part('templates/wc/pr...', 'countdown')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(287): get_product_lottery_countdown('')
+#5 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\woocommerce\single-product\title.php( in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\templates\wc\product-single-countdown.php on line 32
+
+2021-02-16T17:10:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php:182
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(287): get_product_short_description('')
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\woocommerce\single-product\participate.php(56): do_action('wc_short_descri...')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\plugins\woocommerce-lottery\public\class-wc-lottery-public.php(635): wc_get_template('single-product/...')
+#6 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(287): wc_lottery_Public->woocommerce_lottery_participate_template('')
+#7 C:\ in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php on line 182
+

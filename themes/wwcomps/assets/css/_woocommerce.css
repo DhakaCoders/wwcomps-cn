@@ -1,0 +1,34 @@
+.custom-summary {
+    background: #fff;
+    padding: 10px;
+}
+.lottery-ajax-change {
+    margin-top: 0 !important;
+}
+.wcl-progress-meter {
+    margin-top: 0 !important;
+    padding-bottom: 30px;
+}
+.total-tickets, .total-remaining {
+    position: absolute;
+    display: inline-block;
+}
+.total-tickets{
+	left: 0;
+	bottom: 0;
+}
+.total-remaining {
+	right: 0;
+	bottom: 0;
+}
+.wcl-progress-meter .zero{
+    display: inline-block !important; 
+    position: initial !important;
+    top: 0 !important; 
+}
+.wcl-progress-meter .max {
+    display: inline-block!important;
+    position: initial!important;
+    top: 0!important;
+    right: 0!important;
+}
