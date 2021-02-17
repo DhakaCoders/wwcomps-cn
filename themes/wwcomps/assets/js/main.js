@@ -200,12 +200,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   /*start Of Noyon*/
 
-  if( $('.luckyWinnerSlider').length ){
-    $('.luckyWinnerSlider').slick({
+  if( $('.lwBnrSlider').length ){
+    $('.lwBnrSlider').slick({
       dots: true,
       infinite: false,
       arrows: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
@@ -237,6 +237,21 @@ if( $('li.menu-item-has-children a').length ){
 }
 
 
+
+
+
+ function leftrtslickprev(){
+  var windowWidth3 = $(window).width();
+   var ConWidth = $(".container").width();
+   var LftRtOffset = (windowWidth3 - ConWidth) / 2;
+   var leftMargin = LftRtOffset -50;
+  $('.lw-bnr-slider button.slick-prev').css('left', leftMargin);
+  $('.lw-bnr-slider button.slick-next').css('right', leftMargin);
+};
+leftrtslickprev();
+$(window).resize(function(){
+  leftrtslickprev();
+});
 
   /*start Of Shariful*/
 
@@ -324,31 +339,26 @@ $(window).resize(function(){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            arrows: false,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            arrows: false,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            arrows: false,
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
 }
@@ -365,26 +375,24 @@ if( $('.latesCompititionsSlider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            arrows: false,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            arrows: false,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            arrows: false,
           }
         }
         // You can unslick at a given breakpoint now by adding:
