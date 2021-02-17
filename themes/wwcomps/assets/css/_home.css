@@ -207,3 +207,65 @@
 .lates-compititions-section{
 	margin-bottom: 75px;
 }
+
+
+
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+
+}
+
+
+@media(max-width: 1399px){
+
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+	.winnersSlider, .latesCompititionsSlider{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.lates-winners-sec-con,
+	.lates-compititions-sec-con{
+		overflow: hidden;
+	}
+
+}
+
+@media(max-width: 991px){
+	.winners-grd-item-fea-img-cntlr{
+		height: 222px;
+	}
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+	
+
+}
+
+@media(max-width: 359px){
+
+}
+
+

@@ -324,12 +324,11 @@ $(window).resize(function(){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            arrows: false,
           }
         },
         {
@@ -365,12 +364,11 @@ if( $('.latesCompititionsSlider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            arrows: false,
           }
         },
         {
