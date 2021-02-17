@@ -203,6 +203,10 @@
 	.products-grd-page-pagi {
 	    padding-top: 50px;
 	}
+	.pro-grd-price .price del{
+		font-size: 15px;
+		top: 5px;
+	}
 }
 
 @media(max-width: 991px){
@@ -240,6 +244,9 @@
 	}
 	.products-grd-page-pagi {
 	    padding-top: 45px;
+	}
+	.product-grd-item-des{
+		text-align: center;
 	}
 }
 
