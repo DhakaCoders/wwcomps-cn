@@ -32,6 +32,7 @@
     top: 0!important;
     right: 0!important;
 }
+/*Cart page*/
 .wc-cart-crtl {
     float: left;
     width: 70%;
@@ -56,4 +57,20 @@ table.shop_table.shop_table_responsive {
 
 .qty button.minus {
     cursor: pointer;
+}
+/*Checkout page*/
+.checkout-col-1 {
+    width: 60%;
+    float: left;
+}
+.checkout-col-2 {
+    float: left;
+    width: 40%;
+}
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-checkout-review-order{
+    background: #fff;
+}
+.woocommerce-billing-fields__field-wrapper input{
+    border: 1px solid #ddd;
 }
