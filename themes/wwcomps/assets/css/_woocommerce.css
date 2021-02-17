@@ -74,3 +74,13 @@ table.shop_table.shop_table_responsive {
 .woocommerce-billing-fields__field-wrapper input{
     border: 1px solid #ddd;
 }
+
+/*Myaccount Page */
+.woocommerce .wc-login-1 {
+    float: left;
+    width: 48%;
+}
+.woocommerce .wc-login-2 {
+    float: right;
+    width: 48%;
+}
