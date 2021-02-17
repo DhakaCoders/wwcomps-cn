@@ -183,6 +183,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     -o-transform: scale3d(1,0,1);
     transform-origin: top;
     opacity: 0;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
+    -ms-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15%);
+    -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 }
 nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
     transform: scale3d(1,1,1);
@@ -516,6 +519,9 @@ body.allWork{
         transform-origin: initial;
         opacity: 1;
         display: none;
+        box-shadow: initial;
+        -ms-box-shadow: initial;
+        -webkit-box-shadow: initial;
     }
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
         border: none;
