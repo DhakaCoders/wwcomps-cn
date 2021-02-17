@@ -308,10 +308,9 @@ if( $('li.menu-item-has-children a').length ){
   }
   if (windowWidth3 <= 767) {
     $('.lw-bnr-slider button.slick-prev').css('top', xsTopoffset);
-    $('.lw-bnr-slider button.slick-prev').css('left', xsTopoffset);
+    $('.forest-proj-slider button.slick-prev').css('left', xsTopoffset);
     $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
-    $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
-
+    $('.forest-proj-slider button.slick-next').css('right', xsTopoffset);
   }
 }
 leftrtslickprev();
