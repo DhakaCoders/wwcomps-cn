@@ -284,7 +284,7 @@
 }
 @media(max-width:1399px){
 	.forest-proj-slide-item-des .counter-up-cntlr ul {
-	    margin-left: -42px;
+	    margin-left: -46px;
 	}
 	.proj-location span{
 		font-size:18px;
@@ -436,6 +436,9 @@
 	    height: 22px;
 	  background-size:cover!important;
 	  background-repeat:no-repeat!important;
+	}
+	.forest-proj-slide-item-des > p{
+		padding-bottom:25px;
 	}
 
 }
