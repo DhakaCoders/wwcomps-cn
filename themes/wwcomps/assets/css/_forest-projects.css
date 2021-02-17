@@ -462,6 +462,9 @@
 	.partners-sec-cntlr ul li {
 	    padding: 5px 25px;
 	}
+	.forest-proj-sec .custom_paging{
+		bottom:55px;
+	}
 	.forest-proj-sec .custom_paging li{
 		width: 32px;
 	    height: 32px;
