@@ -240,7 +240,7 @@ if( $('li.menu-item-has-children a').length ){
 
 
 
- function leftslickprev(){
+ function leftrtslickprev(){
   var windowWidth3 = $(window).width();
    var ConWidth = $(".container").width();
    var LftRtOffset = (windowWidth3 - ConWidth) / 2;
@@ -248,9 +248,9 @@ if( $('li.menu-item-has-children a').length ){
   $('.lw-bnr-slider button.slick-prev').css('left', leftMargin);
   $('.lw-bnr-slider button.slick-next').css('right', leftMargin);
 };
-leftslickprev();
+leftrtslickprev();
 $(window).resize(function(){
-  leftslickprev();
+  leftrtslickprev();
 });
 
   /*start Of Shariful*/
