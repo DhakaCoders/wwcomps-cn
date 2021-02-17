@@ -98,10 +98,10 @@
 	position: absolute;
 	display: flex;
 	bottom:42px;
-	left:0px;
 	margin:0;
 	padding:0;
 	list-style:none;
+	margin-left: -1px;
 }
 .forest-proj-sec .forest-proj-slider,
 .forest-proj-sec .forest-proj-slider .slick-list,
