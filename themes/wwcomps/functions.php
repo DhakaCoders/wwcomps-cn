@@ -169,7 +169,6 @@ function news_search_pagination($query) {
     }
 return $query;
 }
- 
 add_filter('pre_get_posts','news_search_pagination');
 /**
 Debug->>
