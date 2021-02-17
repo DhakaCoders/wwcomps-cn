@@ -32,6 +32,9 @@
 }
 
 /* modal */
+.modal {
+    padding: 0;
+}
 .wgid-title-popup{
 	font-size: 22px;
 	font-family: 'LeagueSpartan-Semibold';
@@ -52,7 +55,11 @@
 }
 .modal-body i{
 	display: inline-block;
-	vertical-align: baseline;	
+	vertical-align: baseline;
+	width: 100%;	
+}
+.modal-body i img{
+	width: 100%;
 }
 .body-cont{
 	padding: 45px 5px 55px 20px;
@@ -86,6 +93,7 @@
 	align-items: center;
 	justify-content: center;
 	text-transform: uppercase;
+	padding-top: 10px;
 }
 /* ================= */
 /* == responsive == */
@@ -204,7 +212,7 @@
 		padding-bottom: 25px!important;
 	}
 	.winr-grid-item {
-    	max-width: 290px!important;
+    	max-width: 300px!important;
     	width: 100%!important;
     	margin: auto;
 	}
@@ -215,7 +223,7 @@
 		font-size: 14px;
 	}
 	.modal.show .modal-dialog{
-		/* padding: 10px 10px; */
+		padding: 10px 10px;
 	}
 	.wgid-title-popup{
 		font-size: 17px;
