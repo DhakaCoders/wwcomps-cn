@@ -50,3 +50,10 @@ form.woocommerce-cart-form {
 table.shop_table.shop_table_responsive {
     background: #fff;
 }
+.qty button.plus {
+    cursor: pointer;
+}
+
+.qty button.minus {
+    cursor: pointer;
+}

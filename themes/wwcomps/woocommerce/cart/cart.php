@@ -100,7 +100,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 								<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 								<div class="qty">
-									<input class="minus" type="button" value="-">
+									<button class="minus" type="button">-</button>
 									<?php
 									if ( $_product->is_sold_individually() ) {
 										$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -120,7 +120,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 									echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 									?>
-									<input class="plus" type="button" value="+">
+									<button class="plus" type="button">+</button>
 								</div>
 								</td>
 

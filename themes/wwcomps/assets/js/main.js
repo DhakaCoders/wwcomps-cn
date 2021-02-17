@@ -403,7 +403,7 @@ if( $('.latesCompititionsSlider').length ){
 }
 // jquery minus plus quantity
 
-/*$('.qty').each(function() {
+$('.qty').each(function() {
   var spinner = $(this),
     input = spinner.find('input[type="number"]'),
     btnUp = spinner.find('.plus'),
@@ -413,10 +413,10 @@ if( $('.latesCompititionsSlider').length ){
 
   btnUp.click(function() {
     var oldValue = parseFloat(input.val());
-    if (oldValue <= max) {
-      var newVal = oldValue;
-    } else {
+    if (oldValue < max) {
       var newVal = oldValue + 1;
+    } else {
+      var newVal = oldValue;
     }
     spinner.find("input").val(newVal);
     spinner.find("input").trigger("change");
@@ -433,26 +433,7 @@ if( $('.latesCompititionsSlider').length ){
     spinner.find("input").trigger("change");
   });
 
-});*/
+});
 new WOW().init();
-
-$('.qty').on('click', '.plus', function(e) {
-    var input = $(this).prev('input.qty');
-    var val = parseInt(input.val());
-    var step = input.attr('step');
-    step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-    input.val( val + step ).change();
-});
-
-$('.qty').on('click', '.minus', 
-    function(e) {
-    var input = $(this).next('input.qty');
-    var val = parseInt(input.val());
-    var step = input.attr('step');
-    step = 'undefined' !== typeof(step) ? parseInt(step) : 1;
-    if (val > 0) {
-        input.val( val - step ).change();
-    } 
-});
 
 })(jQuery);
