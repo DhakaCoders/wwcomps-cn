@@ -220,3 +220,13 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
 
 add_filter( 'gettext', 'projectnamespace_woocommerce_text', 30, 3 );
 
+// Hook in
+//add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
+    unset( $fields['billing']['billing_company'] ); // remove company field
+    unset($fields['order']['order_comments']);
+
+     return $fields;
+}

@@ -6,7 +6,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="fl-angle-sec-hdr">
-            <h2 class="fl-h5 flash-title"><span>My</span> Cart</h2>
+            <h2 class="fl-h5 flash-title">
+              <?php if( is_cart()){?>
+              <span>My</span> Cart
+            <?php }else { ?>
+              <?php the_title(); ?>
+            <?php } ?>
+            </h2>
           </div>
         </div>
       </div>
