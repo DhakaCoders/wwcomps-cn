@@ -13,10 +13,10 @@
 }
 .lw-bnr-item{
 	position: relative;
-	padding: 60px 0 70px;
+	padding: 60px 0 65px;
 }
 
-.lw-bnr-slider.slick-dotted.slick-slider{
+.lw-bnr-slider.lwBnrSlider{
 	margin-bottom: 0!important;
 }
 .lw-bnr-slider.slick-slider ul.slick-dots{
@@ -44,6 +44,7 @@
 	background: #fff;
 	max-width: 720px;
 	width: 100%;
+	border: 2px solid #9d9c98;
 }
 .lw-slide-item-desc > i{
 	position: absolute;
@@ -55,15 +56,14 @@
 	-o-transform: translateY(-50%);
 }
 .lw-slide-item-title{
-    font-family: 'LeagueSpartan-Medium';
+    font-size: 44px;
 	line-height: 1.2;
 	margin-bottom: 45px;
 	color: #545050;
 	text-transform: uppercase;
 }
 .lw-slide-item-title span{
-	font-size: 44px;
-	 font-family: 'LeagueSpartan-Semibold';
+	 font-family: 'LeagueSpartan-Medium';
 	 display: block;
 }
 .lw-slide-item-sub-title{
@@ -257,6 +257,12 @@
 
 /*responsive*/
 @media(max-width: 1499px){
+	.lw-slide-item-desc{
+		padding: 60px 50px;
+	}
+	.lw-slide-item-title{
+		font-size: 43px;
+	}
 	.counter-up-cntlr ul{
 		margin: 0 -20px;
 	}
@@ -279,11 +285,28 @@
 	}
 }
 @media(max-width: 1299px){
+	.lw-slide-item-desc{
+		padding: 50px 45px;
+	}
 	.htp-desc-hedding i{
 		bottom: -22px;
 	}
 }
 @media(max-width: 1199px){
+	.lucky-winner-desc-cntlr{
+		padding: 0 40px;
+	}
+	.lw-slide-item-desc{
+		max-width: 630px;
+		padding: 40px;
+	}
+	.lw-bnr-slider .slick-prev:hover{
+		color: #009245;
+	}
+	
+	.lw-slide-item-title{
+		font-size: 40px;
+	}
 	.counter-up-cntlr{
 		padding-left: 0;
 	}
@@ -307,6 +330,13 @@
 	}
 }
 @media(max-width: 991px){
+	.lw-slide-item-desc{
+		max-width: 520px;
+		padding: 30px;
+	}
+	.lw-slide-item-title{
+		font-size: 36px;
+	}
 	.counter-up-cntlr ul li{
 		width: 50%;
 		margin-bottom: 0;
@@ -320,10 +350,51 @@
 	.htp-sec-desc-cntlr{
 		max-width: 500px;
 	}
+	.counter-up-sec{
+		padding: 25px 0;
+	}
 }
 @media(max-width: 767px){
-	.counter-up-sec{
-		padding-top: 35px;
+	.lucky-winner-banner-bg .bnr-bg-rgt{
+		height: 38%;
+	}
+	.lucky-winner-banner-bg .bnr-bg-lft{
+		height: 62%;
+	}
+	.lw-slide-item-title{
+	    font-size: 	32px;
+	    margin-bottom: 20px;
+	}
+	.lw-bnr-item{
+		padding-top: 200px;
+	}
+	.lw-slide-item-desc{
+		padding: 20px;
+		text-align: center;
+	}
+	.lw-si-prize-cntlr{
+		justify-content: center;
+	}
+	.lw-si-btn .fl-btn{
+		margin: 0 auto;
+	}
+	.lucky-winner-desc-cntlr{
+		padding: 0;
+	}
+	.lw-slide-item-title span{
+		display: none;
+	}
+	.lw-slide-item-desc > i{
+		display: none;
+	}
+	.lw-si-prize-cntlr strong{
+		font-size: 24px;
+	}
+	.lw-si-prize-cntlr .price .woocommerce-Price-amount bdi{
+		font-size: 30px;
+	}
+	.lw-si-prize-cntlr .price > del{
+		font-size: 16px;
 	}
 	.counter-up-cntlr ul{
 		margin: 0 -8px;
@@ -382,6 +453,45 @@
 
 }
 @media(max-width: 575px){
+	.lucky-winner-banner-bg .bnr-bg-rgt{
+		height: 38%;
+	}
+	.lucky-winner-banner-bg .bnr-bg-lft{
+		height: 65%;
+	}
+	.lw-bnr-item{
+		padding-top: 165px;
+	}
+	.lw-slide-item-sub-title{
+		font-size: 245px;
+	}
+	.lw-si-prize-cntlr strong{
+		font-size: 20px;
+	}
+	.lw-si-prize-cntlr .price{
+		padding-right: 35px;
+	}
+	.lw-si-prize-cntlr .price .woocommerce-Price-amount bdi{
+		font-size: 26px;
+		padding-left: 5px;
+	}
+	.lw-slide-item-desc > p br{
+		display: none;
+	}
+	.lw-slide-item-title{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.lw-si-prize-cntlr .price > del{
+		font-size: 14px;
+	}
+	.lw-slide-item-desc > p{
+		margin-bottom: 1px;
+	}
+	.lw-si-prize-cntlr{
+		margin-bottom: 18px;
+	}
+
 	.counter-up-cntlr ul{
 		margin: 0 -5px;
 	}
@@ -392,9 +502,6 @@
 		font-size: 33px;
 		margin-bottom: 7px;
 
-	}
-	.counter-up-sec{
-		padding-top: 25px;
 	}
 	.counter-item{
 		padding-left: 0;
@@ -436,4 +543,9 @@
 }
 @media(max-width: 479px){
 
+}
+@media(max-width: 396px){
+	.lw-bnr-slider.slick-slider ul.slick-dots{
+		bottom: 45px;
+	}
 }

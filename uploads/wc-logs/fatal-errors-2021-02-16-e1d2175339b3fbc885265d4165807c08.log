@@ -22,3 +22,7 @@ Stack trace:
 #6 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(287): wc_lottery_Public->woocommerce_lottery_participate_template('')
 #7 C:\ in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php on line 182
 
+2021-02-16T18:45:07+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php on line 45
+
+2021-02-16T18:47:07+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\wc-functions.php on line 45
+
