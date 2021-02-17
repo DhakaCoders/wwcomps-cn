@@ -1,6 +1,6 @@
 .lucky-winner-banner{
-	min-height: 660px!important;
-	padding: 55px 0 0 0!important;
+	min-height: initial!important;
+	padding: 0!important;
 }
 .lucky-winner-banner-bg{
 
@@ -11,11 +11,19 @@
 .lucky-winner-slider{
 
 }
-.lucky-winner-slider button.slick-prev{
-	left: -47px;
+.lw-bnr-item{
+	position: relative;
+	padding: 60px 0 70px;
 }
-.lucky-winner-slider button.slick-next{
-	right: -47px;
+
+.lw-bnr-slider.slick-dotted.slick-slider{
+	margin-bottom: 0!important;
+}
+.lw-bnr-slider.slick-slider ul.slick-dots{
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
 }
 .lw-slide-item-cntlr{
 	display: none;
