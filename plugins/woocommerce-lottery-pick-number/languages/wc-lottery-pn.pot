@@ -1,0 +1,332 @@
+# Copyright (C) 2019 wpgenie
+# This file is distributed under the same license as the Woocommerce Lottery Pick Number plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Lottery Pick Number 1.2.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-lottery-pick-number\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-07-15T07:36:39+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0-alpha-f1c9941\n"
+"X-Domain: wc-lottery-pn\n"
+
+#. Plugin Name of the plugin
+msgid "Woocommerce Lottery Pick Number"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpgenie.org/woocommerce-lottery/"
+msgstr ""
+
+#. Description of the plugin
+msgid "WooCommerce Lottery plugin extension for picking lottery number(s), questions / answers and manually picking winners based on 3rd party lottery drawings."
+msgstr ""
+
+#. Author of the plugin
+msgid "wpgenie"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://wpgenie.org"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:101
+msgid "Remove this answer?"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:118
+#: \admin\class-wc-lottery-pn-admin.php:135
+#: \admin\class-wc-lottery-pn-admin.php:816
+#: \public\class-wc-lottery-pn-public.php:203
+#: \templates\single-product\tabs\lottery-history.php:57
+msgid "Ticket number"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:128
+#: \admin\class-wc-lottery-pn-admin.php:136
+#: \admin\class-wc-lottery-pn-admin.php:819
+#: \admin\partials\html-product-lottery-answers.php:7
+#: \public\class-wc-lottery-pn-public.php:222
+#: \public\class-wc-lottery-pn-public.php:232
+#: \templates\single-product\tabs\lottery-history.php:60
+msgid "Answer"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:243
+msgid "Allow ticket numbers?"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:244
+msgid "Allow customer to pick ticket number(s) "
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:252
+msgid "Randomly assign ticket number(s) without ticket number picking"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:253
+msgid "Customer gets random assing ticket number"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:261
+msgid "Sort tickets in tabs?"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:269
+msgid "Number of tickets per tab"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:281
+msgid "Manualy pick winners"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:282
+msgid "Pick winners manualy when lottery has finished."
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:290
+msgid "Force user to answer a question?"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:291
+msgid "Force user to answer a question before adding lottery number to cart"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:299
+msgid "Only alow true answers."
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:300
+msgid "Only alow users to pick correct answers"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:316
+msgid "Enter number of winning ticket. Fom 1-%d"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:337
+msgid "Manual pick text"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:338
+msgid "Some text explaining how mmanual winner picking is done."
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:637
+msgid "Lottery pick number and answer"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:642
+msgid "Show answers in history tab"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:648
+msgid "Show answers in history only when lottery is finished"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:654
+msgid "Reserve ticket number when user puts it in cart"
+msgstr ""
+
+#: \admin\class-wc-lottery-pn-admin.php:660
+msgid "Hold reserve tickets for n minutes"
+msgstr ""
+
+#: \admin\partials\html-meta-box-answers.php:8
+msgid "Question"
+msgstr ""
+
+#: \admin\partials\html-meta-box-answers.php:10
+msgid "Ask user a question."
+msgstr ""
+
+#: \admin\partials\html-meta-box-answers.php:36
+msgid "Add Answer"
+msgstr ""
+
+#: \admin\partials\html-product-lottery-answers.php:13
+msgid "True"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:101
+msgid "You already have selected maximum number of tickets!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:102
+msgid "Ticket sold!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:103
+msgid "You have already this ticket in your cart!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:104
+#: \public\class-wc-lottery-pn-public.php:313
+#: \public\class-wc-lottery-pn-public.php:344
+msgid "Sorry, you must be logged in to participate in lottery. <a href=\"%s\" class=\"button\">Login &rarr;</a>"
+msgstr "Sorry, you must be logged in to participate in this competition. <a href=\"%s\" class=\"button\">Login &rarr;</a>"
+
+#: \public\class-wc-lottery-pn-public.php:105
+msgid "Please pick a number. "
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:106
+msgid "Please answer the question."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:107
+msgid "You must pick correct answer."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:256
+msgid "Product %1$s has been removed from your cart because someone purchase that ticket number. Please add it to your cart again by <a href=\"%2$s\">clicking here</a>."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:290
+msgid "Product %1$s has not been added to your cart. Please add it to your cart again."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:295
+msgid "Product %1$s has not been added to your cart because someone puchased that ticket number. Please add it to your cart again."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:299
+msgid "Product %1$s has not been added to your cart because there is already that product with same ticket number in cart."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:305
+msgid "Product %1$s has not been added to your cart because someone reserved that ticket number. Please add it to your cart again."
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:316
+msgid "Product %1$s has not been added to your cart because you have to select ticket number!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:327
+msgid "Product %1$s has not been added to your cart because of problem with your answer!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:334
+msgid "Product %1$s has not been added to your cart because your answer is not correct. Please try it again!!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:339
+msgid "Product %1$s has not been added to your cart because there is some problem with answers. Please contact us!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:347
+msgid "Product %1$s has not been added to your cart because you have to answer question!"
+msgstr ""
+
+#: \public\class-wc-lottery-pn-public.php:369
+msgid "Ticket numbers will be reseved for %d minutes. After that someone else could reserve or buy same ticket!"
+msgstr ""
+
+#: \templates\single-product\answers.php:18
+msgid "Answer the question:"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:12
+msgid "Lottery History"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:25
+msgid "Lottery has finished"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:27
+msgid "Lottery failed because there were no minimal number of participants"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:32
+msgid "Lottery winners are"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:44
+msgid "Lottery winner is:"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:54
+msgid "Date"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:55
+msgid "User"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:99
+msgid "Lottery started"
+msgstr ""
+
+#: \templates\single-product\tabs\lottery-history.php:105
+msgid "Lottery starting"
+msgstr ""
+
+#: \templates\single-product\tickets-numbers-tabbed.php:20
+#: \templates\single-product\tickets-numbers.php:19
+msgid "Pick your ticket number(s)"
+msgstr ""
+
+#: \templates\single-product\tickets-numbers-tabbed.php:70
+#: \templates\single-product\tickets-numbers.php:37
+msgid "Sold!"
+msgstr ""
+
+#: \templates\single-product\tickets-numbers-tabbed.php:72
+#: \templates\single-product\tickets-numbers.php:39
+msgid "Already in your cart!"
+msgstr ""
+
+#: \templates\single-product\tickets-numbers-tabbed.php:74
+#: \templates\single-product\tickets-numbers.php:41
+msgid "Reserved!"
+msgstr ""
+
+#: \templates\single-product\winners.php:24
+msgid "Please be patient. We are waiting for some orders to be paid!"
+msgstr ""
+
+#: \templates\single-product\winners.php:27
+msgid "Please be patient. We are picking winners!"
+msgstr ""
+
+#: \templates\single-product\winners.php:32
+msgid "Congratulations! You are winner!"
+msgstr ""
+
+#: \templates\single-product\winners.php:34
+msgid "Sorry, better luck next time."
+msgstr ""
+
+#: \templates\single-product\winners.php:43
+#: \templates\single-product\winners.php:114
+msgid "Winners:"
+msgstr ""
+
+#: \templates\single-product\winners.php:56
+#: \templates\single-product\winners.php:83
+msgid "Ticket number: "
+msgstr ""
+
+#: \templates\single-product\winners.php:62
+#: \templates\single-product\winners.php:89
+msgid "Answer: "
+msgstr ""
+
+#: \templates\single-product\winners.php:80
+#: \templates\single-product\winners.php:129
+msgid "Winner is:"
+msgstr ""
+
+#: \templates\single-product\winners.php:97
+#: \templates\single-product\winners.php:104
+msgid "There is no winner for this lottery"
+msgstr ""
+
+#: \templates\single-product\winners.php:121
+msgid "N/A "
+msgstr ""
