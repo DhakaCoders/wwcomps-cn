@@ -32,3 +32,21 @@
     top: 0!important;
     right: 0!important;
 }
+.wc-cart-crtl {
+    float: left;
+    width: 70%;
+}
+.wc-carttotal-crtl {
+    float: left;
+    width: 30%;
+}
+.woocommerce .cart-collaterals .cart_totals, 
+.woocommerce-page .cart-collaterals .cart_totals {
+    width: inherit !important;
+}
+form.woocommerce-cart-form {
+    background: #fff;
+}
+table.shop_table.shop_table_responsive {
+    background: #fff;
+}
