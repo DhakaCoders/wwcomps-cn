@@ -55,6 +55,9 @@
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 }
+.lw-slide-item-desc-top-arrow{
+	display: none;
+}
 .lw-slide-item-title{
     font-size: 44px;
 	line-height: 1.2;
@@ -371,6 +374,17 @@
 	.lw-slide-item-desc{
 		padding: 20px;
 		text-align: center;
+		margin: 0 auto
+	}
+	.lw-slide-item-desc-top-arrow{
+		position: absolute;
+		display: block;
+		left: 50%;
+		top: -14px;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.lw-si-prize-cntlr{
 		justify-content: center;
@@ -532,7 +546,8 @@
 		margin-bottom: 10px;
 	}
 	.htp-desc-hedding i{
-		bottom: -21px;
+		bottom: -18px;
+		max-width: 80px;
 	}
 	.htp-sec-desc p{
 		margin-bottom: 20px;
