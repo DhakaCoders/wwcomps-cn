@@ -60,7 +60,6 @@
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
-	background: #fff;
 	position: relative;
 }
 
@@ -70,6 +69,7 @@
 	display: inline-block;
 	vertical-align: baseline;
 	position: relative;
+	background: #fff;
 }
 
 .filter-tabbar ul li a{
@@ -94,6 +94,7 @@
 	background: url(../images/right-arrow-border.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	z-index: 5;
 }
 .filter-tabbar ul li:last-child:after{
 	content: "";
@@ -249,18 +250,119 @@
 	.winners-grd-item-fea-img-cntlr{
 		height: 222px;
 	}
+	.pro-fea-img-cntlr {
+	    height: 222px;
+	}
+
 }
 
 @media(max-width: 767px){
-
+	.winnersSlideItem, .latesCompititionsSlideItem {
+	    padding: 0 10px 45px;
+	}
+	.lwsc-btn {
+	    padding-top: 35px;
+	}
+	.filter-tabbar ul li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.filter-tabbar ul li a{
+		font-size: 16px;
+	}
+	.filter-tabbar {
+	    margin-bottom: 50px;
+	}
 }
 
 @media(max-width: 575px){
+	.winnersSlider .winners-grd-item,
+	.latesCompititionsSlider .product-grd-item{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.lwsc-btn a{
+		font-size: 12px;
+		max-width: 220px;
+	}
+	.lwsc-btn {
+	    padding-top: 28px;
+	}
+	.filter-tabbar ul{
+		width: 100%;
+		padding-right: 20px;
+		background: transparent;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.filter-tabbar ul li{
+		width: 25%;
+		margin-bottom: 10px;
+	}
+	.filter-tabbar ul li:nth-child(4):after {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 100%;
+	    border-top: 17px solid transparent;
+	    border-bottom: 17px solid transparent;
+	    border-left: 10px solid #fff;
 
+	}
+	.filter-tabbar ul li:last-child:after{
+		border-top: 17px solid transparent;
+	    border-bottom: 17px solid transparent;
+	    border-left: 10px solid #fff;
+	}
+	.filter-tabbar ul li a {
+	    font-size: 14px;
+	}
+	.lates-winners-sec-con, .lates-compititions-sec-con {
+	    padding: 60px 0 30px;
+	}
+	.filter-tabbar {
+	    margin-bottom: 40px;
+	}
 }
 
 @media(max-width: 479px){
-	
+	.filter-tabbar ul li{
+		width: 33.3333%;
+	}
+	.filter-tabbar ul li a {
+	    font-size: 12px;
+	}
+	.filter-tabbar ul li:nth-child(3):after {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 100%;
+	    border-top: 16px solid transparent;
+	    border-bottom: 16px solid transparent;
+	    border-left: 12px solid #fff;
+
+	}
+	.filter-tabbar ul li:last-child:after{
+		border-top: 16px solid transparent;
+	    border-bottom: 16px solid transparent;
+	    border-left: 12px solid #fff;
+	}
+	.filter-tabbar ul li:nth-child(4):after{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		width: 15px;
+		background: url(../images/right-arrow-border.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 5;
+		border: none;
+	}
 
 }
 
