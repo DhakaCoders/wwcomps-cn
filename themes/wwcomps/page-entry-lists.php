@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Live Draws*/
+/*Template Name: Entry Lists*/
 get_header();
 $thisID = get_the_ID();
 ?>
