@@ -546,7 +546,8 @@
 		margin-bottom: 10px;
 	}
 	.htp-desc-hedding i{
-		bottom: -21px;
+		bottom: -18px;
+		max-width: 80px;
 	}
 	.htp-sec-desc p{
 		margin-bottom: 20px;
