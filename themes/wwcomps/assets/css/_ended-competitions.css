@@ -248,6 +248,9 @@
 	.product-grd-item-des{
 		text-align: center;
 	}
+	.pro-grd-ftr-bar:before{
+		content: none;
+	}
 }
 
 @media(max-width: 479px){
