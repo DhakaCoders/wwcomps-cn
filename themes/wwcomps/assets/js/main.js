@@ -198,6 +198,53 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
+  /*start Of Niaz*/
+
+// accordion
+$('.hh-accordion-title').click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
+    $(this).toggleClass('hh-accordion-active');
+    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
+});
+
+//Masonry
+if(windowWidth > 767) {
+  if( $('.our-proj-grid').length ){
+    $('.our-proj-grid').masonry({
+      // options
+      itemSelector: '.our-proj-grid-item',
+    });
+  };
+};
+
+// frst-project slider
+$('.frstProjSlider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: false,
+    dots: true,
+    dotsClass: 'custom_paging',
+    customPaging: function (slider, i) {
+        console.log(slider);
+        return  (i + 1);
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*start Of Noyon*/
 
   if( $('.lwBnrSlider').length ){
@@ -255,11 +302,16 @@ if( $('li.menu-item-has-children a').length ){
 
   if (windowWidth3 <= 1199) {
     $('.lw-bnr-slider button.slick-prev').css('left', LftRtOffset);
+    $('.forest-proj-slider button.slick-prev').css('left', LftRtOffset);
     $('.lw-bnr-slider button.slick-next').css('right', LftRtOffset);
+    $('.forest-proj-slider button.slick-next').css('right', LftRtOffset);
   }
   if (windowWidth3 <= 767) {
     $('.lw-bnr-slider button.slick-prev').css('top', xsTopoffset);
+    $('.lw-bnr-slider button.slick-prev').css('left', xsTopoffset);
     $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
+    $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
+
   }
 }
 leftrtslickprev();
@@ -298,39 +350,7 @@ var windowWidth4 = $(window).width();
   
 
 
-  /*start Of Niaz*/
 
-// accordion
-$('.hh-accordion-title').click(function(){
-    $(this).next().slideToggle(300);
-    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
-    $(this).toggleClass('hh-accordion-active');
-    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
-});
-
-//Masonry
-if(windowWidth > 767) {
-  if( $('.our-proj-grid').length ){
-    $('.our-proj-grid').masonry({
-      // options
-      itemSelector: '.our-proj-grid-item',
-    });
-  };
-};
-
-// frst-project slider
-$('.frstProjSlider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: false,
-    dots: true,
-    dotsClass: 'custom_paging',
-    customPaging: function (slider, i) {
-        console.log(slider);
-        return  (i + 1);
-    }
-  });
 
 
 

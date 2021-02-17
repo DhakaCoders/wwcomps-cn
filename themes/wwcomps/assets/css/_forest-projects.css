@@ -11,9 +11,6 @@
 .our-project-sec{
 	position: relative;
 }
-.forest-proj-slide-item-des{
-	max-width:728px;
-}
 .forest-proj-slide-item-des .counter-up-cntlr ul{
 	background: #195883;
 	margin: 0 -55px;
@@ -36,13 +33,13 @@
 }
 .forest-proj-slider-content .forest-proj-slide-item-des{
 	padding-bottom:3px;
-	max-width:728px;
 	padding-right:22px;
 	box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
 	-ms-box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
 	-webkit-box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
+	border:none;
 }
-.lw-slide-item-desc > i{
+.forest-proj-slide-item-des > i{
 	right:-35px;
 }
 .forest-proj-slide-item-des .counter-item{
@@ -101,7 +98,8 @@
 	margin:0;
 	padding:0;
 	list-style:none;
-	margin-left: -1px;
+	margin-left: -5px;
+	margin-right:-5px;
 }
 .forest-proj-sec .forest-proj-slider,
 .forest-proj-sec .forest-proj-slider .slick-list,
@@ -280,8 +278,14 @@
 	max-height:150px;
 }
 @media(max-width:1499px){
+	.forest-proj-slide-item-des .counter-up-cntlr ul{
+		margin-left:-47px;
+	}
 }
 @media(max-width:1399px){
+	.forest-proj-slide-item-des .counter-up-cntlr ul {
+	    margin-left: -42px;
+	}
 	.proj-location span{
 		font-size:18px;
 	}
@@ -301,6 +305,9 @@
 	}
 }
 @media(max-width:1199px){
+	.forest-proj-slide-item-des .counter-up-cntlr ul {
+	    margin-left: -37px;
+	}
 	.proj-btn {
 	    right: 19px;
 	    margin: 0 -6px;
@@ -325,6 +332,9 @@
 	}*/
 }
 @media(max-width:991px){
+	.forest-proj-slide-item-des .counter-up-cntlr ul {
+	    margin-left: -27px;
+	}
 	.proj-btn {
 	    right: 13px;
 	    margin: 0 -4px;
@@ -353,6 +363,29 @@
 	}
 }
 @media(max-width:767px){
+	.forest-proj-slide-item-des .counter-up-cntlr ul {
+	    margin-left: -17px;
+	}
+	.forest-proj-slider-content .forest-proj-slide-item-des{
+		box-shadow:none;
+		border:none;
+		margin:0 auto;
+	}
+	.forest-proj-slider-content .lw-slide-item-desc > i{
+			display: block!important;
+		}
+	.forest-proj-slider-content .lw-slide-item-desc > i .desktop{
+		display: none;
+	}
+	.forest-proj-slider-content .lw-slide-item-desc > i .mobile{
+		display: block;
+	}
+	.forest-proj-slide-item .bnr-bg-rgt{
+		height:38%!important;
+	}
+	.forest-proj-slide-item .bnr-bg-lft{
+		height:62%!important;
+	}
 	.our-project-grid-items ul li{
 		max-width:100%;
 	}
