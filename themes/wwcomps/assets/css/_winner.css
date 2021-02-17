@@ -69,7 +69,7 @@
 .body-cont p span{
 	font-weight: 500;
 }
-.body-cont p a{
+.body-cont p strong{
 	color: #35AA5F;
 	padding-left: 5px;
 }
@@ -130,7 +130,7 @@
 		margin: 0 -5px -20px!important;
 	}
 	.winr-grid-cntrl ul li{
-		padding: 0 5px 20px!important;
+		padding: 0 5px 10px!important;
 	}
 	.wgid-title a{
 		font-size: 17px;
@@ -154,7 +154,7 @@
 
 @media(max-width: 767px){
 	.winr-fea-img-cntlr {
-    	height: 172px!important;
+    	height: 250px!important;
 	}
 	.winr-grid-cntrl ul li{
 		width: 50%!important
@@ -180,7 +180,7 @@
 
 @media(max-width: 639px){
 	.winr-fea-img-cntlr {
-    	height: 190px!important;
+    	height: 210px!important;
 	}
 	.body-cont p{
 		font-size: 14px;
@@ -204,18 +204,18 @@
 		padding-bottom: 25px!important;
 	}
 	.winr-grid-item {
-    	max-width: 350px;
-    	width: 100%;
+    	max-width: 290px!important;
+    	width: 100%!important;
     	margin: auto;
 	}
 	.winr-fea-img-cntlr {
-    	height: 250px!important;
+    	height: 217px!important;
 	}
 	.winr-grd-date span{
 		font-size: 14px;
 	}
 	.modal.show .modal-dialog{
-		padding: 10px 10px;
+		/* padding: 10px 10px; */
 	}
 	.wgid-title-popup{
 		font-size: 17px;
@@ -226,9 +226,6 @@
 }
 
 @media(max-width: 479px){
-	.winr-fea-img-cntlr {
-    	height: 288px!important;
-	}
 	.body-cont p{
 		font-size: 12px;
 		line-height: 2;
@@ -253,7 +250,5 @@
 }
 
 @media(max-width: 359px){
-	.winr-fea-img-cntlr {
-    	height: 217px!important;
-	}
+
 }
