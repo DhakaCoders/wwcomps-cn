@@ -302,16 +302,11 @@ if( $('li.menu-item-has-children a').length ){
 
   if (windowWidth3 <= 1199) {
     $('.lw-bnr-slider button.slick-prev').css('left', LftRtOffset);
-    $('.forest-proj-slider button.slick-prev').css('left', LftRtOffset);
     $('.lw-bnr-slider button.slick-next').css('right', LftRtOffset);
-    $('.forest-proj-slider button.slick-next').css('right', LftRtOffset);
   }
   if (windowWidth3 <= 767) {
     $('.lw-bnr-slider button.slick-prev').css('top', xsTopoffset);
-    $('.lw-bnr-slider button.slick-prev').css('left', xsTopoffset);
     $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
-    $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
-
   }
 }
 leftrtslickprev();
