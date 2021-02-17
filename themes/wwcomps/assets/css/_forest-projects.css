@@ -7,6 +7,7 @@
 	background:#175884;
 	z-index:1;
 }
+
 .our-project-sec{
 	position: relative;
 }
@@ -33,10 +34,16 @@
 	padding-left:0px;
 	position: relative;
 }
-.forest-proj-slide-item-des{
+.forest-proj-slider-content .forest-proj-slide-item-des{
 	padding-bottom:3px;
 	max-width:728px;
 	padding-right:22px;
+	box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
+	-ms-box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
+	-webkit-box-shadow: 8px 8px 2px rgba(35, 31, 32,0.6);
+}
+.lw-slide-item-desc > i{
+	right:-35px;
 }
 .forest-proj-slide-item-des .counter-item{
 	padding-top:55px;
@@ -52,14 +59,14 @@
     justify-content: center;
     align-items: center;
 }
-.banner-bg-rgt-cntlr {
-  max-width: 65.3%;
-  width:100%;
-}
-.forest-proj-sec .bnr-bg-rgt{
-	max-width:100%!important;
+
+
+.forest-proj-sec .lucky-winner-slider{
+	max-width:100%;
 	width:100%;
-	background-attachment:scroll;
+}
+.forest-proj-sec .lw-slide-item-rgt-cntlr{
+	display: flex;
 }
 .forest-proj-sec{
 	padding-bottom:114px!important;
@@ -96,20 +103,33 @@
 	padding:0;
 	list-style:none;
 }
-.forest-proj-sec .lucky-winner-slider,
-.forest-proj-sec .lucky-winner-slider .slick-list,
-.forest-proj-sec .lucky-winner-slider .slick-track,
-.forest-proj-sec .lucky-winner-slider .lw-slide-item-cntlr,
-.forest-proj-sec .lucky-winner-slider .banner-bg,
-.forest-proj-sec .lucky-winner-slider .bnr-bg-lft,
-.forest-proj-sec .lucky-winner-slider .bnr-bg-rgt{
+.forest-proj-sec .forest-proj-slider,
+.forest-proj-sec .forest-proj-slider .slick-list,
+.forest-proj-sec .forest-proj-slider .slick-track,
+.forest-proj-sec .forest-proj-slider .forest-proj-slide-item,
+.forest-proj-sec .forest-proj-slider .banner-bg,
+.forest-proj-sec .forest-proj-slider .bnr-bg-lft,
+.forest-proj-sec .forest-proj-slider .bnr-bg-rgt{
 	height:100%;
 }
-/*.forest-proj-sec .slick-slider ul.slick-dots{
+.forest-proj-slider-cntlr{
 	position: absolute;
-	top: 0;
+	left: 0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+.forest-proj-slider-content{
+	width:100%;
+	z-index:1;
+}
+.forest-proj-sec{
+	min-height:initial;
+}
+.forest-proj-sec .banner-bg{
+	position: initial;
 
-}*/
+}
 
 
 
