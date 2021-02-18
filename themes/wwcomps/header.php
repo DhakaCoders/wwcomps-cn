@@ -72,6 +72,15 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('logo_header', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $smedias = get_field('social_medias', 'options');
+?>
   <div class="bdoverlay"></div>
 <header class="header-warp">
   <div class="top-bar">
@@ -79,62 +88,58 @@
       <div class="row">
         <div class="col-md-12">
           <div class="top-bar-cntlr">
+            <?php if(!empty($smedias)): ?>
             <div class="top-bar-socials">
               <ul class="reset-list">
-                <li>
-                  <a href="#">
-                    <i>
-                      <svg class="facebook-icon" width="7.713" height="14.854" viewBox="0 0 7.713 14.854" fill="#fff">
-                      <use xlink:href="#facebook-icon"></use> </svg>
-                    </i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i>
-                      <svg class="instagram-icon" width="13.711" height="13.711" viewBox="0 0 13.711 13.711" fill="#fff">
-                      <use xlink:href="#instagram-icon"></use> </svg>
-                    </i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i>
-                      <svg class="twiter-icon" width="14.069" height="11.426" viewBox="0 0 14.069 11.426" fill="#fff">
-                      <use xlink:href="#twiter-icon"></use> </svg>
-                    </i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i>
-                      <svg class="youtube-icon" width="15.996" height="11.426" viewBox="0 0 15.996 11.426" fill="#fff">
-                      <use xlink:href="#youtube-icon"></use> </svg>
-                    </i>
-                  </a>
-                </li>
-
+                <?php foreach($smedias as $smedia):  ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                      <?php echo $smedia['icon']; ?>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
               </ul>
             </div>
+            <?php endif; ?>
             <div class="top-bar-right">
               <ul class="reset-list">
+              <?php 
+              if( is_user_logged_in() ){
+                foreach ( wc_get_account_menu_items() as $endpoint => $label ) : 
+                  if($endpoint == 'customer-logout'):
+              ?>
                 <li>
                   <div class="top-bar-rt-login top-bar-rt-col">
-                    <a href="#">
+                    <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>">
+                      <span>Logout</span>
+                      <i><img src="<?php echo THEME_URI; ?>/assets/images/user-icon.svg" alt=""></i>
+                    </a>
+                  </div>
+                </li>
+              <?php endif; endforeach; 
+              } else {
+              ?>
+                <li>
+                  <div class="top-bar-rt-login top-bar-rt-col">
+                    <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
                       <span>Login</span>
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/user-icon.svg" alt=""></i>
                     </a>
                   </div>
                 </li>
-
+              <?php } if( is_user_logged_in() ){?>
                 <li>
                   <div class="top-bar-rt-register top-bar-rt-col">
-                    <a href="#"><span>Register</span></a>
+                    <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><span>My Account</span></a>
                   </div>
                 </li>
+              <?php }else{ ?>
+                <li>
+                  <div class="top-bar-rt-register top-bar-rt-col">
+                    <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><span>Register</span></a>
+                  </div>
+                </li>
+              <?php } ?>
               </ul>
               
               
@@ -151,11 +156,13 @@
         <div class="col-md-12">
           <div class="header-cntlr">
             <div class="hdr-left">
+              <?php if( !empty( $logo_tag ) ) :?>
               <div class="logo">
-                <a href="#">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt="">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
                 </a>
               </div>
+              <?php endif; ?>
             </div>
             <div class="hdr-right">
               <div class="humberger-cntlr">
@@ -167,28 +174,25 @@
               </div>
               <div class="hdr-menu">
                 <nav class="main-nav">
-                  <ul class="clearfix reset-list">
-                    <li class="current-menu-item"><a href="#">latest competitions</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">entry lists</a>
-                      <ul class="sub-menu" style="">
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                        <li><a href="#">Sub Menu</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">live draws</a></li>
-                    <li><a href="#">winners</a></li>
-                    <li><a href="#">forest projects</a></li>
-                    <li><a href="#">how it</a></li>
-                  </ul>
+                <?php 
+                  $mmenuOptions = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => false
+                    );
+                  wp_nav_menu( $mmenuOptions ); 
+                ?>
                 </nav>
               </div>
               <div class="hdr-add-to-card">
                 <div class="hdr-add-to-card-icon">
-                  <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/Cart-icon.svg" alt=""></a>
-                  <span class="hdr-add-to-card-items">2</span>
+                  <a href="<?php echo wc_get_cart_url(); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/Cart-icon.svg" alt=""></a>
+                  <?php if(WC()->cart->get_cart_contents_count() > 0) {
+                      echo sprintf ( '<span class="hdr-add-to-card-items">%d</span>', WC()->cart->get_cart_contents_count() );
+                    } else {
+                      echo sprintf ( '<span>%d</span>', 0 );
+                    }
+                  ?>
                 </div>
               </div>
             </div>
@@ -203,9 +207,13 @@
 <div class="xs-mbl-menu-cntlr">
   <div class="xs-mbl-menu-top-wrap">
     <div class="xs-mbl-menu-top">
+      <?php if( !empty( $logo_tag ) ) :?>
       <div class="xs-mmt-logo">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg" alt=""></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <?php echo $logo_tag; ?>
+        </a>
       </div>
+      <?php endif; ?>
       <div class="xs-mmt-close-icon">
         <div class="close-icon humberger-icon">
           <span></span>
@@ -217,22 +225,14 @@
 
   <div class="xs-mbl-menu">
     <nav class="main-nav">
-      <ul class="clearfix reset-list">
-        <li class="current-menu-item"><a href="#">latest competitions</a></li>
-        <li class="menu-item-has-children">
-          <a href="#">entry lists</a>
-          <ul class="sub-menu" style="">
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-            <li><a href="#">Sub Menu</a></li>
-          </ul>
-        </li>
-        <li><a href="#">live draws</a></li>
-        <li><a href="#">winners</a></li>
-        <li><a href="#">forest projects</a></li>
-        <li><a href="#">how it</a></li>
-      </ul>
+      <?php 
+        $mmenuOptions = array( 
+            'theme_location' => 'cbv_main_menu', 
+            'menu_class' => 'clearfix reset-list',
+            'container' => false
+          );
+        wp_nav_menu( $mmenuOptions ); 
+      ?>
     </nav>
   </div>
 </div>

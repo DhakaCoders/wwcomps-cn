@@ -170,51 +170,43 @@
   </div>
 </section>
 
-
+<?php
+  $showhidecounter = get_field('showhidecounter', HOMEID);
+  if( $showhidecounter ):
+    $counterups = get_field('counterups', HOMEID);
+?>
 <section class="counter-up-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="counter-up-cntlr">
+          <?php if( $counterups ): ?>
           <ul class="reset-list">
+            <?php 
+            foreach( $counterups as  $counter ): 
+            $symbol = !empty($counter['symbol'])?$counter['symbol']:'';
+            ?>
             <li>
               <div class="counter-item">
-                <div class="counter-item-img"><img src="<?php echo THEME_URI; ?>/assets/images/counter-item-img-001.svg" alt=""></div>
-                <strong class="number-of-counter"><span class="counter">1900</span>+</strong>
-                <h6 class="counter-item-sub-title">TICKETS SOLD</h6>
-              </div>
-            </li>
+                <div class="counter-item-img">
+                <?php if(!empty($counter['icon'])) echo cbv_get_image_tag($counter['icon']); ?>
+                </div>
+                <?php 
+                if( !empty($counter['value'])) printf('<strong class="number-of-counter"><span class="counter">%s</span>%s</strong>', $counter['value'], $symbol); 
 
-            <li>
-              <div class="counter-item">
-                <div class="counter-item-img"><img src="<?php echo THEME_URI; ?>/assets/images/counter-item-img-002.svg" alt=""></div>
-                <strong class="number-of-counter"><span class="counter">359</span></strong>
-                <h6 class="counter-item-sub-title">TICKETS SOLD</h6>
+                if( !empty($counter['title'])) printf('<h6 class="counter-item-sub-title">%s</h6>', $counter['title']); 
+                ?>
               </div>
             </li>
-
-            <li>
-              <div class="counter-item">
-                <div class="counter-item-img"><img src="<?php echo THEME_URI; ?>/assets/images/counter-item-img-003.svg" alt=""></div>
-                <strong class="number-of-counter"><span class="counter">4421</span>+</strong>
-                <h6 class="counter-item-sub-title">TICKETS SOLD</h6>
-              </div>
-            </li>
-
-            <li>
-              <div class="counter-item">
-                <div class="counter-item-img"><img src="<?php echo THEME_URI; ?>/assets/images/counter-item-img-004.svg" alt=""></div>
-                <strong class="number-of-counter"><span class="counter">66</span>K</strong>
-                <h6 class="counter-item-sub-title">TICKETS SOLD</h6>
-              </div>
-            </li>
+            <?php endforeach; ?>
           </ul>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 
 <section class="lates-compititions-section">
   <div class="fl-angle-hdr">
@@ -402,9 +394,15 @@
 
 
 <section class="left-right-desc">
+<?php
+  $showhideintro = get_field('showhideintro', HOMEID);
+  if( $showhideintro ):
+    $intro = get_field('introsec', HOMEID);
+    $bgimg = !empty($intro['image'])?cbv_get_image_src($intro['image']):THEME_URI.'/assets/images/htp-banner-lft-img.jpg';
+?>
   <div class="how-to-play-wrap page-banner-section left-right-desc-item right-desc-item">
     <div class="banner-bg htp-banner-bg">
-      <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/htp-banner-lft-img.jpg')"></div>
+      <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo $bgimg; ?>')"></div>
       <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/htp-banner-rt-img.jpg')"></div>
     </div>
     <div class="container">
@@ -412,53 +410,62 @@
         <div class="col-md-12">
           <div class="htp-sec-desc-cntlr">
             <div class="htp-desc-hedding">
-              <h3 class="htp-desc-title fl-h4"><span>HOW TO </span> PLAY</h3>
+              <?php if( !empty($intro['title']) ) printf('<h3 class="htp-desc-title fl-h4">%s</h3>', $intro['title'] ); ?>
               <i><img src="<?php echo THEME_URI; ?>/assets/images/blue-arrow.png" alt=""></i>
             </div>
             <div class="htp-sec-desc">
               <i><img src="<?php echo THEME_URI; ?>/assets/images/white-angle-left.png" alt=""></i>
-              <h6 class="htp-desc-sub-title fl-h5">Proin gravida velit auctor aliquet aenean sollicitudin, lorem quis bibendum auctor.</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non nunc eget lectus consectetur pharetra non in dolor. Phasellus tortor mi, imperdiet porta gravida commodo est id,  iaculis lectus. Sed pretium blandit felis, id tincidunt purus feugiat eu. Nunc id orci porta, iaculis mi nor. 
-              </p>
-              <div class="htp-desc-button">
-                <a class="fl-btn" href="#">READ MORE</a>
-              </div>
+              <?php 
+                if( !empty($intro['subtitle']) ) printf('<h6 class="htp-desc-sub-title fl-h5">%s</h6>', $intro['subtitle'] ); 
+                if(!empty($intro['description'])) echo wpautop( $intro['description']);
+                $link = $intro['link'];
+                if( is_array( $link ) &&  !empty( $link['url'] ) ){
+                    printf('<div class="htp-desc-button"><a class="fl-btn" href="%s" target="%s">%s</a></div>', $link['url'], $link['target'], $link['title']); 
+                }
+              ?>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
+<?php endif; ?>
+<?php
+  $showhideintro_2 = get_field('showhideintro_2', HOMEID);
+  if( $showhideintro_2 ):
+    $intro2 = get_field('introsec_2', HOMEID);
+    $bgimg2 = !empty($intro2['image'])?cbv_get_image_src($intro2['image']):THEME_URI.'/assets/images/rstsn-projects-bnr-rt-img.jpg';
+?>
   <div class="how-to-play-wrap page-banner-section rstsn-projects-sec left-right-desc-item">
     <div class="banner-bg rstsn-projects-bg">
       <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hit-bnr-page-lft-img.jpg')"></div>
-      <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/rstsn-projects-bnr-rt-img.jpg')"></div>
+      <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo $bgimg2; ?>')"></div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="htp-sec-desc-cntlr rstsn-projects-desc-cntlr">
             <div class="htp-desc-hedding">
-              <h3 class="htp-desc-title">RESTORATION PROJECTS</h3>
+              <?php if( !empty($intro2['title']) ) printf('<h3 class="htp-desc-title">%s</h3>', $intro2['title'] ); ?>
               <i><img src="<?php echo THEME_URI; ?>/assets/images/blue-arrow.png" alt=""></i>
             </div>
             <div class="htp-sec-desc rstsn-projects-desc">
               <i><img src="<?php echo THEME_URI; ?>/assets/images/white-angle-right.png" alt=""></i>
-              <h6 class="htp-desc-sub-title">Proin gravida velit auctor aliquet aenean sollicitudin, lorem quis bibendum auctor.</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non nunc eget lectus consectetur pharetra non in dolor. Phasellus tortor mi, imperdiet porta gravida commodo est id,  iaculis lectus. Sed pretium blandit felis, id tincidunt purus feugiat eu. Nunc id orci porta, iaculis mi nor. 
-              </p>
-              <div class="htp-desc-button">
-                <a class="fl-btn" href="#">READ MORE</a>
-              </div>
+              <?php 
+                if( !empty($intro['subtitle']) ) printf('<h6 class="htp-desc-sub-title">%s</h6>', $intro['subtitle'] ); 
+                if(!empty($intro['description'])) echo wpautop( $intro['description']);
+                $link = $intro['link'];
+                if( is_array( $link ) &&  !empty( $link['url'] ) ){
+                    printf('<div class="htp-desc-button"><a class="fl-btn" href="%s" target="%s">%s</a></div>', $link['url'], $link['target'], $link['title']); 
+                }
+              ?>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+<?php endif; ?>
 </section>
 
 

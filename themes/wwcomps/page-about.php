@@ -5,7 +5,7 @@
 get_header(); 
 $thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
-$bgimg = !empty($intro['image'])?cbv_get_image_src($intro['image']):THEME_URI.'/<?php echo THEME_URI; ?>/assets/images/ab-bnr-page-rgt-img.jpg';
+$bgimg = !empty($intro['image'])?cbv_get_image_src($intro['image']):THEME_URI.'/assets/images/ab-bnr-page-rgt-img.jpg';
 ?>
 <section class="fl-angle-hdr-cntlr">
   <div class="fl-angle-hdr">

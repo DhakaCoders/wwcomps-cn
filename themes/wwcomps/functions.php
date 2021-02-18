@@ -24,6 +24,7 @@ if( !function_exists('cbv_theme_setup') ){
         }
         add_image_size( 'winnergrid', 346, 250, true );
         add_image_size( 'gallerygrid', 324, 350, true );
+        add_image_size( 'projectgrid', 526, 268, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -38,9 +39,10 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
-            'cbv_ftb_menu' => __( 'Copyright Menu', THEME_NAME )
+            'cbv_main_menu' => __( 'Main Menu', THEME_NAME ),
+            'cbv_fta_menu1' => __( 'Footer Menu 1', THEME_NAME ),
+            'cbv_fta_menu2' => __( 'Footer Menu 2', THEME_NAME ),
+            'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME )
         ) );
 
     }
