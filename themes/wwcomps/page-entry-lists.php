@@ -1,7 +1,7 @@
 <?php 
 /*Template Name: Entry Lists*/
 get_header();
-//$thisID = get_the_ID();
+$thisID = get_the_ID();
 ?>
 <section class="entry-lists">
   <div class="fl-angle-hdr">

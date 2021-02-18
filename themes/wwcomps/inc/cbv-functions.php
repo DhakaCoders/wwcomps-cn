@@ -190,7 +190,23 @@ function get_link_by_page_template( $pagetemplate ){
     }
   return $pagelink;
 }
-
+function get_id_by_page_template( $pagetemplate ){
+    $pageID = '';
+    if( !empty($pagetemplate) ){
+      $page_details = get_pages( array(
+       'post_type' => 'page',
+       'meta_key' => '_wp_page_template',
+       'hierarchical' => 0,
+       'meta_value' => $pagetemplate
+      ));
+      if($page_details){
+        foreach($page_details as $page_detail){
+          $pageID = $page_detail->ID;
+        }
+      }
+    }
+  return $pageID;
+}
 function get_title_by_page_template( $pagetemplate ){
     global $post;
 
