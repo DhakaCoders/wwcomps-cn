@@ -22,7 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
         if(function_exists('add_theme_support')) {
             add_theme_support('category-thumbnails');
         }
-        //add_image_size( 'postsingle', 926, 550, true );
+        add_image_size( 'winnergrid', 346, 250, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -162,6 +162,10 @@ function news_search_pagination($query) {
     if (is_search() && $query->is_main_query() && !is_admin() ) {
         $query->set('post_type',array('post'));
         $query->set( 'posts_per_page', 9 );
+    }
+    if (is_tax('winners_cat') && $query->is_main_query() && !is_admin() ) {
+        $query->set('competition_winners',array('post'));
+        $query->set( 'posts_per_page', 4 );
     }
 return $query;
 }

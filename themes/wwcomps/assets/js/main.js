@@ -198,6 +198,53 @@ google.maps.event.addDomListener(window, 'load', initialize);
 })();
 
 
+  /*start Of Niaz*/
+
+// accordion
+$('.hh-accordion-title').click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
+    $(this).toggleClass('hh-accordion-active');
+    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
+});
+
+//Masonry
+if(windowWidth > 767) {
+  if( $('.our-proj-grid').length ){
+    $('.our-proj-grid').masonry({
+      // options
+      itemSelector: '.our-proj-grid-item',
+    });
+  };
+};
+
+// frst-project slider
+$('.frstProjSlider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: false,
+    dots: true,
+    dotsClass: 'custom_paging',
+    customPaging: function (slider, i) {
+        console.log(slider);
+        return  (i + 1);
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*start Of Noyon*/
 
   if( $('.lwBnrSlider').length ){
@@ -245,13 +292,42 @@ if( $('li.menu-item-has-children a').length ){
    var ConWidth = $(".container").width();
    var LftRtOffset = (windowWidth3 - ConWidth) / 2;
    var leftMargin = LftRtOffset -50;
+   /*767*/
+   var xsTopoffset1 = $('.bnr-bg-rgt').height();
+   var xsTopoffset = xsTopoffset1 / 2;
   $('.lw-bnr-slider button.slick-prev').css('left', leftMargin);
+  $('.forest-proj-slider button.slick-prev').css('left', leftMargin);
   $('.lw-bnr-slider button.slick-next').css('right', leftMargin);
-};
+  $('.forest-proj-slider button.slick-next').css('right', leftMargin);
+
+  if (windowWidth3 <= 1199) {
+    $('.lw-bnr-slider button.slick-prev').css('left', LftRtOffset);
+    $('.forest-proj-slider button.slick-prev').css('left', LftRtOffset);
+    $('.lw-bnr-slider button.slick-next').css('right', LftRtOffset);
+    $('.forest-proj-slider button.slick-next').css('right', LftRtOffset);
+  }
+  if (windowWidth3 <= 767) {
+    $('.lw-bnr-slider button.slick-prev').css('top', xsTopoffset);
+    $('.forest-proj-slider button.slick-prev').css('top', xsTopoffset);
+    $('.lw-bnr-slider button.slick-next').css('top', xsTopoffset);
+    $('.forest-proj-slider button.slick-next').css('top', xsTopoffset);
+  }
+}
 leftrtslickprev();
 $(window).resize(function(){
   leftrtslickprev();
 });
+var windowWidth4 = $(window).width();
+
+/*if (windowWidth4 <= 1199) {
+  var windowWidth5 = $(window).width();
+  var ConWidth2 = $(".container").width();
+  var LftRtOffset2 = (windowWidth5 - ConWidth2) / 2;
+  $('.lw-bnr-slider button.slick-prev').css('left', LftRtOffset2);
+  $('.lw-bnr-slider button.slick-next').css('right', LftRtOffset2);
+}*/
+
+
 
   /*start Of Shariful*/
 
@@ -273,41 +349,7 @@ $(window).resize(function(){
   
 
 
-  /*start Of Niaz*/
 
-// accordion
-$('.hh-accordion-title').click(function(){
-    $(this).next().slideToggle(300);
-    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
-    $(this).toggleClass('hh-accordion-active');
-    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
-});
-
-//Masonry
-if(windowWidth > 767) {
-  if( $('.our-proj-grid').length ){
-    $('.our-proj-grid').masonry({
-      // options
-      itemSelector: '.our-proj-grid-item',
-    });
-  };
-};
-
-// frst-project slider
-$('.frstProjSlider').slick({
-    prevArrow: $('.slick-arrows .pt-slick-prev'),
-    nextArrow: $('.slick-arrows .pt-slick-next'),
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: false,
-    dots: true,
-    dotsClass: 'custom_paging',
-    customPaging: function (slider, i) {
-        console.log(slider);
-        return  (i + 1);
-    }
-  });
 
 
 
@@ -321,6 +363,7 @@ function attrvaluupdate(){
   var containerWidth = $('.container').width();
   var leftOffsetCal = ((windowWidth2 - containerWidth ) / 2)+1;
   $('.fl-angle-hdr-join').css('width', leftOffsetCal );
+  $('.custom_paging').css('left',leftOffsetCal);
 };
 attrvaluupdate();
 $(window).resize(function(){
@@ -401,8 +444,39 @@ if( $('.latesCompititionsSlider').length ){
       ]
     });
 }
+// jquery minus plus quantity
 
+$('.qty').each(function() {
+  var spinner = $(this),
+    input = spinner.find('input[type="number"]'),
+    btnUp = spinner.find('.plus'),
+    btnDown = spinner.find('.minus'),
+    min = 1,
+    max = input.attr('max');
 
-    new WOW().init();
+  btnUp.click(function() {
+    var oldValue = parseFloat(input.val());
+    if (oldValue < max) {
+      var newVal = oldValue + 1;
+    } else {
+      var newVal = oldValue;
+    }
+    spinner.find("input").val(newVal);
+    spinner.find("input").trigger("change");
+  });
+
+  btnDown.click(function() {
+    var oldValue = parseFloat(input.val());
+    if (oldValue <= min) {
+      var newVal = oldValue;
+    } else {
+      var newVal = oldValue - 1;
+    }
+    spinner.find("input").val(newVal);
+    spinner.find("input").trigger("change");
+  });
+
+});
+new WOW().init();
 
 })(jQuery);
