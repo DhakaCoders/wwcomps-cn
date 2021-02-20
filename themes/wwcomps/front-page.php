@@ -173,6 +173,7 @@ get_header(); ?>
                 $thumID = get_post_thumbnail_id(get_the_ID());
                 $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
                 $pp_max_ticket = get_post_meta(get_the_ID(), '_max_tickets_per_user', true);
+                $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
                 ?> 
                 <div class="latesCompititionsSlideItem all">
                   <div class="product-grd-item">
@@ -192,7 +193,18 @@ get_header(); ?>
                     <div class="pro-grd-ftr-bar">
                       <div class="pro-grd-date">
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/days-icon.svg"></i>
-                        <span>14 days left</span>
+                        <?php 
+                          if( !empty( $_lottery_dates_to ) ){
+                            $dateDiff = dateDiffInDays( $_lottery_dates_to );
+                            if( $dateDiff > 1 ){
+                               echo "<span>$dateDiff days left</span>";
+                            }elseif( $dateDiff == 1 && $dateDiff < 0 ){
+                                echo "<span>$dateDiff day left</span>";
+                            }else{
+                                echo '<span>0 day left</span>';
+                            }
+                          }
+                        ?>
                       </div>
                       <?php if( !empty($pp_max_ticket) ): ?>
                       <div class="pro-grd-time">
@@ -235,6 +247,7 @@ get_header(); ?>
                 $thumID = get_post_thumbnail_id(get_the_ID());
                 $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
                 $pp_max_ticket = get_post_meta(get_the_ID(), '_max_tickets_per_user', true);
+                $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
                 ?> 
                 <div class="latesCompititionsSlideItem <?php echo $comp_term->slug; ?>">
                   <div class="product-grd-item">
@@ -251,7 +264,18 @@ get_header(); ?>
                     <div class="pro-grd-ftr-bar">
                       <div class="pro-grd-date">
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/days-icon.svg"></i>
-                        <span>14 days left</span>
+                        <?php 
+                          if( !empty( $_lottery_dates_to ) ){
+                            $dateDiff = dateDiffInDays( $_lottery_dates_to );
+                            if( $dateDiff > 1 ){
+                               echo "<span>$dateDiff days left</span>";
+                            }elseif( $dateDiff == 1 && $dateDiff < 0 ){
+                                echo "<span>$dateDiff day left</span>";
+                            }else{
+                                echo '<span>0 day left</span>';
+                            }
+                          }
+                        ?>
                       </div>
                       <?php if( !empty($pp_max_ticket) ): ?>
                       <div class="pro-grd-time">

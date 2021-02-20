@@ -50,7 +50,9 @@ $thisID = get_the_ID();
                   </div>
                   <?php if( !empty($intro['published_date']) ) printf('<div class="publish-date"><p>Publish on:<span> %s</span></p></div>', $intro['published_date']); ?>
                   <?php if( !empty($intro['draw_date']) ) printf('<div class="drwan-date"><p>Drawn on:<span> %s</span></p></div>', $intro['draw_date']); ?>
-                  <a class="fl-btn entry-lst-btn" href="#">view</a>
+                  <?php if( !empty($intro['download_file']) ): ?>
+                    <a class="fl-btn entry-lst-btn" href="<?php echo $intro['download_file']; ?>" target="_blank">view</a>
+                  <?php endif; ?>
                 </div>
               </li>
               <?php endwhile; ?>

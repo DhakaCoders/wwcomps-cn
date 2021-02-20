@@ -143,6 +143,8 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         $thumID = get_post_thumbnail_id($product->get_id());
         $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
         $pp_max_ticket = get_post_meta($product->get_id(), '_max_tickets_per_user', true);
+        $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
+
         echo '<div class="product-grd-item">';
         echo '<div class="pro-fea-img-cntlr">';
         echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
@@ -160,7 +162,16 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo '<div class="pro-grd-ftr-bar">';
         echo '<div class="pro-grd-date">';
         echo '<i><img src="'.THEME_URI.'/assets/images/days-icon.svg"></i>';
-        echo '<span>14 days left</span>';
+        if( !empty( $_lottery_dates_to ) ){
+            $dateDiff = dateDiffInDays( $_lottery_dates_to );
+            if( $dateDiff > 1 ){
+               echo "<span>$dateDiff days left</span>";
+            }elseif( $dateDiff == 1 && $dateDiff < 0 ){
+                echo "<span>$dateDiff day left</span>";
+            }else{
+                echo '<span>0 day left</span>';
+            }
+        }
         echo '</div>';
         if( !empty($pp_max_ticket) ):
         echo '<div class="pro-grd-time">';
@@ -186,7 +197,9 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 
 add_action('wc_top_title_text', 'add_custom_text_box_top_title', 5, 0);
 function add_custom_text_box_top_title() {
-    echo '<p>PLAY AND PLANT FOR A <strong>CHANCE TO WIN</strong></p>';
+    global $product;
+    $toptext = get_field('product_text', $product->get_id());
+    if( !empty($toptext) ) printf('<p>%s</p>', $toptext);
 }
 
 add_action('lottery_price', 'get_lottery_price');
@@ -202,8 +215,20 @@ function get_lottery_price(){
 add_action('wc_short_description', 'get_product_short_description');
 function get_product_short_description(){
     global $product;
-    $custom_text = get_the_excerpt();
-    echo '<div class="fl-product-summary-txt">'.wpautop($custom_text).'</div>';
+    //$custom_text = get_the_excerpt();
+    $pp_max_ticket = get_post_meta($product->get_id(), '_max_tickets_per_user', true);
+    echo '<div class="fl-product-summary-txt">';
+    echo '<h4>RULES TO PLAY</h4>';
+    echo '<ul>';
+    echo '<li>Answer correct competition question below</li>';
+    if( !empty($pp_max_ticket) ):
+        echo '<li>Choose how many tickets you want to play, Max '.$pp_max_ticket.' per person</li>';
+    endif;
+    echo '<li>Competition will close early if all entries are sold prior to end date</li>';
+    echo '<li>All competition profits go towards forest restoration projects see here</li>';
+    echo '<li>For postal entry please see here</li>';
+    echo '</ul>';
+    echo '</div>';
 }
 add_filter( 'woocommerce_get_stock_html', '__return_empty_string', 10, 2 );
 

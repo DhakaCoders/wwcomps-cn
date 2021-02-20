@@ -158,7 +158,7 @@ $thisID = get_the_ID();
                     <?php echo $imagetag; ?>
                     <div class="proj-btn">
                       <a data-fancybox="gallery" data-caption="<?php echo get_the_title(); ?>" href="<?php echo $imagesrc; ?>" class="fl-btn" href="#">VIEW GALLERY</a>
-                      <a class="fl-btn" href="#">PLAY 2 PLANT</a>
+                      <a class="fl-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>">PLAY 2 PLANT</a>
                     </div>
                   </div>
                   <div class="pur-proj-dec">
