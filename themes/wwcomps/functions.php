@@ -25,6 +25,7 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'winnergrid', 346, 250, true );
         add_image_size( 'gallerygrid', 324, 350, true );
         add_image_size( 'projectgrid', 526, 268, true );
+        add_image_size( 'hmslide', 882, 708, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );

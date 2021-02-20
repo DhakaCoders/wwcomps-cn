@@ -142,7 +142,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         global $product, $woocommerce, $post;
         $thumID = get_post_thumbnail_id($product->get_id());
         $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
-
+        $pp_max_ticket = get_post_meta($product->get_id(), '_max_tickets_per_user', true);
         echo '<div class="product-grd-item">';
         echo '<div class="pro-fea-img-cntlr">';
         echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
@@ -162,10 +162,12 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo '<i><img src="'.THEME_URI.'/assets/images/days-icon.svg"></i>';
         echo '<span>14 days left</span>';
         echo '</div>';
+        if( !empty($pp_max_ticket) ):
         echo '<div class="pro-grd-time">';
         echo '<i><img src="'.THEME_URI.'/assets/images/avater-icon.svg"></i>';
-        echo '<span>20 tickets pp</span>';
+        echo '<span>'.$pp_max_ticket.' tickets pp</span>';
         echo '</div>';
+        endif;
         echo '</div>';
         echo '</div>';
     }
