@@ -69,19 +69,20 @@ get_header();
               $i = 1;
               while($query->have_posts()): $query->the_post();
                 $attach_id = get_post_thumbnail_id(get_the_ID());
+                $date = get_field('date', get_the_ID());
             ?>
               <li>
                 <div class="winr-grid-item product-grd-item">
                   <div class="winr-fea-img-cntlr pro-fea-img-cntlr">
                     <a class="overlay-link" href="#" data-toggle="modal" data-target="#Modal-<?php echo $i; ?>"></a>
-                    <div class="inline-bg" style="background: url(<?php echo cbv_get_image_src($attach_id, 'winnergrid'); ?>);"></div>
+                    <div class="inline-bg" style="background: url(<?php echo !empty($attach_id)?cbv_get_image_src($attach_id, 'winnergrid'):''; ?>);"></div>
                   </div>
                   <div class="winr-grd-item-des product-grd-item-des mHc">
                     <div class="wgid-title-bar">
                       <h3 class="fl-h6 pgid-title wgid-title"><a href="#" data-toggle="modal" data-target="#Modal-<?php echo $i; ?>"><?php the_title(); ?></a></h3>
                     </div>
                     <div class="winr-grd-date">
-                      <span><?php echo get_the_date('m/d/Y'); ?></span>
+                      <?php if( !empty($date) ) printf('<span>%s</span>', $date); ?>
                     </div>
                   </div>
                 </div>
@@ -95,7 +96,7 @@ get_header();
 	                  <div class="modal-body">
 	                    <i>
                     	<?php if( !empty($attach_id) ){ ?>
-                          <?php echo cbv_get_image_tag($attach_id); ?>
+                          <?php echo cbv_get_image_tag($attach_id, 'winners_popup'); ?>
                         <?php }?>
 	                    </i>
 	                    <div class="body-cont">

@@ -70,7 +70,7 @@ get_header();
                 <div class="winr-grid-item product-grd-item">
                   <div class="winr-fea-img-cntlr pro-fea-img-cntlr">
                     <a class="overlay-link" href="#" data-toggle="modal" data-target="#Modal-<?php echo $i; ?>"></a>
-                    <div class="inline-bg" style="background: url(<?php echo cbv_get_image_src($attach_id, 'winnergrid'); ?>);"></div>
+                    <div class="inline-bg" style="background: url(<?php echo !empty($attach_id)?cbv_get_image_src($attach_id, 'winnergrid'):''; ?>);"></div>
                   </div>
                   <div class="winr-grd-item-des product-grd-item-des mHc">
                     <div class="wgid-title-bar">
@@ -91,7 +91,7 @@ get_header();
 	                  <div class="modal-body">
 	                    <i>
                     	<?php if( !empty($attach_id) ){ ?>
-                          <?php echo cbv_get_image_tag($attach_id); ?>
+                          <?php echo cbv_get_image_tag($attach_id, 'winners_popup'); ?>
                         <?php }?>
 	                    </i>
 	                    <div class="body-cont">

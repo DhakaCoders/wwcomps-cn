@@ -23,7 +23,7 @@ get_header(); ?>
             <div class="col-md-12">
               <div class="lucky-winner-desc-cntlr">
                 <div class="lw-slide-item-desc">
-                  <i><img src="assets/images/white-angle-right.png" alt=""></i>
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/white-angle-right.png" alt=""></i>
                   <span class="lw-slide-item-desc-top-arrow"><img src="<?php echo THEME_URI; ?>/assets/images/angle-rgt-white-res.png" alt=""></span>
                     <?php 
                       if( !empty($slide['title'])) printf('<h2 class="lw-slide-item-title">%s</h2>', $slide['title']); 
@@ -434,17 +434,18 @@ get_header(); ?>
                   $i = 1;
                 while($allwinquery->have_posts()): $allwinquery->the_post();
                   $winthumID = get_post_thumbnail_id(get_the_ID());
-                  $winthumurl = !empty($winthumID)? cbv_get_image_src($winthumID):'';
+                  $winthumurl = !empty($winthumID)? cbv_get_image_src($winthumID, 'winners_slide'):'';
                   $date = get_field('date', get_the_ID());
+                  $winimgtagsrc = !empty($winthumID)?cbv_get_image_src($winthumID, 'winners_popup'):'';
                 ?> 
                 <div class="winnersSlideItem winall">
                   <div class="winners-grd-item">
                     <div class="winners-grd-item-fea-img-cntlr">
-                      <a class="overlay-link" href="#" data-toggle="modal" data-target="#Modal-<?php echo $i; ?>"></a>
+                      <a class="overlay-link modallink" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"></a>
                       <div class="inline-bg" style="background: url(<?php echo $winthumurl; ?>);"></div>
                     </div>
                     <div class="winners-grd-item-des mHc">
-                      <h6 class="fl-h6 mHc1 hwgid-title"><a href="#" data-toggle="modal" data-target="#Modal-<?php echo $i; ?>"><?php the_title(); ?></a></h6>
+                      <h6 class="fl-h6 mHc1 hwgid-title"><a class="modallink" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"><?php the_title(); ?></a></h6>
                       <?php if( !empty($date) ) printf('<strong class="winners-grd-date">%s</strong>', $date); ?>
                     </div>
                   </div>
@@ -474,41 +475,19 @@ get_header(); ?>
                 if( $catwinquery->have_posts() ): 
                 while($catwinquery->have_posts()): $catwinquery->the_post();
                 $winthumID = get_post_thumbnail_id(get_the_ID());
-                $winthumurl = !empty($winthumID)? cbv_get_image_src($winthumID):'';
+                $winthumurl = !empty($winthumID)? cbv_get_image_src($winthumID, 'winners_slide'):'';
+                $winimgtagsrc = !empty($winthumID)?cbv_get_image_src($winthumID, 'winners_popup'):'';
                 $date = get_field('date', get_the_ID());
                 ?> 
                 <div class="winnersSlideItem <?php echo $win_term->slug; ?>">
                   <div class="winners-grd-item">
                     <div class="winners-grd-item-fea-img-cntlr">
-                      <a class="overlay-link" href="#"></a>
+                      <a class="overlay-link modallink" href="#" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"></a>
                       <div class="inline-bg" style="background: url(<?php echo $winthumurl; ?>);"></div>
                     </div>
                     <div class="winners-grd-item-des mHc">
-                      <h6 class="fl-h6 mHc1 hwgid-title"><a href="#"><?php the_title(); ?></a></h6>
+                      <h6 class="fl-h6 mHc1 hwgid-title"><a href="#" class="modallink" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"><?php the_title(); ?></a></h6>
                       <?php if( !empty($date) ) printf('<strong class="winners-grd-date">%s</strong>', $date); ?>
-                    </div>
-                  </div>
-                  <!-- Modal -->
-                  <div class="modal fade" id="Modal-<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby=" Modal-<?php echo $i; ?>Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title wgid-title-popup" id="Modal-<?php echo $i; ?>Label"><?php the_title(); ?></h5>
-                        </div>
-                        <div class="modal-body">
-                          <i>
-                          <?php if( !empty($winthumID) ){ ?>
-                              <?php echo cbv_get_image_tag($winthumID); ?>
-                            <?php }?>
-                          </i>
-                          <div class="body-cont">
-                            <?php the_content(); ?>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success pop-btn" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -526,6 +505,27 @@ get_header(); ?>
         </div>
     </div> 
   </div> 
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby=" Modal-Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title wgid-title-popup" id="Modal-Label"></h5>
+        </div>
+        <div class="modal-body">
+          <i>
+          <img id="modal-img" src="">
+          </i>
+          <div class="body-cont" id="modal-content">
+            <?php the_content(); ?>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success pop-btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <?php endif; ?>  
 </section>
 <?php endif; ?>

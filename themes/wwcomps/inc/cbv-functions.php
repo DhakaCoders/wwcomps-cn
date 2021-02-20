@@ -232,4 +232,4 @@ function dateDiffInDays($date)
   $date1 = date('Y-m-d H:i:s');;
   $diff = strtotime($date) - strtotime($date1); 
   return abs(round($diff / 86400)); 
-} 
+}

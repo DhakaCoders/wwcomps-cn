@@ -477,6 +477,19 @@ $('.qty').each(function() {
   });
 
 });
+
+
+$('.modallink').on('click', function(){
+  var title = $(this).data("title");
+  var desc = $(this).data("desc");
+  var imageURL = $(this).data("img");
+  $("#Modal #Modal-Label").text(title);
+  $("#Modal #modal-content").html(desc);
+  $("#Modal #modal-img").attr('src',imageURL);
+  $('#Modal').modal('show'); 
+});
+
+
 new WOW().init();
 
 })(jQuery);

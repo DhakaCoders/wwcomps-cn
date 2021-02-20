@@ -1,0 +1,41 @@
+2021-02-20T19:06:40+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php:237
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\functions.php(80): include_once()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-settings.php(514): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-config.php(98): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\2021\02\wwcomps\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 237
+
+2021-02-20T19:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php:237
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\functions.php(80): include_once()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-settings.php(514): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-config.php(98): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\2021\02\wwcomps\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2021\02\wwcomps\wp-admin\post-new.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 237
+
+2021-02-20T19:07:00+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php:237
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\functions.php(80): include_once()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-settings.php(514): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-config.php(98): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\2021\02\wwcomps\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 237
+
+2021-02-20T19:07:24+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php:237
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\functions.php(80): include_once()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wp-settings.php(514): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-config.php(98): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\2021\02\wwcomps\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 237
+

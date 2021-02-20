@@ -58,13 +58,13 @@ $intro = get_field('introsec', $thisID);
                     </div>
                     <div class="gallery-grd-item-overlay-img">
                       <div class="gallery-grd-item-overlay-btn">
-                        <a class="fl-btn" href="#">view gallery</a>
+                        <a class="fl-btn" data-fancybox="gallery" data-caption="<?php echo get_the_title(); ?>" href="<?php echo $imagesrc; ?>" href="#">view gallery</a>
                       </div>
                     </div>
                   </div>
                   <div class="gallery-grd-item-des mHc">
                     <div class="gallery-grd-item-des-hdr">
-                      <h5 class="gallery-gid-title mHc1"><a href="#"><?php the_title(); ?></a></h5>
+                      <h5 class="gallery-gid-title mHc1"><a data-fancybox="gallery" data-caption="<?php echo get_the_title(); ?>" href="<?php echo $imagesrc; ?>" href="#"><?php the_title(); ?></a></h5>
                     </div>
                     <div class="gallery-place-date">
                       <div class="gallery-place">
