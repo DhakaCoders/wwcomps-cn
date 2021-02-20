@@ -144,14 +144,18 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
         $pp_max_ticket = get_post_meta($product->get_id(), '_max_tickets_per_user', true);
         $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
+        $is_condition = get_field('is_condition', $product->get_id());
+        $condition = get_field('condition', $product->get_id());
 
         echo '<div class="product-grd-item">';
         echo '<div class="pro-fea-img-cntlr">';
         echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
         echo '<div class="inline-bg" style="background: url('.$thumurl.');"></div>';
+        if( !$is_condition ):
         echo '<div class="pro-absolute-text">';
-        echo '<span>NEW PRICE!</span>';
+        if( !empty($condition) ) printf('<span>%s</span>', $condition);
         echo '</div>';
+        endif;
         echo '</div>';
         echo '<div class="product-grd-item-des mHc" style="height: 117px;">';
         echo '<h3 class="fl-h6 pgid-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';

@@ -174,15 +174,21 @@ get_header(); ?>
                 $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
                 $pp_max_ticket = get_post_meta(get_the_ID(), '_max_tickets_per_user', true);
                 $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
+                $is_condition = get_field('is_condition', get_the_ID());
+                $condition = get_field('condition', get_the_ID());
                 ?> 
                 <div class="latesCompititionsSlideItem all">
                   <div class="product-grd-item">
                     <div class="pro-fea-img-cntlr">
                       <a class="overlay-link" href="<?php echo get_permalink(); ?>"></a>
                       <div class="inline-bg" style="background: url(<?php echo $thumurl; ?>);"></div>
-                      <div class="pro-absolute-text">
-                        <span>NEW PRICE!</span>
-                      </div>
+                      <?php 
+                        if( !$is_condition ):
+                          echo '<div class="pro-absolute-text">';
+                          if( !empty($condition) ) printf('<span>%s</span>', $condition);
+                          echo '</div>';
+                        endif;
+                      ?>
                     </div>
                     <div class="product-grd-item-des mHc">
                       <h3 class="fl-h6 pgid-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -248,12 +254,21 @@ get_header(); ?>
                 $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
                 $pp_max_ticket = get_post_meta(get_the_ID(), '_max_tickets_per_user', true);
                 $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
+                $is_condition = get_field('is_condition', get_the_ID());
+                $condition = get_field('condition', get_the_ID());
                 ?> 
                 <div class="latesCompititionsSlideItem <?php echo $comp_term->slug; ?>">
                   <div class="product-grd-item">
                     <div class="pro-fea-img-cntlr">
                       <a class="overlay-link" href="<?php echo get_permalink(); ?>"></a>
                       <div class="inline-bg" style="background: url(<?php echo $thumurl; ?>);"></div>
+                      <?php 
+                        if( !$is_condition ):
+                          echo '<div class="pro-absolute-text">';
+                          if( !empty($condition) ) printf('<span>%s</span>', $condition);
+                          echo '</div>';
+                        endif;
+                      ?>
                     </div>
                     <div class="product-grd-item-des mHc">
                       <h3 class="fl-h6 pgid-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
