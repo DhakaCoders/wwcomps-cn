@@ -294,12 +294,16 @@ cart
 	display: flex;
 }
 .wc-cart-crtl > h2,
-.cart_totals > h2{
+.cart_totals > h2,
+.woocommerce-billing-fields > h3,
+h3#order_review_heading{
 	font-size: 30px;
 	color: #231F20;
 	text-transform: uppercase;
 	margin-bottom: 40px;
 	letter-spacing: 1px;
+	padding-top: 0;
+	margin-top: 0;
 }
 .wc-cart-crtl{
 	width: 75%;
@@ -425,7 +429,8 @@ cart
 	position: relative;
 }
 .woocommerce form.woocommerce-cart-form:before,
-.wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table:before{
+.wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table:before,
+.woocommerce-billing-fields__field-wrapper:before, #order_review.woocommerce-checkout-review-order:before{
 	content: "";
 	border-left: 33px solid transparent;
 	border-right: 33px solid transparent;
@@ -434,8 +439,13 @@ cart
 	left: 15px;
 	bottom: 100%;
 }
+
+.woocommerce-billing-fields__field-wrapper:before,
 .wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table:before{
 	border-bottom: 16px solid #fff;
+}
+.woocommerce-billing-fields__field-wrapper:before, #order_review.woocommerce-checkout-review-order:before{
+	left: 37px;
 }
 .wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table{
 	position: relative;
@@ -519,13 +529,43 @@ cart
 	display: flex;
 }
 .checkout-col-1{
-	width: 70%;
+	width: 65%;
 	padding-right: 20px;
 }
 .checkout-col-2{
-	width: 30%;
+	width: 35%;
 }
-
+.woocommerce-billing-fields__field-wrapper,
+#order_review.woocommerce-checkout-review-order{
+	background: #fff;
+	border: none;
+	position: relative;
+}
+.woocommerce-billing-fields__field-wrapper{
+	padding: 40px 40px 25px;
+}
+.woocommerce-billing-fields__field-wrapper .form-row.form-row-wide{
+	margin-bottom: 20px!important;
+}
+.woocommerce-billing-fields__field-wrapper .form-row input.input-text{
+	background: #f9f9f9;
+}
+.shop_table.woocommerce-checkout-review-order-table{
+	border-radius: 0!important;
+}
+.shop_table.woocommerce-checkout-review-order-table{
+	border-collapse: collapse!important;
+	border: none!important;
+}
+.shop_table.woocommerce-checkout-review-order-table thead tr th{
+	background: #175783;
+	color: #fff;
+	border: none!important;
+}
+.woocommerce .shop_table.woocommerce-checkout-review-order-table td{
+	border-left: 0;
+	border-radius: 0;
+}
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
