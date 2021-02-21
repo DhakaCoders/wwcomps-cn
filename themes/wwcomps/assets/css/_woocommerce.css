@@ -566,6 +566,35 @@ h3#order_review_heading{
 	border-left: 0;
 	border-radius: 0;
 }
+#place_order{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: normal;
+    font-family: 'LeagueSpartan-Semibold';
+    min-height: 60px!important;
+}
+.woocommerce-checkout-payment ul li{
+	width: 100%!important;
+	max-width: 100%;
+}
+.woocommerce-checkout #payment ul.payment_methods li img {
+	margin-left: 0;
+}
+#payment.woocommerce-checkout-payment ul.wc_payment_methods.payment_methods.methods{
+	display: block;
+	
+}
+.woocommerce-checkout #payment{
+	border-radius: 0!important;
+	background: #fff;
+}
+.woocommerce .shop_table.woocommerce-checkout-review-order-table tr.order-total th,
+.woocommerce .shop_table.woocommerce-checkout-review-order-table tr.order-total td{
+	background: #f8f4f1;
+}
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {

@@ -23,12 +23,20 @@
 	padding: 0 5px;
 	line-height: 1;
 }
+.top-bar-socials ul li a{
+    color: #fff;
+}
 .top-bar-socials ul li a,
 .top-bar-socials ul li a i{
 	display: inline-block;
 }
 .top-bar-socials ul li a:hover i svg{
 	fill: #019245;
+}
+.top-bar-socials ul li a:hover,
+.top-bar-rt-login a:hover,
+.top-bar-rt-col a:hover{
+    color: #ebceae;
 }
 .top-bar-right{
 	margin-left: auto;
@@ -88,6 +96,7 @@
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	left: 0;
+    margin-top: -1px;
 }
 
 
