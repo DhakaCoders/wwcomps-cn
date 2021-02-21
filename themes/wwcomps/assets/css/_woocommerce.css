@@ -449,6 +449,9 @@ cart
 	font-size: 26px;
 	line-height: 1.2;
 }
+.product-name > a:hover{
+	color: #EACEAD!important;
+}
 .cart-total-wrap-crtl .variation{
 	display: flex;
 	align-items: center;
@@ -512,6 +515,17 @@ cart
 	background: #F7F4F2;
 	padding: 10px 10px 20px 10px!important;
 }
+#customer_details{
+	display: flex;
+}
+.checkout-col-1{
+	width: 70%;
+	padding-right: 20px;
+}
+.checkout-col-2{
+	width: 30%;
+}
+
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
