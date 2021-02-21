@@ -331,6 +331,7 @@ cart
 	text-transform: capitalize;
 	font-family: 'Hind', sans-serif;
     font-weight: 300;
+    padding-top: 14px;
 }
 .woocommerce table.shop_table td,
 .woocommerce table.shop_table tbody:first-child tr:first-child th,
@@ -386,7 +387,7 @@ cart
 }
 .product-remove{
 	position: absolute;
-	left: 20px;
+	left: 15px;
 	top: 12px;
 	display: flex;
 	align-items: center;
@@ -395,7 +396,10 @@ cart
 .woocommerce table.shop_table td.product-thumbnail{
 	position: relative;
 	padding-left: 50px;
-	width: 304px;
+	width: 30%;
+}
+.woocommerce .woocommerce-cart-form table.shop_table td.product-name{
+	width: 35%;
 }
 .woocommerce table.shop_table td.product-thumbnail > a{
 	display: block;
@@ -436,7 +440,78 @@ cart
 .wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table{
 	position: relative;
 }
-
+.product-name > a{
+	display: block;
+	color: #1C75BC!important;
+	    font-family: 'LeagueSpartan-Semibold';
+	    padding-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 26px;
+	line-height: 1.2;
+}
+.cart-total-wrap-crtl .variation{
+	display: flex;
+	align-items: center;
+}
+.cart-total-wrap-crtl .variation dt{
+	font-family: 'Hind', sans-serif;
+    font-weight: 300;
+}
+.cart-total-wrap-crtl .variation dd{
+	font-weight: 600;
+}
+.woocommerce .woocommerce-cart-form table.shop_table td .product-title .woocommerce-Price-amount{
+	color: #1C75BC;
+	font-size: 20px;
+	font-weight: 700;
+}
+.product-quantity .qty{
+	display: flex;
+	align-items: center;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+.product-quantity .qty .minus,
+.product-quantity .qty .plus{
+	width: 32px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid #707070;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+.product-quantity .qty .minus img,
+.product-quantity .qty .plu img{
+	width: 100%;
+	height: auto;
+}
+.woocommerce .quantity input[type=number]{
+	font-size: 18px;
+	line-height: 1;
+	font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    width: 45px;
+}
+.woocommerce .quantity input[type=number]::-webkit-inner-spin-button, 
+.woocommerce .quantity input[type=number]::-webkit-outer-spin-button { 
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+  margin: 0; 
+}
+.woocommerce-cart table.cart th.product-quantity{
+	text-align: center;
+}
+.woocommerce .woocommerce-cart-form table.shop_table td.actions{
+	background: #F7F4F2;
+	padding: 10px 10px 20px 10px!important;
+}
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
