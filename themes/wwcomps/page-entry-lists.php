@@ -2,6 +2,8 @@
 /*Template Name: Entry Lists*/
 get_header();
 $thisID = get_the_ID();
+$custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
+$page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
 ?>
 <section class="entry-lists">
   <div class="fl-angle-hdr">
@@ -10,7 +12,7 @@ $thisID = get_the_ID();
       <div class="row">
         <div class="col-md-12">
           <div class="fl-angle-sec-hdr">
-            <h2 class="fl-h5 flash-title"><span>ENTRY</span> LISTS</h2>
+            <h2 class="fl-h5 flash-title"><?php echo $page_title; ?></h2>
           </div>
         </div>
       </div>

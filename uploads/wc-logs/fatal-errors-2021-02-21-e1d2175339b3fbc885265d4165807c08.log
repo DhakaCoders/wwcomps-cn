@@ -1,0 +1,10 @@
+2021-02-21T16:26:33+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 247
+
+2021-02-21T16:26:36+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\cbv-functions.php on line 247
+
+2021-02-21T17:19:05+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\custom-meta-box.php on line 16
+
+2021-02-21T17:19:07+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\custom-meta-box.php on line 16
+
+2021-02-21T17:19:09+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\inc\custom-meta-box.php on line 16
+

@@ -7,6 +7,9 @@ $thisID = get_the_ID();
 $forms = get_field('formshortcode', $thisID);
 $continfo = get_field('contactsec', $thisID);
 $bgimg = !empty($continfo['image'])?cbv_get_image_src($continfo['image']):THEME_URI.'/assets/images/cu-bnr-rgt-img.jpg';
+
+$custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
+$page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
 ?>
 
 <section class="fl-angle-hdr-cntlr">
@@ -16,7 +19,7 @@ $bgimg = !empty($continfo['image'])?cbv_get_image_src($continfo['image']):THEME_
       <div class="row">
         <div class="col-md-12">
           <div class="fl-angle-sec-hdr">
-            <h2 class="fl-h5 flash-title"><span>CONTACT</span> US</h2> 
+            <h2 class="fl-h5 flash-title"><?php echo $page_title; ?></h2> 
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 <?php 
 /*Template Name: Ended Competitions*/
 get_header(); 
+$thisID = get_the_ID();
+$custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
+$page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
 ?>
 <section class="fl-angle-hdr-cntlr">
   <div class="fl-angle-hdr">
@@ -9,7 +12,7 @@ get_header();
       <div class="row">
         <div class="col-md-12">
           <div class="fl-angle-sec-hdr">
-            <h2 class="fl-h5 flash-title"><span>ENDED</span> COMPETITIONS</h2>
+            <h2 class="fl-h5 flash-title"><?php echo $page_title; ?></h2>
           </div>
         </div>
       </div>

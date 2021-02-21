@@ -240,8 +240,8 @@ add_filter( 'woocommerce_get_stock_html', '__return_empty_string', 10, 2 );
 function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
     if ( $domain === 'woocommerce' ) {
         $translated = str_replace(
-            array( 'Cart totals' ),
-            array( 'Basket Totals'),
+            array( 'Cart totals', 'Place order' ),
+            array( 'Basket Totals', 'Proceed to Payment'),
             $translated
         );
     }
