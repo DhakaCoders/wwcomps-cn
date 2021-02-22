@@ -64,8 +64,9 @@
 	font-size: 32px;
 	line-height: 1;
 	font-family: 'LeagueSpartan-Extrabold';
+	display: flex;
 }
-.pro-grd-price .price del {
+.pro-grd-price del {
     font-size: 17.11px;
     line-height: 1;
     color: #AAAAAA;
@@ -76,6 +77,9 @@
     position: relative;
     top: 8px;
     margin-left: 1px;
+    order: 2;
+    margin-bottom: auto;
+    margin-left: 8px;
 }
 .pro-grd-ftr-bar{
 	background: #f8f4f1;

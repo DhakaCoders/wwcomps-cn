@@ -40,7 +40,27 @@ strong{
     font-family: 'LeagueSpartan-Semibold';
 }
 del{
-	text-decoration: line-through;
+	text-decoration: none;
+	position: relative;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+del:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	height: 1px;
+	background: #a6a6a6;
+	margin-top: -1px;
+	z-index: 5;
+}
+del span{
+	margin-right: 0!important;
 }
 ::selection {
   color: #fff;

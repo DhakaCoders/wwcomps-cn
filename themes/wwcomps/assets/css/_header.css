@@ -255,6 +255,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
 .hdr-add-to-card-icon a{
 	display: inline-block;
 }
+.hdr-add-to-card-icon a:hover{
+    opacity: .7;
+}
 .hdr-add-to-card-icon span{
 	position: absolute;
 	display: flex;
