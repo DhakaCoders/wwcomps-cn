@@ -287,6 +287,8 @@
 .ticket-count-crtl{
 	display: flex;
 	align-items: center;
+	margin-top: 8px;
+	color: #757575;
 }
 .ticket-count-crtl span{
 	position: static!important;
@@ -309,6 +311,12 @@
 }
 .ticket-count-crtl .total-remaining{
 	justify-content: flex-end;
+}
+.wcl-progress-meter{
+	margin-top: 25px!important;
+}
+.lottery-ajax-change{
+	margin-top: 0!important;
 }
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
