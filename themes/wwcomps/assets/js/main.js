@@ -116,63 +116,64 @@ if( $('.responsive-slider').length ){
     });
 }
 
-var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-      nextEl: '.catagorySlider-arrows .swiper-button-next',
-      prevEl: '.catagorySlider-arrows .swiper-button-prev',
-    },
-    breakpoints: {
-       639: {
-        slidesPerView: 2,
-        spaceBetween: 0,
+if( $('.catagorySlider').length ){
+  var swiper = new Swiper('.catagorySlider', {
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: '.catagorySlider-arrows .swiper-button-next',
+        prevEl: '.catagorySlider-arrows .swiper-button-prev',
       },
-      991: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1199: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-      1920: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-    }
-  });
-
+      breakpoints: {
+         639: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1199: {
+          loop: false,
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+        1920: {
+          loop: false,
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+      }
+    });
+}
 
 if( $('#mapID').length ){
-var latitude = $('#mapID').data('latitude');
-var longitude = $('#mapID').data('longitude');
+  var latitude = $('#mapID').data('latitude');
+  var longitude = $('#mapID').data('longitude');
 
-var myCenter= new google.maps.LatLng(latitude,  longitude);
-function initialize(){
-    var mapProp = {
-      center:myCenter,
-      mapTypeControl:true,
-      scrollwheel: false,
-      zoomControl: true,
-      disableDefaultUI: true,
-      zoom:7,
-      streetViewControl: false,
-      rotateControl: true,
-      mapTypeId:google.maps.MapTypeId.ROADMAP,
-      styles: CustomMapStyles
-      };
+  var myCenter= new google.maps.LatLng(latitude,  longitude);
+  function initialize(){
+      var mapProp = {
+        center:myCenter,
+        mapTypeControl:true,
+        scrollwheel: false,
+        zoomControl: true,
+        disableDefaultUI: true,
+        zoom:7,
+        streetViewControl: false,
+        rotateControl: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP,
+        styles: CustomMapStyles
+        };
 
-    var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
-    var marker= new google.maps.Marker({
-      position:myCenter,
-        //icon:'map-marker.png'
-      });
-    marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
+      var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
+      var marker= new google.maps.Marker({
+        position:myCenter,
+          //icon:'map-marker.png'
+        });
+      marker.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
@@ -201,13 +202,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
   /*start Of Niaz*/
 
 // accordion
-$('.hh-accordion-title').click(function(){
-    $(this).next().slideToggle(300);
-    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
-    $(this).toggleClass('hh-accordion-active');
-    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
-});
-
+if( $('.hh-accordion-title').length ){
+  $('.hh-accordion-title').click(function(){
+      $(this).next().slideToggle(300);
+      $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
+      $(this).toggleClass('hh-accordion-active');
+      $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
+  });
+}
 //Masonry
 if(windowWidth > 767) {
   if( $('.our-proj-grid').length ){
@@ -233,18 +235,6 @@ $('.frstProjSlider').slick({
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   /*start Of Noyon*/
 
   if( $('.lwBnrSlider').length ){
@@ -260,14 +250,14 @@ $('.frstProjSlider').slick({
     });
 }
 
-jQuery(document).ready(function($) {
-  if( $('.counter').length ){
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  }
-});
+
+if( $('.counter').length ){
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+}
+
 
 
 if( $('.humberger-icon').length ){
@@ -409,38 +399,39 @@ if( $('.latesCompititionsSlider').length ){
 }
 // jquery minus plus quantity
 
-$('.qty').each(function() {
-  var spinner = $(this),
-    input = spinner.find('input[type="number"]'),
-    btnUp = spinner.find('.plus'),
-    btnDown = spinner.find('.minus'),
-    min = 1,
-    max = input.attr('max');
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
 
-  btnUp.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue < max) {
-      var newVal = oldValue + 1;
-    } else {
-      var newVal = oldValue;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue < max) {
+        var newVal = oldValue + 1;
+      } else {
+        var newVal = oldValue;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
   });
-
-  btnDown.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue <= min) {
-      var newVal = oldValue;
-    } else {
-      var newVal = oldValue - 1;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
-
-});
-
+}
 
 $('.modallink').on('click', function(){
   var title = $(this).data("title");
@@ -452,23 +443,24 @@ $('.modallink').on('click', function(){
   $('#Modal').modal('show'); 
 });
 
-if( $('.latesCompititionsSlider').length ){
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.thumbnail-crtl'
-  });
-  $('.thumbnail-crtl').slick({
+
+
+$('.woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.thumbnail-crtl'
+});
+$('.thumbnail-crtl').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image',
   dots: true,
   centerMode: true,
   focusOnSelect: true
 });
-}
+
 
 
 
