@@ -21,6 +21,9 @@
 .variation dd p{
 	line-height: 1.2;
 }
+.cart-total-wrap-crtl .variation dd p{
+	font-weight: 500;
+}
 @media (max-width: 1699px){
 	
 }
