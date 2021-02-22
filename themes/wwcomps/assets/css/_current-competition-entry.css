@@ -255,14 +255,15 @@
 	display: flex;
 	justify-content: flex-end;
 }
-.pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
+.cart.pick-number .pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
 	float: none!important;
 	height: 56px;
 	font-size: 18px;
 	line-height: 1;
-	padding: 10px;
-	max-width: 180px;
-	width: 100%;
+	padding: 10px!important;
+	padding-top: 11px!important;
+	max-width: 180px!important;
+	width: 100%!important;
 	font-weight: normal;
 	letter-spacing: 1px;
 	font-family: 'LeagueSpartan-Semibold';
@@ -376,6 +377,7 @@
 }
 .woocommerce div.product div.summary{
 	position: relative;
+	margin-bottom: 0!important;
 }
 .woocommerce div.product div.summary:before{
 	content: "";
@@ -402,6 +404,7 @@
 }
 body.single-product .products-grd-page-con{
 	padding-top: 75px;
+	padding-bottom: 30px;
 }
 /*.product.has-post-thumbnail{
 	
@@ -427,6 +430,10 @@ body.single-product .products-grd-page-con{
 	top: 0;
 	right: 0;
 }
+.pro-single-btm .btn-qty,
+.pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
+	height: 56px!important;
+}
 .pro-single-btm .btn-qty{
 	width: 65px;
 	display: flex;
@@ -439,7 +446,7 @@ body.single-product .products-grd-page-con{
 	background: transparent;
 	width: 8px;
 	height: 6px;
-	right: 12px;
+	right: 15px;
 	padding: 0!important;
 	cursor: pointer;
 }
