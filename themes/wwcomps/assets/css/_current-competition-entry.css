@@ -406,7 +406,64 @@ body.single-product .products-grd-page-con{
 /*.product.has-post-thumbnail{
 	
 }*/
+.wc_lotery_countdown-amount{
+	font-size: 42px!important;
+	line-height: 1.2;
+	color: #1E1E1E;
+	font-weight: 600;
+}
+.wc_lotery_countdown-period{
+	font-size: 16px;
+	line-height: 1.2;
+}
+.wc_lotery_countdown-section{
+	position: relative;
+}
+.wc_lotery_countdown-section:not(:last-child):after{
+	content: ":";
+	position: absolute;
+	color: #175884;
+	font-size: 40px;
+	top: 0;
+	right: 0;
+}
+.pro-single-btm .btn-qty{
+	width: 65px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.pro-single-btm .btn-qty .minus,
+.pro-single-btm .btn-qty .plus{
+	position: absolute;
+	background: transparent;
+	width: 8px;
+	height: 6px;
+	right: 12px;
+	padding: 0!important;
+	cursor: pointer;
+}
+.pro-single-btm .btn-qty .minus img,
+.pro-single-btm .btn-qty .plus img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.pro-single-btm .btn-qty .plus{
+	bottom: 20px;
 
+}
+.pro-single-btm .btn-qty .minus{
+	top: 20px;
+}
+.woocommerce div.product form.cart .pro-single-btm  div.quantity{
+	float: none;
+	height: 100%;
+}
+.woocommerce .pro-single-btm .quantity input[type=number]{
+	width: 100%;
+	height: 100%;
+}
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
