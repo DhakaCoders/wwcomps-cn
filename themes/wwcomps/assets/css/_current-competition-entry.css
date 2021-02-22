@@ -278,13 +278,38 @@
 
 }
 .wcl-progress-meter progress{
-	height: 40px;
-	background: #D0D3D6;
+	height: 40px!important;
+	background: #D0D3D6!important;
 }
 .fl-product-summary-txt{
 	padding-top: 45px;
 }
+.ticket-count-crtl{
+	display: flex;
+	align-items: center;
+}
+.ticket-count-crtl span{
+	position: static!important;
+	color: #175884;
+	margin-left: 5px;
 
+}
+.ticket-count-crtl > div{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'LeagueSpartan-Semibold';
+}
+.ticket-count-crtl .total-tickets{
+	
+}
+.ticket-count-crtl .total-remaining{
+	justify-content: flex-end;
+}
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
