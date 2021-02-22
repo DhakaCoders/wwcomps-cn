@@ -17,8 +17,11 @@ $lottery_dates_from         = $product->get_lottery_dates_from();
 
 
  if(($product->is_closed() === FALSE ) and ($product->is_started() === TRUE )) : ?>			
-    <div class="lottery-time" id="countdown"><?php echo apply_filters('time_text', __( 'This competition ends in:', 'wc_lottery' ), $product->get_type()); ?> 
-            <div class="main-lottery lottery-time-countdown" data-time="<?php echo $product->get_seconds_remaining() ?>" data-lotteryid="<?php echo $product->get_id() ?>" data-format="<?php echo get_option( 'simple_lottery_countdown_format' ) ?>"></div>
+    <div class="lottery-time" id="countdown">
+        <?php echo apply_filters('time_text', __( '<span class="competition-ends-title">This competition ends in:</span>', 'wc_lottery' ), $product->get_type()); ?> 
+            <div class="main-lottery lottery-time-countdown" data-time="<?php echo $product->get_seconds_remaining() ?>" data-lotteryid="<?php echo $product->get_id() ?>" data-format="<?php echo get_option( 'simple_lottery_countdown_format' ) ?>">
+                
+            </div>
     </div>
     <div class="fl-pro-summary-price-quentity">
     <?php do_action('lottery_price'); ?>
