@@ -236,6 +236,30 @@ $('.frstProjSlider').slick({
 
 
   /*start Of Noyon*/
+  $(".woocommerce-billing-fields .form-row label").each(function () {
+    el = $(this);
+    label_value = el.text();
+    el.hide();
+    el.next().children('input').attr('placeholder', label_value);
+  });
+
+
+
+
+  $(".woocommerce-form-row label").each(function () {
+    el = $(this);
+    label_value = el.text();
+    el.hide();
+    el.next('input').attr('placeholder', label_value);
+  });
+
+
+
+
+
+
+
+
 
   if( $('.lwBnrSlider').length ){
     $('.lwBnrSlider').slick({
