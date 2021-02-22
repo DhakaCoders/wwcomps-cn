@@ -6,7 +6,7 @@
 function specific_page_remove_meta_boxes() {
   global $post;
   $frontID = get_option( 'page_on_front' );
-  if( $frontID == $post->ID)
+  if( isset($post->ID) && ($frontID == $post->ID) )
     remove_meta_box( 'cbv_az_metabox_id', 'page', 'cbv-custom-metabox-holder' );
 
 }
