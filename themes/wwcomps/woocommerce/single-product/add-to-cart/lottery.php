@@ -59,6 +59,9 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<?php endif; ?>
 
 	<div class="pro-single-btm clearfix">
+	<span class="icon-btn"></span>
+	<div class="btn-qty">
+	<button class="minus" type="button"><img src="<?php echo THEME_URI; ?>/assets/images/up.png"></button>
 	<?php
 		/**
 		 * @since 2.1.0.
@@ -82,7 +85,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 
 ?>
-
+<button class="plus" type="button"><img src="<?php echo THEME_URI; ?>/assets/images/down.png"></button>
+</div>
 	<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt <?php echo 'yes' === $use_ticket_numbers && "yes" !== $random_ticket_numbers ? ' lottery-must-pick ' : ''; echo true === $use_answers ? ' lottery-must-answer ' : '' ; ?>" >Enter now</button>
 
 	<?php
