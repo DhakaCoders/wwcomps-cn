@@ -46,6 +46,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
               while($query->have_posts()): $query->the_post();
                 $location = get_field('location', get_the_ID());
                 $imageID = get_field('image', get_the_ID());
+                $date = get_field('date', get_the_ID());
                 $imagesrc = !empty($imageID)? cbv_get_image_src($imageID, 'gallerygrid'):'';
             ?>
               <li>
@@ -73,7 +74,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
                         <span><i class="fas fa-map-marker-alt"></i><?php if( !empty($location)) printf('%s', $location); ?></span>
                       </div>
                       <div class="galley-date">
-                        <span><i class="fas fa-calendar-alt"></i> 14.01.2021</span>
+                        <span><i class="fas fa-calendar-alt"></i> <?php if( !empty($date) ) printf('%s', $date);?></span>
                       </div>
                     </div>
                   </div>

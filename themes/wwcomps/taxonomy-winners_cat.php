@@ -1,5 +1,8 @@
 <?php 
 get_header();
+$thisID = get_id_by_page_template( 'page-competition-winners.php' );
+$custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
+$page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
 ?>
 <section class="winners-sec">
   <div class="fl-angle-hdr">
@@ -8,7 +11,7 @@ get_header();
       <div class="row">
         <div class="col-md-12">
           <div class="fl-angle-sec-hdr">
-            <h2 class="fl-h5 flash-title"><span>competitions</span> winners</h2>
+            <h2 class="fl-h5 flash-title"><?php echo $page_title; ?></h2>
           </div>
         </div>
       </div>
@@ -46,7 +49,7 @@ get_header();
 		  $query = new WP_Query(array( 
 		    'post_type'=> 'competition_winners',
 		    'post_status' => 'publish',
-		    'posts_per_page' => 4,
+		    'posts_per_page' => 9,
 		    'paged' => $paged,
 		    'orderby' => 'date',
 		    'order'=> $sort,

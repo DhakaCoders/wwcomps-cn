@@ -70,10 +70,8 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/app.php' );
-    include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/counterup.php' );
     include_once( THEME_DIR . '/enq-scripts/masonry.php' );
-    include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
@@ -176,7 +174,7 @@ function news_search_pagination($query) {
     }
     if (is_tax('winners_cat') && $query->is_main_query() && !is_admin() ) {
         $query->set('competition_winners',array('post'));
-        $query->set( 'posts_per_page', 4 );
+        $query->set( 'posts_per_page', 9 );
     }
 return $query;
 }

@@ -5,6 +5,7 @@
 get_header(); 
 $thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
+$bgimg = !empty($intro['image'])?cbv_get_image_src($intro['image']):THEME_URI.'/assets/images/hit-bnr-page-rgt-img.jpg';
 $shopID = get_option( 'woocommerce_shop_page_id' );
 $custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
 $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
@@ -27,7 +28,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
 <section class="page-banner-section how-it-works-sec">
   <div class="banner-bg">
     <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hit-bnr-page-lft-img.jpg')"></div>
-    <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hit-bnr-page-rgt-img.jpg')"></div>
+    <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo $bgimg; ?>')"></div>
   </div>
   <div class="page-banner-sec-cntlr">
   <div class="container">

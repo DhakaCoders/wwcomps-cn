@@ -521,7 +521,34 @@ $('.main-gallery').slick({
       ]
  });
 
+// Competitions filter
+var filtered = false;
+$('.filter-btn').on('click',function(e){
+  e.preventDefault();
+    $('.filter-btn').removeClass('active');
+    var filter = $(this).data('attribute');
+    if(filter=='all'){
+        $('.latesCompititionsSlider').slick('slickUnfilter');
+    }else{
+        $('.latesCompititionsSlider').slick('slickUnfilter').slick('slickFilter','.'+filter);
+    }
+    $(this).addClass('active');
+    filtered = true;
+}); 
 
-new WOW().init();
+// Competitions filter
+var Winfiltered = false;
+$('.win-filter-btn').on('click',function(e){
+  e.preventDefault();
+    $('.win-filter-btn').removeClass('active');
+    var winFilter = $(this).data('attribute');
+    if(winFilter=='all'){
+        $('.winnersSlider').slick('slickUnfilter');
+    }else{
+        $('.winnersSlider').slick('slickUnfilter').slick('slickFilter','.'+winFilter);
+    }
+    $(this).addClass('active');
+    Winfiltered = true;
+}); 
 
 })(jQuery);
