@@ -100,8 +100,8 @@
 	font-weight: 400;
 	color: #AAAAAA;
 	position: absolute;
-	right: 0;
 	top: 0;
+	margin-left: 8px;
 }
 .lw-si-prize-cntlr .price .woocommerce-Price-amount bdi{
     font-family: 'LeagueSpartan-Bold';

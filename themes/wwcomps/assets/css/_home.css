@@ -121,6 +121,21 @@
 	background-repeat: no-repeat;
 	z-index: 2;
 }
+.filter-tabbar ul li.active:before{
+	content: ""!important;
+    position: absolute!important;
+    top: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: auto!important;
+    border-top: 19px solid transparent!important;
+    border-bottom: 20px solid transparent!important;
+    border-left: 12px solid #fff!important;
+    z-index: 10;
+}
+.filter-tabbar ul li:first-child.active:before{
+	content: none!important;
+}
 .filter-tabbar ul li:last-child.active:after{
 	content: none;
 }
