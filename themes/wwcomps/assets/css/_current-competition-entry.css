@@ -183,7 +183,39 @@
 	display: flex;
 	margin-bottom: 50px;
 }
-
+.wc_lotery_countdown-section{
+	font-size: 42px;
+	line-height: 1;
+	display: block;
+}
+.fl-pro-summary-prices > div{
+	display: flex;
+	align-items: center;
+}
+.fl-pro-summary-prices del{
+	margin-bottom: auto;
+}
+.fl-pro-summary-prices div label{
+	font-size: 28px;
+	color: #231F20;
+ 	font-family: 'LeagueSpartan-Semibold';
+ 	text-transform: uppercase;
+ 	margin-bottom: 0;
+ 	margin-right: 10px;
+}
+.fl-pro-summary-prices del{
+	order: 3;
+}
+.fl-pro-summary-prices ins .woocommerce-Price-amount.amount bdi{
+	font-size: 44px;
+	color: #1C75BC;
+	font-family: 'LeagueSpartan-Bold';
+	margin-right: 5px;
+}
+.fl-pro-summary-prices del .woocommerce-Price-amount.amount span{
+	position: relative;
+	margin-bottom: auto;
+}
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
