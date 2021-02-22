@@ -479,11 +479,46 @@ $('.main-gallery').slick({
    asNavFor: '.thumbnail-crtl'
  });
  $('.thumbnail-crtl').slick({
-   slidesToShow: 4,
+   slidesToShow: 5,
    slidesToScroll: 1,
    asNavFor: '.main-gallery',
    dots: true,
-   focusOnSelect: true
+   focusOnSelect: true,
+   responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 4,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            dots: false,
+            arrows: true,
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 360,
+          settings: {
+            dots: false,
+            arrows: true,
+            slidesToShow: 3,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
  });
 
 
