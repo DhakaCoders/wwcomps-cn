@@ -467,7 +467,6 @@ if( $('.thumbnail-crtl').length ){
 }
 
 
-
 new WOW().init();
 
 })(jQuery);
