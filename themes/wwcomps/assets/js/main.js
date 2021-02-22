@@ -444,24 +444,27 @@ $('.modallink').on('click', function(){
 });
 
 
+if( $('.main-gallery').length ){
+  $('.main-gallery').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.thumbnail-crtl'
+  });
+}
 
-$('.woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.thumbnail-crtl'
-});
-$('.thumbnail-crtl').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+if( $('.thumbnail-crtl').length ){
+  $('.thumbnail-crtl').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.main-gallery',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 
-
+}
 
 
 

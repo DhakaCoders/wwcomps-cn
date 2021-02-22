@@ -5,53 +5,19 @@
 @import url('_header.css');
 @import url('_page.css');
 @import url('_home.css');
-@import url('_contact.css');
 @import url('_woocommerce.css');
 @import url('_footer.css');
-
-
-
-
-/*Start of Noyon*/
 @import url('_home2.css');
 @import url('_live-draws.css');
-
-
-
-
-
-
-
-
-/*Start of Shariful*/
-
 @import url('_gallery.css');
-
-
-
-
-
-/*Start of Sabbir*/
-
 @import url('_entry-lists.css');
 @import url('_contact-us.css');
 @import url('_winner.css');
-
-
-
-
-
-/*Start of Niaz*/
-
 @import url('_how-it-works.css');
 @import url('_about-us.css');
 @import url('_faqs.css');
 @import url('_forest-projects.css');
 @import url('_current-competition-entry.css');
-
-
-/*Start of Rannojit*/
-
 @import url('_ended-competitions.css');
 @import url('_wc_common.css');
 @import url('_woocommerce.css');
