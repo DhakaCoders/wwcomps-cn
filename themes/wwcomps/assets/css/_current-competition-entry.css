@@ -111,7 +111,8 @@
 	background: #F7F4F2;
 	margin-bottom: 0;
 }
-.lottery-question{
+.lottery-question,
+.fl-product-summary-txt h4{
 	font-size: 22px;
 	line-height: 1.2;
 	margin-bottom: 12px;
@@ -119,8 +120,29 @@
     color: #231F20;
     text-transform: uppercase;
 }
-
-
+.summary.entry-summary.custom-summary ul.lottery-pn-answers{
+	display: flex;
+}
+.summary.entry-summary.custom-summary ul.lottery-pn-answers li {
+    font-size: 16px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+    min-width: 40px;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul{
+	display: block!important;
+	padding-left: 15px;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul li{
+	width: 100%!important;
+}
 
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
