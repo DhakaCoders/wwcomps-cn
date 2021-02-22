@@ -400,6 +400,9 @@
 .gallery-crtl > .woocommerce-product-gallery{
 	width: 100%!important;
 }
+body.single-product .products-grd-page-con{
+	padding-top: 75px;
+}
 /*.product.has-post-thumbnail{
 	
 }*/
