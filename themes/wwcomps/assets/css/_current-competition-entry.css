@@ -100,6 +100,13 @@
 	left:70px;
 	margin-top:-3px;
 }
+/* pro single*/
+
+.summary.entry-summary.custom-summary{
+	background: #fff;
+}
+
+
 
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{

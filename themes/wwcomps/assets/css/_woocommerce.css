@@ -595,6 +595,12 @@ h3#order_review_heading{
 .woocommerce .shop_table.woocommerce-checkout-review-order-table tr.order-total td{
 	background: #f8f4f1;
 }
+
+
+/* single */
+
+
+
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
