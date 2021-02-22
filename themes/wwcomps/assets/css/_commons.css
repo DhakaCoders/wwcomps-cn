@@ -66,6 +66,12 @@ del span{
   color: #fff;
   background: #EACEAD;
 }
+.no-results {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding: 50px 0;
+}
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767

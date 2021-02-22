@@ -5,6 +5,7 @@
 get_header(); 
 $thisID = get_the_ID();
 $intro = get_field('introsec', $thisID);
+$bgimg = !empty($intro['image'])?cbv_get_image_src($intro['image']):THEME_URI.'/assets/images/faqs-bnr-page-rgt-img.jpg';
 $custom_page_title = get_post_meta( $thisID, '_custom_page_title', true );
 $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $custom_page_title : get_the_title();
 ?>
@@ -26,7 +27,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
 <section class="page-banner-section how-it-works-sec faqs-bnr-pg-sec">
   <div class="banner-bg">
     <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hit-bnr-page-lft-img.jpg')"></div>
-    <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/faqs-bnr-page-rgt-img.jpg')"></div>
+    <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo $bgimg; ?>')"></div>
   </div>
   <div class="container">
     <div class="row">
@@ -34,7 +35,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
         <div class="page-bnr-desc faqs-bnr-pg-desc">
           <?php if( !empty($intro['title']) ) printf('<h2 class="fl-h1">%s</h2>', $intro['title'] ); ?>
          <?php 
-            $srooms_query = new WP_Query(array( 
+            $faq_query = new WP_Query(array( 
               'post_type'=> 'faq',
               'post_status' => 'publish',
               'posts_per_page' => -1,
@@ -43,9 +44,9 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
               ) 
             );
           ?>
-          <?php if($srooms_query->have_posts()): ?>
+          <?php if($faq_query->have_posts()): ?>
           <div class="hh-accordion-tab-cntlr">
-            <?php while($srooms_query->have_posts()): $srooms_query->the_post(); ?>
+            <?php while($faq_query->have_posts()): $faq_query->the_post(); ?>
             <div class="hh-accordion-tab-row">
                 <h3 class="hh-accordion-title"><span></span><?php the_title(); ?></h3>
                 <div class="hh-accordion-des">
