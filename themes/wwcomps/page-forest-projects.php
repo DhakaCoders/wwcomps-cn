@@ -34,7 +34,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
        <div class="forest-proj-slide-item">
           <div class="banner-bg">
             <div class="bnr-bg-lft inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hit-bnr-page-lft-img.jpg')"></div>
-            <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo cbv_get_image_src($gllID); ?>')"></div>
+            <div class="bnr-bg-rgt inline-bg" style="background-image:url('<?php echo cbv_get_image_src($gllID, 'fp_slide'); ?>')"></div>
           </div>
         </div>
       <?php endforeach; ?>
