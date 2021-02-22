@@ -106,6 +106,20 @@
 	background: #fff;
 }
 
+.summary.entry-summary.custom-summary .cart.pick-number{
+	padding: 50px 38px 40px;
+	background: #F7F4F2;
+	margin-bottom: 0;
+}
+.lottery-question{
+	font-size: 22px;
+	line-height: 1.2;
+	margin-bottom: 12px;
+    font-family: 'LeagueSpartan-Medium';
+    color: #231F20;
+    text-transform: uppercase;
+}
+
 
 
 @media(max-width:1199px){
