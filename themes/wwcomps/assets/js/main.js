@@ -319,43 +319,6 @@ $(window).resize(function(){
 });
 var windowWidth4 = $(window).width();
 
-/*if (windowWidth4 <= 1199) {
-  var windowWidth5 = $(window).width();
-  var ConWidth2 = $(".container").width();
-  var LftRtOffset2 = (windowWidth5 - ConWidth2) / 2;
-  $('.lw-bnr-slider button.slick-prev').css('left', LftRtOffset2);
-  $('.lw-bnr-slider button.slick-next').css('right', LftRtOffset2);
-}*/
-
-
-
-  /*start Of Shariful*/
-
-
-
-
-
-  /*start Of Milon*/
-
-
-
-
-
-
-  /*start Of Sabbir*/
-
-
-
-  
-
-
-
-
-
-
-
-  /*start Of Rannojit*/
-
 
 //windowWidth
 function attrvaluupdate(){
@@ -488,6 +451,26 @@ $('.modallink').on('click', function(){
   $("#Modal #modal-img").attr('src',imageURL);
   $('#Modal').modal('show'); 
 });
+
+if( $('.latesCompititionsSlider').length ){
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.thumbnail-crtl'
+  });
+  $('.thumbnail-crtl').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+}
+
+
 
 
 new WOW().init();
