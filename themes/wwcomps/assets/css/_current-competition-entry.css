@@ -371,6 +371,42 @@
 .thumbnail-crtl .thumb-list.slick-current img{
 	border: 2px solid #F4E2D0;
 }
+.woocommerce div.product div.images .woocommerce-product-gallery__image--placeholder{
+	border: none;
+}
+.woocommerce div.product div.summary{
+	position: relative;
+}
+.woocommerce div.product div.summary:before{
+	content: "";
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-right: 24px solid #fff;
+	position: absolute;
+	right: 100%;
+	top: 150px;
+}
+.product.has-post-thumbnail:after,
+.product.has-post-thumbnail:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.gallery-crtl{
+	float: left;
+	width: 52%;
+	padding-right: 40px;
+}
+.gallery-crtl > .woocommerce-product-gallery{
+	width: 100%!important;
+}
+body.single-product .products-grd-page-con{
+	padding-top: 75px;
+}
+/*.product.has-post-thumbnail{
+	
+}*/
+
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
