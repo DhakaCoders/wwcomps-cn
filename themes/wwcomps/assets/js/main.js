@@ -455,7 +455,7 @@ $('.main-gallery').slick({
    asNavFor: '.thumbnail-crtl'
  });
  $('.thumbnail-crtl').slick({
-   slidesToShow: 3,
+   slidesToShow: 4,
    slidesToScroll: 1,
    asNavFor: '.main-gallery',
    dots: true,

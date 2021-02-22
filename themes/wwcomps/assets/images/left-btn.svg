@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Group_130" data-name="Group 130" transform="translate(-105.561 -769.917)">
+    <g id="Container" transform="translate(105.561 769.917)" fill="#fff" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5">
+      <circle cx="22" cy="22" r="22" stroke="none"/>
+      <circle cx="22" cy="22" r="21.25" fill="none"/>
+    </g>
+    <g id="Left_chevron_icon" data-name="Left chevron icon">
+      <path id="Path_238" data-name="Path 238" d="M129.927,784.658a.823.823,0,0,1,1.165,0l.779.779a.824.824,0,0,1,0,1.164l-5.291,5.316,5.291,5.315a.825.825,0,0,1,0,1.165l-.779.779a.825.825,0,0,1-1.165,0l-6.676-6.677a.823.823,0,0,1,0-1.165Z"/>
+    </g>
+  </g>
+</svg>
