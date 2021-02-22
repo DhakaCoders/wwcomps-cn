@@ -126,7 +126,18 @@
 <?php wp_footer(); ?>
 <script type="text/javascript">
   (function($) {
-    
+    var filtered = false;
+    $('.filter-btn').on('click',function(){
+        $('.filter-btn').removeClass('active');
+        var filter = $(this).data('attribute');
+        if(filter=='all'){
+            $('.employees').slick('slickUnfilter');
+        }else{
+            $('.employees').slick('slickUnfilter').slick('slickFilter','.'+filter);
+        }
+        $(this).addClass('active');
+        filtered = true;
+    }); 
   })(jQuery);
 </script>
 </body>
