@@ -251,6 +251,40 @@
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
+.pro-single-btm{
+	display: flex;
+	justify-content: flex-end;
+}
+.pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
+	float: none!important;
+	height: 56px;
+	font-size: 18px;
+	line-height: 1;
+	padding: 10px;
+	max-width: 180px;
+	width: 100%;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-family: 'LeagueSpartan-Semibold';
+}
+.pro-single-btm > .quantity{
+	margin-left: auto!important;
+	border: 1px solid #7C7C7C;
+	display: flex;
+	align-items: center;
+	max-width: 120px;
+	width: 100%;
+	background: #fff;
+
+}
+.wcl-progress-meter progress{
+	height: 40px;
+	background: #D0D3D6;
+}
+.fl-product-summary-txt{
+	padding-top: 45px;
+}
+
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
