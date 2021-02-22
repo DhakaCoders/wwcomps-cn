@@ -134,12 +134,12 @@ get_header(); ?>
              <div class="lates-winners-slider-filter">
                  <div class="filter-tabbar">
                   <ul class="filter reset-list">
-                    <li class="filter-btn active"><a data-filter="all"  class="all" href="#">ALL</a></li>
+                    <li class="filter-btn active"><a data-attribute="all"  class="all" href="#">ALL</a></li>
                     <?php 
                       foreach( $competitions as $compcat ): 
                       $comp_term = $compcat['select_category'];
                     ?>
-                      <li class="filter-btn"><a data-filter="<?php echo $comp_term->slug; ?>" class="<?php echo $comp_term->slug; ?>" href="#"><?php echo $comp_term->name; ?></a></li>
+                      <li class="filter-btn" data-attribute="<?php echo $comp_term->slug; ?>"><a href="#"><?php echo $comp_term->name; ?></a></li>
                     <?php endforeach; ?>
                   </ul>
                 </div>

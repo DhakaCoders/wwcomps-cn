@@ -127,13 +127,14 @@
 <script type="text/javascript">
   (function($) {
     var filtered = false;
-    $('.filter-btn').on('click',function(){
+    $('.filter-btn').on('click',function(e){
+      e.preventDefault();
         $('.filter-btn').removeClass('active');
         var filter = $(this).data('attribute');
         if(filter=='all'){
-            $('.employees').slick('slickUnfilter');
+            $('.latesCompititionsSlider').slick('slickUnfilter').slick('slickFilter','.'+filter);
         }else{
-            $('.employees').slick('slickUnfilter').slick('slickFilter','.'+filter);
+            $('.latesCompititionsSlider').slick('slickUnfilter').slick('slickFilter','.'+filter);
         }
         $(this).addClass('active');
         filtered = true;
