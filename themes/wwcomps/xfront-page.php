@@ -153,77 +153,6 @@ get_header(); ?>
             <div class="filter-slider-cntlr">
               <div class="latesCompititionsSlider">
                 <?php 
-                  $allargs = array(
-                    'post_type' => 'product',
-                    'post_status' => 'publish',
-                    'ignore_sticky_posts' => 1,
-                    'posts_per_page' => 9,
-                    'orderby' => 'date',
-                    'order' => 'desc',
-                    'meta_query' => $meta_query,
-                    'tax_query' => array(
-                      array('taxonomy' => 'product_type' , 'field' => 'slug', 'terms' => 'lottery')
-                    ),
-                    'is_lottery_archive' => TRUE
-                  ); 
-                $allquery = new WP_Query($allargs);
-                if( $allquery->have_posts() ): 
-                while($allquery->have_posts()): $allquery->the_post();
-                global $product;
-                $thumID = get_post_thumbnail_id(get_the_ID());
-                $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
-                $pp_max_ticket = get_post_meta(get_the_ID(), '_max_tickets_per_user', true);
-                $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
-                $is_condition = get_field('is_condition', get_the_ID());
-                $condition = get_field('condition', get_the_ID());
-                ?> 
-                <div class="latesCompititionsSlideItem">
-                  <div class="product-grd-item">
-                    <div class="pro-fea-img-cntlr">
-                      <a class="overlay-link" href="<?php echo get_permalink(); ?>"></a>
-                      <div class="inline-bg" style="background: url(<?php echo $thumurl; ?>);"></div>
-                      <?php 
-                        if( !$is_condition ):
-                          echo '<div class="pro-absolute-text">';
-                          if( !empty($condition) ) printf('<span>%s</span>', $condition);
-                          echo '</div>';
-                        endif;
-                      ?>
-                    </div>
-                    <div class="product-grd-item-des mHc">
-                      <h3 class="fl-h6 pgid-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-                      <div class="pro-grd-price">
-                        <?php echo $product->get_price_html(); ?>
-                      </div>
-                    </div>
-                    <div class="pro-grd-ftr-bar">
-                      <div class="pro-grd-date">
-                        <i><img src="<?php echo THEME_URI; ?>/assets/images/days-icon.svg"></i>
-                        <?php 
-                          if( !empty( $_lottery_dates_to ) ){
-                            $dateDiff = dateDiffInDays( $_lottery_dates_to );
-                            if( $dateDiff > 1 ){
-                               echo "<span>$dateDiff days left</span>";
-                            }elseif( $dateDiff == 1 && $dateDiff < 0 ){
-                                echo "<span>$dateDiff day left</span>";
-                            }else{
-                                echo '<span>0 day left</span>';
-                            }
-                          }
-                        ?>
-                      </div>
-                      <?php if( !empty($pp_max_ticket) ): ?>
-                      <div class="pro-grd-time">
-                        <i><img src="<?php echo THEME_URI; ?>/assets/images/avater-icon.svg"></i>
-                        <span><?php echo $pp_max_ticket; ?> tickets pp</span>
-                      </div>
-                    <?php endif; ?>
-                    </div>
-                  </div>
-                </div>
-                <?php endwhile; ?>
-                <?php endif; wp_reset_postdata(); ?>
-                <?php 
                   foreach( $competitions as $compcat ): 
                   $comp_term = $compcat['select_category'];
 
@@ -435,38 +364,6 @@ get_header(); ?>
           <div class="col-md-12">
             <div class="filter-slider-cntlr">
               <div class="winnersSlider">
-                <?php 
-                  $allwinargs = array(
-                    'post_type' => 'competition_winners',
-                    'post_status' => 'publish',
-                    'ignore_sticky_posts' => 1,
-                    'posts_per_page' => 9,
-                    'orderby' => 'date',
-                    'order' => 'desc',
-                  ); 
-                $allwinquery = new WP_Query($allwinargs);
-                if( $allwinquery->have_posts() ): 
-                  $i = 1;
-                while($allwinquery->have_posts()): $allwinquery->the_post();
-                  $winthumID = get_post_thumbnail_id(get_the_ID());
-                  $winthumurl = !empty($winthumID)? cbv_get_image_src($winthumID, 'winners_slide'):'';
-                  $date = get_field('date', get_the_ID());
-                  $winimgtagsrc = !empty($winthumID)?cbv_get_image_src($winthumID, 'winners_popup'):'';
-                ?> 
-                <div class="winnersSlideItem">
-                  <div class="winners-grd-item">
-                    <div class="winners-grd-item-fea-img-cntlr">
-                      <a class="overlay-link modallink" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"></a>
-                      <div class="inline-bg" style="background: url(<?php echo $winthumurl; ?>);"></div>
-                    </div>
-                    <div class="winners-grd-item-des mHc">
-                      <h6 class="fl-h6 mHc1 hwgid-title"><a class="modallink" href="#" data-title="<?php echo get_the_title(); ?>" data-desc="<?php echo get_the_content(); ?>" data-img="<?php echo $winimgtagsrc; ?>"><?php the_title(); ?></a></h6>
-                      <?php if( !empty($date) ) printf('<strong class="winners-grd-date">%s</strong>', $date); ?>
-                    </div>
-                  </div>
-                </div>
-                <?php $i++; endwhile; ?>
-                <?php endif; wp_reset_postdata(); ?>
                 <?php 
                   foreach( $winnercats as $wincat ): 
                   $win_term = $wincat['select_category'];
