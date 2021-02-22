@@ -261,3 +261,50 @@ function custom_override_checkout_fields( $fields ) {
 
      return $fields;
 }
+
+// Front: Calculate new item price and add it as custom cart item data
+add_filter('woocommerce_add_cart_item_data', 'add_custom_product_data', 10, 3);
+function add_custom_product_data( $cart_item_data, $product_id, $variation_id ) {
+
+    $lottery_tickets_ques = filter_input( INPUT_POST, 'lottery_question' );
+
+    if ( empty($lottery_tickets_ques)) {
+        return $cart_item_data;
+    }
+
+        $cart_item_data['lottery_question'] = $lottery_tickets_ques;
+
+    
+    return $cart_item_data;
+}
+
+// Front: Display option in cart item
+add_filter('woocommerce_get_item_data', 'display_custom_item_data', 10, 2);
+
+function display_custom_item_data($item_data, $cart_item) {
+        if ( empty( $cart_item['lottery_question'] ) ) {
+            return $item_data;
+        }
+        $question = maybe_unserialize( get_post_meta( $cart_item['product_id'], '_lottery_question', true ) );
+
+        $item_data[] = array(
+            'key'     => __( 'Question', 'wc-lottery-ques' ),
+            'value'   => wc_clean( $cart_item['lottery_question'] ),
+            'display' => isset( $question[ $cart_item['lottery_question'] ] ['text'] ) ? $question[ $cart_item['lottery_question'] ]['text']  : '',
+        );
+
+
+        return $item_data;
+}
+
+
+// Save and display custom fields in order item meta
+add_action( 'woocommerce_add_order_item_meta', 'add_custom_fields_order_item_meta', 20, 3 );
+function add_custom_fields_order_item_meta( $item_id, $cart_item, $cart_item_key ) {
+
+    if ( isset($cart_item['lottery_question']) ) {
+        wc_add_order_item_meta($item_id, 'Question', $cart_item['lottery_question']);
+        
+    }
+
+}

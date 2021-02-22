@@ -17,7 +17,7 @@ if ( empty( $lottery_question ) || empty( $answers ) ) {
 
 <h3 style="display: none"><?php esc_html_e( 'Answer the question:' , 'wc-lottery-pn' )?></h3>
 <p class="lottery-question"><?php echo wp_kses_post( $lottery_question ) ?></p>
-
+<input type="hidden" name="lottery_question" value="<?php echo wp_kses_post( $lottery_question ) ?>">
 <?php if ( is_array( $answers ) ){
 	echo '<ul class="lottery-pn-answers">';
 	foreach ($answers as $key => $answer) {
