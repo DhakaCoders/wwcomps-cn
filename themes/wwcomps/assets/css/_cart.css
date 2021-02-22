@@ -1,4 +1,26 @@
-
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1;
+    padding: 11px 10px 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.cart-total-wrap-crtl .variation{
+	display: block!important;
+}
+.variation-Question{
+	display: flex;
+	align-items: top;
+}
+.variation dt,
+.variation dd,
+.variation dd p{
+	line-height: 1.2;
+}
 @media (max-width: 1699px){
 	
 }
