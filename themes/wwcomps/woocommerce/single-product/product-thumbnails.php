@@ -27,7 +27,7 @@ global $product;
 $attachment_ids = $product->get_gallery_image_ids();
 
 if ( $attachment_ids && $product->get_image_id() ) {
-	echo '<div clss="thumbnail-crtl" id="thumb-slider">';
+	echo '<div class="thumbnail-crtl" id="thumb-slider">';
 	foreach ( $attachment_ids as $attachment_id ) {
 		echo '<div class="thumb-list">';
 		echo cbv_get_image_tag( $attachment_id, 'thumb_slider'); 
