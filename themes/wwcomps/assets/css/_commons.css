@@ -461,15 +461,18 @@ ol li::before {
 
 /*-- slider break fix--*/
 .winnersSlider .winnersSlideItem,
-.latesCompititionsSlider .latesCompititionsSlideItem{
+.latesCompititionsSlider .latesCompititionsSlideItem,
+.main-gallery .woocommerce-product-gallery__image--placeholder{
 	display: none;
 }
 
 .winnersSlider .winnersSlideItem:first-child,
-.latesCompititionsSlider .latesCompititionsSlideItem:first-child{
+.latesCompititionsSlider .latesCompititionsSlideItem:first-child,
+.main-gallery .woocommerce-product-gallery__image--placeholder:first-child{
 	display: block;
 }
 .winnersSlider.slick-initialized .winnersSlideItem,
-.latesCompititionsSlider .latesCompititionsSlideItem{
+.latesCompititionsSlider.slick-initialized .latesCompititionsSlideItem,
+.main-gallery.slick-initialized .woocommerce-product-gallery__image--placeholder{
 	display: block;
 }

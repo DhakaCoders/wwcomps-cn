@@ -112,6 +112,20 @@
 	padding-bottom: 40px;
 	background: #F7F4F2;
 	margin-bottom: 0;
+	position: relative;
+	border-top: 1px solid #c9cdd0;
+}
+.summary.entry-summary.custom-summary .cart.pick-number:before{
+	content: "";
+	position: absolute;
+	left: 26px;
+	top: 0;
+	background: url(../images/pink-angle.jpg);
+	background-repeat: no-repeat;
+	width: 38px;
+	height: 14px;
+	background-size: 100% auto;
+	margin-top: -1px;
 }
 .summary.entry-summary.custom-summary .cart.pick-number,
 .summary.entry-summary.custom-summary{
@@ -183,6 +197,284 @@
 	display: flex;
 	margin-bottom: 50px;
 }
+.wc_lotery_countdown-section{
+	font-size: 42px;
+	line-height: 1;
+	display: block;
+}
+.fl-pro-summary-prices > div{
+	display: flex;
+	align-items: center;
+}
+.fl-pro-summary-prices del{
+	margin-bottom: auto;
+}
+.fl-pro-summary-prices div label{
+	font-size: 28px;
+	color: #231F20;
+ 	font-family: 'LeagueSpartan-Semibold';
+ 	text-transform: uppercase;
+ 	margin-bottom: 0;
+ 	margin-right: 10px;
+}
+.fl-pro-summary-prices del{
+	order: 3;
+}
+.fl-pro-summary-prices ins .woocommerce-Price-amount.amount bdi{
+	font-size: 44px;
+	color: #1C75BC;
+	font-family: 'LeagueSpartan-Bold';
+	margin-right: 5px;
+}
+.fl-pro-summary-prices del .woocommerce-Price-amount.amount span{
+	position: relative;
+	margin-bottom: auto;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul{
+	padding-left: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul li{
+	font-size: 16px;
+	padding-left: 15px;
+	padding-bottom: 14px;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul li:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	background: url(../images/list-icon-gradient.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.pro-single-btm{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+.cart.pick-number .pro-single-btm button.single_add_to_cart_button.button{
+	float: none!important;
+	height: 56px;
+	font-size: 18px;
+	line-height: 1;
+	padding: 10px!important;
+	padding-top: 11px!important;
+	max-width: 180px!important;
+	width: 100%!important;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-family: 'LeagueSpartan-Semibold';
+}
+.pro-single-btm > .quantity{
+	margin-left: auto!important;
+	border: 1px solid #7C7C7C;
+	display: flex;
+	align-items: center;
+	max-width: 120px;
+	width: 100%;
+	background: #fff;
+
+}
+.wcl-progress-meter progress{
+	height: 40px!important;
+	background: #D0D3D6!important;
+}
+.fl-product-summary-txt{
+	padding-top: 45px;
+}
+.ticket-count-crtl{
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+	color: #757575;
+}
+.ticket-count-crtl span{
+	position: static!important;
+	color: #175884;
+	margin-left: 5px;
+
+}
+.ticket-count-crtl > div{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'LeagueSpartan-Semibold';
+}
+.ticket-count-crtl .total-tickets{
+	
+}
+.ticket-count-crtl .total-remaining{
+	justify-content: flex-end;
+}
+.wcl-progress-meter{
+	margin-top: 25px!important;
+}
+.lottery-ajax-change{
+	margin-top: 0!important;
+}
+.thumbnail-crtl{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.thumbnail-crtl ul.slick-dots{
+	margin-left: auto;
+	margin-right: auto;
+}
+.thumbnail-crtl.slick-slider ul.slick-dots{
+	height: auto!important;
+	text-align: center;
+	display: block!important;
+	padding-top: 24px!important;
+}
+.thumbnail-crtl.slick-slider ul.slick-dots li{
+	background: #1C1B21!important;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.thumbnail-crtl.slick-slider ul.slick-dots li,
+.thumbnail-crtl.slick-slider ul.slick-dots li button{
+	width: 8px!important;
+	height: 8px!important;
+}
+
+.main-gallery{
+	margin-bottom: 15px!important;
+}
+.thumb-list{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.thumbnail-crtl .slick-prev,
+.thumbnail-crtl .slick-next{
+	width: 44px;
+	height: 44px;
+	margin-top: -15px;
+}
+.thumbnail-crtl .slick-prev {
+    left: 0;
+    background: url(../images/left-btn.svg)!important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.thumbnail-crtl .slick-next {
+    right: 0;
+    background: url(../images/right-btn.svg)!important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.thumbnail-crtl .thumb-list.slick-current img{
+	border: 2px solid #F4E2D0;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__image--placeholder{
+	border: none;
+}
+.woocommerce div.product div.summary{
+	position: relative;
+	margin-bottom: 0!important;
+}
+.woocommerce div.product div.summary:before{
+	content: "";
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-right: 24px solid #fff;
+	position: absolute;
+	right: 100%;
+	top: 150px;
+}
+.product.has-post-thumbnail:after,
+.product.has-post-thumbnail:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.gallery-crtl{
+	float: left;
+	width: 52%;
+	padding-right: 40px;
+}
+.gallery-crtl > .woocommerce-product-gallery{
+	width: 100%!important;
+}
+body.single-product .products-grd-page-con{
+	padding-top: 75px;
+	padding-bottom: 30px;
+}
+/*.product.has-post-thumbnail{
+	
+}*/
+.wc_lotery_countdown-amount{
+	font-size: 42px!important;
+	line-height: 1.2;
+	color: #1E1E1E;
+	font-weight: 600;
+}
+.wc_lotery_countdown-period{
+	font-size: 16px;
+	line-height: 1.2;
+}
+.wc_lotery_countdown-section{
+	position: relative;
+}
+.wc_lotery_countdown-section:not(:last-child):after{
+	content: ":";
+	position: absolute;
+	color: #175884;
+	font-size: 40px;
+	top: 0;
+	right: 0;
+}
+.pro-single-btm .btn-qty,
+.pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
+	height: 56px!important;
+}
+.pro-single-btm .btn-qty{
+	width: 65px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.pro-single-btm .btn-qty .minus,
+.pro-single-btm .btn-qty .plus{
+	position: absolute;
+	background: transparent;
+	width: 8px;
+	height: 6px;
+	right: 15px;
+	padding: 0!important;
+	cursor: pointer;
+}
+.pro-single-btm .btn-qty .minus img,
+.pro-single-btm .btn-qty .plus img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.pro-single-btm .btn-qty .plus{
+	bottom: 20px;
+
+}
+.pro-single-btm .btn-qty .minus{
+	top: 20px;
+}
+.woocommerce div.product form.cart .pro-single-btm  div.quantity{
+	float: none;
+	height: 100%;
+}
+.woocommerce .pro-single-btm .quantity input[type=number]{
+	width: 100%;
+	height: 100%;
+}
+
 
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{

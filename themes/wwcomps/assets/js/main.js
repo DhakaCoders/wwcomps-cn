@@ -468,27 +468,23 @@ $('.modallink').on('click', function(){
 });
 
 
-if( $('.main-gallery').length ){
-  $('.main-gallery').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.thumbnail-crtl'
-  });
-}
 
-if( $('.thumbnail-crtl').length ){
-  $('.thumbnail-crtl').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.main-gallery',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-  });
 
-}
+
+$('.main-gallery').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.thumbnail-crtl'
+ });
+ $('.thumbnail-crtl').slick({
+   slidesToShow: 4,
+   slidesToScroll: 1,
+   asNavFor: '.main-gallery',
+   dots: true,
+   focusOnSelect: true
+ });
 
 
 new WOW().init();
