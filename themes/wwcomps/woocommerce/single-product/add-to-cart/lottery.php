@@ -59,6 +59,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<?php endif; ?>
 
 	<div class="pro-single-btm clearfix">
+	<span class="icon-btn"></span>
 	<?php
 		/**
 		 * @since 2.1.0.
