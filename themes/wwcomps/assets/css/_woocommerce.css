@@ -482,6 +482,11 @@ h3#order_review_heading{
 .cart-total-wrap-crtl .variation dd{
 	font-weight: 600;
 }
+body.woocommerce-cart table.shop_table tr.cart-subtotal th{
+	border-top: none!important;
+}
+
+
 .woocommerce .woocommerce-cart-form table.shop_table td .product-title .woocommerce-Price-amount{
 	color: #1C75BC;
 	font-size: 20px;
