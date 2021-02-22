@@ -29,7 +29,9 @@ $attachment_ids = $product->get_gallery_image_ids();
 if ( $attachment_ids && $product->get_image_id() ) {
 	echo '<div clss="thumbnail-crtl" id="thumb-slider">';
 	foreach ( $attachment_ids as $attachment_id ) {
-		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo '<div class="thumb-list">';
+		echo cbv_get_image_tag( $attachment_id, 'thumb_slider'); 
+		echo '</div>';
 	}
 	echo '</div>';
 }

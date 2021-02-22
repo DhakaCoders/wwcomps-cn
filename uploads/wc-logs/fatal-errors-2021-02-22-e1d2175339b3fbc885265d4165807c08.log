@@ -1,0 +1,10 @@
+2021-02-22T07:38:51+00:00 CRITICAL Uncaught Error: Call to undefined function cvb_get_image_tag() in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\woocommerce\single-product\product-thumbnails.php:32
+Stack trace:
+#0 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\plugins\woocommerce\includes\wc-template-functions.php(1487): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(287): woocommerce_show_product_thumbnails('')
+#3 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\2021\02\wwcomps\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\woocommerce\single-product\product-image.php(58): do_action('woocommerce_pro...')
+#6 C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htd in C:\xampp\htdocs\2021\02\wwcomps\wwcomps-cn\themes\wwcomps\woocommerce\single-product\product-thumbnails.php on line 32
+

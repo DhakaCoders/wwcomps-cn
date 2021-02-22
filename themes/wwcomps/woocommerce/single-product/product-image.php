@@ -42,14 +42,16 @@ $wrapper_classes   = apply_filters(
 			<div class="main-gallery">
 			<?php
 			if ( $product->get_image_id() ) {
-				$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+				$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+				$html .= cbv_get_image_tag($post_thumbnail_id);
+				$html .= '</div>';
 			} else {
 				$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
 				$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 				$html .= '</div>';
 			}
-
-			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+			echo $html;
+			//echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
 			?>
 			</div>
 			<?php
