@@ -26,9 +26,12 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'gallerygrid', 324, 350, true );
         add_image_size( 'projectgrid', 526, 268, true );
         add_image_size( 'hmslide', 882, 708, true );
+        add_image_size( 'fp_slide', 881, 744, true );
         add_image_size( 'winners_popup', 498, 408, true );
         add_image_size( 'winners_slide', 254, 274, true );
         add_image_size( 'thumb_slider', 100, 70, true );
+        add_image_size( 'product_ended', 344, 345, true );
+        add_image_size( 'product_thumb', 330, 345, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );

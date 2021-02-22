@@ -43,7 +43,6 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
           <div class="cnt-form">
           <?php if(!empty($forms['form_shortcode'])) echo do_shortcode( $forms['form_shortcode'] ); ?>
           </div>
-          <a class="" href="#"></a>
           <span>
             <img class="desktop angle-desk" src="<?php echo THEME_URI; ?>/assets/images/angle-rgt-white-2.png" alt="">
             <img class="mobile angle-mobile" src="<?php echo THEME_URI; ?>/assets/images/angle-rgt-white-res-3.png" alt="">

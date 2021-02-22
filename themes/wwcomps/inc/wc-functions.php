@@ -141,7 +141,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         global $product, $woocommerce, $post;
         $thumID = get_post_thumbnail_id($product->get_id());
-        $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
+        $thumurl = !empty($thumID)? cbv_get_image_src($thumID, 'product_thumb'):'';
         $pp_max_ticket = get_post_meta($product->get_id(), '_max_tickets_per_user', true);
         $_lottery_dates_to = get_post_meta($product->get_id(), '_lottery_dates_to', true);
         $is_condition = get_field('is_condition', $product->get_id());

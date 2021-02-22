@@ -36,7 +36,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
       'post_type' => 'product',
       'post_status' => 'publish',
       'ignore_sticky_posts' => 1,
-      'posts_per_page' => 1,
+      'posts_per_page' => 9,
       'paged' => $paged,
       'orderby' => 'meta_value',
       'order' => $order,
@@ -59,7 +59,7 @@ $page_title = (isset( $custom_page_title ) && !empty($custom_page_title)) ? $cus
                   while($pQuery->have_posts()): $pQuery->the_post();
                   global $product, $woocommerce, $post; 
                   $thumID = get_post_thumbnail_id($product->get_id());
-                  $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
+                  $thumurl = !empty($thumID)? cbv_get_image_src($thumID, 'product_ended'):'';
                 ?>
                 <li>
                   <div class="product-grd-item">

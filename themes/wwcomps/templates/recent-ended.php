@@ -51,7 +51,7 @@
                   while($pQuery->have_posts()): $pQuery->the_post();
                   global $product, $woocommerce, $post; 
                    $thumID = get_post_thumbnail_id($product->get_id());
-                   $thumurl = !empty($thumID)? cbv_get_image_src($thumID):'';
+                   $thumurl = !empty($thumID)? cbv_get_image_src($thumID, 'product_ended'):'';
                 ?>
                   <li>
                     <div class="product-grd-item">
