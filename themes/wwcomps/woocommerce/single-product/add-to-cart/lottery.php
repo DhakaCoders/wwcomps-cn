@@ -57,6 +57,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			}?>
 
 		<?php endif; ?>
+
+	<div class="pro-single-btm clearfix">
 	<?php
 		/**
 		 * @since 2.1.0.
@@ -89,6 +91,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		 */
 		do_action( 'woocommerce_after_add_to_cart_button' );
 	?>
+	</div>
+
 	</div>
 </div>
 </form>

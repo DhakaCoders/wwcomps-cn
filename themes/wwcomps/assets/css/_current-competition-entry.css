@@ -112,6 +112,20 @@
 	padding-bottom: 40px;
 	background: #F7F4F2;
 	margin-bottom: 0;
+	position: relative;
+	border-top: 1px solid #c1c0be;
+}
+.summary.entry-summary.custom-summary .cart.pick-number:before{
+	content: "";
+	position: absolute;
+	left: 26px;
+	top: 0;
+	background: url(../images/pink-angle.jpg);
+	background-repeat: no-repeat;
+	width: 38px;
+	height: 14px;
+	background-size: 100% auto;
+	margin-top: -1px;
 }
 .summary.entry-summary.custom-summary .cart.pick-number,
 .summary.entry-summary.custom-summary{
@@ -215,6 +229,27 @@
 .fl-pro-summary-prices del .woocommerce-Price-amount.amount span{
 	position: relative;
 	margin-bottom: auto;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul{
+	padding-left: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul li{
+	font-size: 16px;
+	padding-left: 15px;
+	padding-bottom: 14px;
+}
+.summary.entry-summary.custom-summary .fl-product-summary-txt ul li:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	background: url(../images/list-icon-gradient.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
