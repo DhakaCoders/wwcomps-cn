@@ -113,7 +113,7 @@
 	background: #F7F4F2;
 	margin-bottom: 0;
 	position: relative;
-	border-top: 1px solid #c1c0be;
+	border-top: 1px solid #c9cdd0;
 }
 .summary.entry-summary.custom-summary .cart.pick-number:before{
 	content: "";
@@ -255,7 +255,7 @@
 	display: flex;
 	justify-content: flex-end;
 }
-.cart.pick-number .pro-single-btm .single_add_to_cart_button.button.alt.lottery-must-answer{
+.cart.pick-number .pro-single-btm button.single_add_to_cart_button.button{
 	float: none!important;
 	height: 56px;
 	font-size: 18px;
@@ -471,6 +471,8 @@ body.single-product .products-grd-page-con{
 	width: 100%;
 	height: 100%;
 }
+
+
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
