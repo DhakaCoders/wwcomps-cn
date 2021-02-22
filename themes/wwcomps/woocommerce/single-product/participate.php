@@ -29,8 +29,10 @@ $lottery_dates_from         = $product->get_lottery_dates_from();
                     
             <div class="wcl-progress-meter <?php if($product->is_max_tickets_met()) echo 'full' ?>">
                 <progress  max="<?php echo $max_tickets ?>" value="<?php echo $lottery_participants_count ?>"  low="<?php echo $min_tickets ?>"></progress>
-                <div class="total-tickets">TOTAL TICKETS: <span class="max"><?php echo $max_tickets ?></span></div>
-                <div class="total-remaining">REMAINING: <span class="zero">0</span></div>
+                <div class="ticket-count-crtl">
+                    <div class="total-tickets">TOTAL TICKETS: <span class="max"><?php echo $max_tickets ?></span></div>
+                    <div class="total-remaining">REMAINING: <span class="zero">0</span></div>
+                </div>
             </div>
 
             <?php endif; ?>	
