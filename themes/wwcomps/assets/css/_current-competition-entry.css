@@ -368,6 +368,9 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.thumbnail-crtl .thumb-list.slick-current img{
+	border: 2px solid #F4E2D0;
+}
 @media(max-width:1199px){
 	.current-competition-entry-sec-ctlr .hh-accordion-des-cntlr p{
 		font-size:17px;
