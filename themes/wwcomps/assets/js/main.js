@@ -290,8 +290,8 @@ if( $('.humberger-icon').length ){
   });
 }
 if( $('li.menu-item-has-children a').length ){
-  $('li.menu-item-has-children a').click(function(){
-   //event.preventDefault();
+  $('li.menu-item-has-children a').click(function(e){
+   event.preventDefault();
    $(this).next().slideToggle(300);
    $(this).parent().toggleClass('sub-menu-arrow');
  });
