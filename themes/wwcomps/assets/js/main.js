@@ -5,9 +5,9 @@ var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
-	$('#mobile-nav').slideToggle(300);
+  $('#mobile-nav').slideToggle(300);
 });
-	
+  
   
 //matchHeightCol
 if($('.mHc').length){
@@ -203,6 +203,8 @@ if( $('#mapID').length ){
 
 // accordion
 if( $('.hh-accordion-title').length ){
+    $( ".hh-accordion-tab-row" ).first().find('.hh-accordion-title').addClass('hh-accordion-active');
+    $( ".hh-accordion-active").next().slideDown(300);
   $('.hh-accordion-title').click(function(){
       $(this).next().slideToggle(300);
       $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
@@ -211,21 +213,25 @@ if( $('.hh-accordion-title').length ){
   });
 }
 //Masonry
-if(windowWidth > 767) {
-  if( $('.our-proj-grid').length ){
-    $('.our-proj-grid').masonry({
-      // options
-      itemSelector: '.our-proj-grid-item',
-    });
-  };
-};
+$(window).load(function(){
+    if(windowWidth > 767) {
+      if( $('.our-proj-grid').length ){
+        $('.our-proj-grid').masonry({
+          // options
+          itemSelector: '.our-proj-grid-item',
+        });
+      };
+    }
+});
 
 // frst-project slider
 $('.frstProjSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 700,
     dots: true,
     dotsClass: 'custom_paging',
     customPaging: function (slider, i) {
@@ -350,7 +356,7 @@ $(window).resize(function(){
   if( $('.winnersSlider').length ){
     $('.winnersSlider').slick({
       dots: true,
-      infinite: false,
+      infinite: true,
       autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
@@ -386,7 +392,7 @@ $(window).resize(function(){
 if( $('.latesCompititionsSlider').length ){
     $('.latesCompititionsSlider').slick({
       dots: true,
-      infinite: false,
+      infinite: true,
       autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
