@@ -399,7 +399,7 @@ h3#order_review_heading{
 }
 .product-remove{
 	position: absolute;
-	left: 15px;
+	left: 12px;
 	top: 12px;
 	display: flex;
 	align-items: center;
@@ -407,11 +407,11 @@ h3#order_review_heading{
 }
 .woocommerce table.shop_table td.product-thumbnail{
 	position: relative;
-	padding-left: 50px;
-	width: 30%;
+	padding-left: 45px;
+	width: 26%;
 }
 .woocommerce .woocommerce-cart-form table.shop_table td.product-name{
-	width: 35%;
+	width: 44%;
 }
 .woocommerce table.shop_table td.product-thumbnail > a{
 	display: block;
@@ -436,6 +436,7 @@ h3#order_review_heading{
 }
 .woocommerce form.woocommerce-cart-form{
 	position: relative;
+	margin-top: -2px;
 }
 .woocommerce form.woocommerce-cart-form:before,
 .wc-carttotal-crtl .cart-collaterals .cart_totals table.shop_table:before,
@@ -445,7 +446,7 @@ h3#order_review_heading{
 	border-right: 33px solid transparent;
 	border-bottom: 16px solid #175783;
 	position: absolute;
-	left: 15px;
+	left: 19px;
 	bottom: 100%;
 }
 
@@ -469,7 +470,7 @@ h3#order_review_heading{
 	line-height: 1.2;
 }
 .product-name > a:hover{
-	color: #EACEAD!important;
+	color: #4f4f4f!important;
 }
 .cart-total-wrap-crtl .variation{
 	display: flex;
@@ -484,6 +485,12 @@ h3#order_review_heading{
 }
 body.woocommerce-cart table.shop_table tr.cart-subtotal th{
 	border-top: none!important;
+}
+
+body.woocommerce-cart .cart-subtotal .woocommerce-Price-currencySymbol,
+body.woocommerce-cart .order-total .woocommerce-Price-currencySymbol,
+body.woocommerce-cart .cart_item .product-subtotal .woocommerce-Price-currencySymbol{
+	margin-right: 0!important;
 }
 
 
@@ -808,7 +815,51 @@ tr.order-total td strong{
 	font-size: 18px;
 	text-transform: capitalize;
 }
+.variation dt,
+.variation dd{
+	margin-bottom: 13px!important;
+}
+body.woocommerce-cart tr.order-total td strong{
+	color: #212529!important;
+}
 
+body.woocommerce-cart .cart-subtotal td,
+body.woocommerce-cart .order-total td{
+	text-align: right!important;
+	padding-right: 20px!important;
+}
+
+@media(max-width: 1499px){
+	.variation-Question{
+		font-size: 16px;
+	}
+	.product-quantity .qty .minus, .product-quantity .qty .plus {
+	    width: 26px;
+	    height: 26px;
+	}
+	.product-quantity .qty{
+		width: 95px;
+	}
+	.woocommerce table.shop_table td{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.woocommerce .wc-proceed-to-checkout .checkout-button.button{
+		font-size: 17px!important;
+	}
+}
+
+
+@media(max-width: 1199px){
+	.product-name > a{
+		font-size: 24px;
+	}
+	body.woocommerce-cart .entry-list-bg{
+		padding-top: 45px;
+		padding-bottom: 40px;
+	}
+
+}
 
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
@@ -823,6 +874,23 @@ tr.order-total td strong{
 	.woocommerce form .form-row label {
         font-size: 16px;
     }
+    body.woocommerce-cart .wc-cart-crtl,
+    body.woocommerce-cart .wc-carttotal-crtl{
+    	width: 100%;
+    	padding-left: 0!important;
+    	padding-right: 0!important;
+    }
+    body.woocommerce-cart .wc-cart-crtl{
+    	margin-bottom: 30px;
+    }
+    .cart-total-wrap-crtl{
+    	flex-wrap: wrap;
+    }
+     body.woocommerce-cart .cart-collaterals .order-total th,
+     body.woocommerce-cart .cart-collaterals .order-total td{
+     	background: #F7F4F2;
+     	border-top: 1px solid #707070!important;
+     }
 }
 @media(max-width: 768px){
 	body.woocommerce-cart .default-page-con,
@@ -843,6 +911,91 @@ tr.order-total td strong{
 	.woocommerce-cart.woocommerce-page button.button{
 	    margin-left: 0!important;
 	}
+	.woocommerce .cart_totals > h2,
+	.wc-cart-crtl > h2{
+		text-align: center;
+	}
+	.woocommerce table.shop_table td.product-thumbnail{
+		width: 100%;
+		display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 60px!important;
+	}
+	.woocommerce table.shop_table td.product-thumbnail:before,
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-name:before,
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-quantity:before,
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-subtotal:before{
+		content: none;
+	}
+	.woocommerce table.shop_table td.product-thumbnail > a{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.woocommerce form.woocommerce-cart-form:before{
+		border-bottom: 16px solid #fff;
+	}
+	.woocommerce a.remove {
+	    font-size: 37px;
+	    height: 30px;
+	    width: 30px;
+	    font-weight: 500;
+	}
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-name {
+	    width: 100%;
+	    border-top: none!important;
+	    padding-top: 10px!important;
+	}
+	.product-name > a{
+		text-align: center;
+		padding-bottom: 0!important;
+		margin-bottom: 25px!important;
+	}
+	.woocommerce table.shop_table_responsive tr td, 
+	.woocommerce-page table.shop_table_responsive tr td {
+	    display: block;
+	    text-align: center!important;
+	}
+	body.woocommerce-cart .woocommerce .quantity input[type=number]{
+		background: transparent!important;
+	}
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-quantity,
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-subtotal{
+		padding-top: 10px!important;
+		padding-bottom: 10px!important;
+		border-top: 1px solid #707070!important;
+	}
+	.woocommerce td.product-name dl.variation dd.variation-Answer{
+		display: flex;
+	}
+	.woocommerce td.product-name dl.variation{
+		display: table!important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	body.woocommerce-cart #update_cart{
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+	.woocommerce .woocommerce-cart-form table.shop_table td.actions {
+		padding: 15px 10px 16px 10px!important;
+	}
+	body.woocommerce-cart .woocommerce .woocommerce-cart-form table.shop_table td.product-subtotal{
+		font-size: 16px;
+	}
+	.variation-Question {
+	    font-size: 13px;
+	}
+	.woocommerce .woocommerce-cart-form table.shop_table td.product-name{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	body.woocommerce-cart .woocommerce table.shop_table .cart-subtotal td,
+	body.woocommerce-cart .woocommerce table.shop_table .order-total td{
+	 	text-align: right!important;
+	 }
 }
 
 
