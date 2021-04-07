@@ -46,7 +46,7 @@
 	text-decoration: underline;
 }
 .slick-prev{
-	left: 0;
+	right: 0;
 	background: url(../images/left-arrow.svg)!important;
 	background-repeat: no-repeat;
 	background-size: 100% auto;

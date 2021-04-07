@@ -411,6 +411,10 @@ ul li a{
 ul li.refGridItem:before{
 	display: none;
 }
+
+
+
+
 .default-page-con ol, ol {
 	padding: 0 46px 0 0px;
 	list-style: none;
